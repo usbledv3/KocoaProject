@@ -10,16 +10,17 @@ import com.lx.list.PointAppData
 import lx.com.kocoa.databinding.ActivityMyPageBinding
 
 class MyPageActivity : AppCompatActivity() {
-    lateinit var binding : ActivityMyPageBinding
+    lateinit var binding: ActivityMyPageBinding
+
     /*외부*/
     var qrCodeScan = QRCodeScan(this)
     var count = 0
 
     val pointLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult(),
-        ActivityResultCallback {  }
+        ActivityResultCallback { }
     )
-    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMyPageBinding.inflate(layoutInflater)
@@ -32,7 +33,7 @@ class MyPageActivity : AppCompatActivity() {
             pointLauncher.launch(infoIntent)
         }
 
-        /* 포인트샵 이동 */
+        //* 포인트샵 이동 *//*
         binding.pointshopButton.setOnClickListener {
             val pointIntent = Intent(applicationContext, PointShopActivity::class.java)
             pointLauncher.launch(pointIntent)
@@ -75,15 +76,17 @@ class MyPageActivity : AppCompatActivity() {
             }
         }
 
-        /* QR 촬영 버튼 눌렀을때 */
+        //* QR 촬영 버튼 눌렀을때 *//*
         binding.qrButton.setOnClickListener {
             qrCodeScan.startQRScan()
             binding.ntextView2.text = "banana"
         }
 
     }
-    /*함수*/
-    fun showToast(message:String) {
+
+    //*함수*//*
+    fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
+
     }
 }
