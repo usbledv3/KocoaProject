@@ -11,7 +11,7 @@ import lx.com.kocoa.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     // 커밋이 잘 되었나요? asdfaasdf
-    // 테스트를 한번 더 해 봅시다
+    // 테스트를 한번 더 해 봅시다 111
     lateinit var binding: ActivityMainBinding
 
     //부분화면 구분자
