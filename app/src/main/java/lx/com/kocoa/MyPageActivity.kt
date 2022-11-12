@@ -46,7 +46,7 @@ class MyPageActivity : AppCompatActivity() {
 
         }
 
-        // 화면실행시 스탬프 몇개인지? 1.0 -> 1개
+        /*// 화면실행시 스탬프 몇개인지? 1.0 -> 1개
         binding.ratingBar.rating = 0F
 
         // 스탬프
@@ -78,7 +78,7 @@ class MyPageActivity : AppCompatActivity() {
                 binding.ntextView2.text = "5개"
                 count += 1
             }
-        }
+        }*/
 
         //* QR 촬영 버튼 눌렀을때 *//*
         binding.qrButton.setOnClickListener {

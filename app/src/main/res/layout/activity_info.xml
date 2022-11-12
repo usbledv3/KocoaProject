@@ -20,7 +20,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="100dp"
             android:text="회원 정보 수정"
             android:textColor="@color/black"
             android:textSize="30sp" />
@@ -42,7 +42,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:ems="10"
-            android:hint="이름"
+            android:hint="닉네임"
             android:inputType="textPersonName" />
 
         <EditText
