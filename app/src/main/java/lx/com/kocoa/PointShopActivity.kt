@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
+import androidx.activity.result.ActivityResultCallback
 import androidx.activity.result.contract.ActivityResultContracts
 import com.google.zxing.BarcodeFormat
 import com.google.zxing.integration.android.IntentIntegrator
@@ -26,7 +27,10 @@ class PointShopActivity : AppCompatActivity() {
     var customerInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
-
+    val pointLauncher = registerForActivityResult(
+        ActivityResultContracts.StartActivityForResult(),
+        ActivityResultCallback { }
+    )
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -150,7 +154,10 @@ class PointShopActivity : AppCompatActivity() {
                 binding.rewardWrite4.text = "'${input4}' - 사용된 코드"
             }
         }
-
+        binding.nbackButton2.setOnClickListener {
+            val infoIntent = Intent(applicationContext, MyPageActivity::class.java)
+            pointLauncher.launch(infoIntent)
+        }
 
     }
 

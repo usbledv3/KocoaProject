@@ -43,7 +43,8 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
 
         binding.starButton.setOnClickListener {
-
+            val pointIntent = Intent(applicationContext, MainActivity::class.java)
+            pointLauncher.launch(pointIntent)
         }
 
         /*// 화면실행시 스탬프 몇개인지? 1.0 -> 1개
@@ -81,9 +82,9 @@ class MyPageActivity : AppCompatActivity() {
         }*/
 
         //* QR 촬영 버튼 눌렀을때 *//*
-        binding.qrButton.setOnClickListener {
+        /*binding.qrButton.setOnClickListener {
             qrCodeScan.startQRScan()
-        }
+        }*/
 
     }
 
