@@ -28,7 +28,7 @@ class InfoActivity : AppCompatActivity() {
 
         binding.renameButton.setOnClickListener {
             PointAppData.data1 = binding.nameInfo.text.toString()
-            val userIntent = Intent(applicationContext, MainActivity::class.java)
+            val userIntent = Intent(applicationContext, MyPageActivity::class.java)
             userLauncher.launch(userIntent)
             if(binding.nameInfo.text == null) {
                 showToast("회원정보 수정완료")

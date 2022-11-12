@@ -79,7 +79,6 @@ class MyPageActivity : AppCompatActivity() {
         //* QR 촬영 버튼 눌렀을때 *//*
         binding.qrButton.setOnClickListener {
             qrCodeScan.startQRScan()
-            binding.ntextView2.text = "banana"
         }
 
     }
