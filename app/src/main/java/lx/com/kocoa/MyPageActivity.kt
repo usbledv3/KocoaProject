@@ -42,6 +42,10 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoView.setImageResource(R.drawable.digda)
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
 
+        binding.starButton.setOnClickListener {
+
+        }
+
         // 화면실행시 스탬프 몇개인지? 1.0 -> 1개
         binding.ratingBar.rating = 0F
 
