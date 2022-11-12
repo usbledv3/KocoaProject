@@ -7,7 +7,7 @@ import com.google.zxing.integration.android.IntentIntegrator
 import com.google.zxing.integration.android.IntentResult
 
 //QRCodeScan.kt
-class QRCodeScan(private val act: PointShopActivity) {
+class QRCodeScan(private val act: MyPageActivity) {
 
     /** QRCode Scan */
     fun startQRScan(){

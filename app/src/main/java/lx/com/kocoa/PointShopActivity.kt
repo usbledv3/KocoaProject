@@ -27,7 +27,7 @@ class PointShopActivity : AppCompatActivity() {
 
     }
 
-    var count = 0
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -36,7 +36,7 @@ class PointShopActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         /* QR 스캔 선언 */
-        var qrCodeScan = QRCodeScan(this)
+
 
         // 리스트 초기화
 //        initList()
@@ -96,6 +96,7 @@ class PointShopActivity : AppCompatActivity() {
                         .setMessage("\n 'cable'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
+                                /*R.drawable.cable*/
                             })
                     builder.show()
                     PointAppData.reward = PointAppData.reward!! - 15000
@@ -111,7 +112,8 @@ class PointShopActivity : AppCompatActivity() {
 
             when (PointAppData.reward) {
                 in 5000..1000000 -> {
-                    builder.setTitle("산천어를 교환하셨습니다")
+                    builder.setTitle("호텔숙박권을 교환하셨습니다")
+                        .setIcon(R.drawable.hotel1)
                         .setMessage("\n 'hotel'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
@@ -123,7 +125,7 @@ class PointShopActivity : AppCompatActivity() {
                 }
             }
         }
-        
+
         // QR 생성 (포인트샵)
         binding.generateBarcode.setOnClickListener {
             val barcodeEncoder = BarcodeEncoder()
@@ -149,47 +151,7 @@ class PointShopActivity : AppCompatActivity() {
             }
         }
 
-        // 화면실행시 스탬프 몇개인지? 1.0 -> 1개
-        binding.ratingBar.rating = 0F
 
-        // 스탬프
-        binding.ratingBar.setOnRatingBarChangeListener { ratingBar, rating, fromUser ->
-            binding.textView2.text = "${rating} 개"
-        }
-
-        // 스탬프 새로고침
-        binding.stampButton.setOnClickListener {
-
-            if (count == 0) {
-                binding.ratingBar.rating = 1F
-                binding.textView2.text = "1개"
-                count += 1
-            } else if (count == 1) {
-                binding.ratingBar.rating = 2f
-                binding.textView2.text = "2개"
-                count += 1
-            } else if (count == 2) {
-                binding.ratingBar.rating = 3f
-                binding.textView2.text = "3개"
-                count += 1
-            } else if (count == 3) {
-                binding.ratingBar.rating = 4f
-                binding.textView2.text = "4개"
-                count += 1
-            } else if (count == 4) {
-                binding.ratingBar.rating = 5f
-                binding.textView2.text = "5개"
-                count += 1
-            }
-        }
-
-        /* QR 촬영 버튼 눌렀을때 */
-        binding.qrButton.setOnClickListener {
-            qrCodeScan.startQRScan()
-//             QR입력하면 텍스트뷰에 사용했다고 표시됨
-//             나중에 사용할 코드
-
-        }
     }
 
 

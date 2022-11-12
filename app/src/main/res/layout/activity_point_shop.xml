@@ -16,7 +16,7 @@
 
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/mypageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -165,6 +165,8 @@
                                 android:id="@+id/pointButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/purple_200"
+
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
 
@@ -239,6 +241,8 @@
                                 android:id="@+id/pointButton2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/purple_200"
+
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
 
@@ -313,6 +317,8 @@
                                 android:id="@+id/pointButton3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/purple_200"
+
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
 
@@ -387,6 +393,8 @@
                                 android:id="@+id/pointButton4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:backgroundTint="@color/purple_200"
+
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
 
@@ -432,6 +440,7 @@
                     android:id="@+id/barcodeText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
                     android:layout_marginHorizontal="16dp"
                     android:hint="생성된 상품코드를 입력해주세요." />
 
@@ -472,8 +481,9 @@
 
                 <TextView
                     android:id="@+id/rewardWrite"
-                    android:layout_width="112dp"
+                    android:layout_width="101dp"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
                     android:text="입력가능 :"
                     android:textSize="20sp"
                     android:textStyle="bold" />
@@ -542,73 +552,7 @@
                 android:background="@android:color/black" />
 
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/ntextView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="20sp"
-                    android:text="보유 스탬프"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-
-                <RatingBar
-                    android:id="@+id/ratingBar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10sp"
-                    android:numStars="5"
-                    android:progressBackgroundTint="@color/purple_200"
-                    android:rating="5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-            </LinearLayout>
-
-            <!--                    app:layout_constraintHorizontal_bias="0.497"-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="0개"
-                    android:textColor="@color/black"
-                    android:textSize="24sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/stampButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="스탬프 새로고침" />
-
-                <Button
-                    android:id="@+id/qrButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:text="QR찍기 여기서 쓸거아님" />
-
-
-            </LinearLayout>
 
         </LinearLayout>
 
