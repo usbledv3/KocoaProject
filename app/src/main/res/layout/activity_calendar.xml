@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalendarActivity">
+
+
+
+
+    <TextView
+        android:id="@+id/calendarTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="축제 일정"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/januaryButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="1월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/julyButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_stroke"
+        android:text="7월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/januaryButton"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/augustButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/button_stroke"
+        android:text="8월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/julyButton"
+        app:layout_constraintTop_toBottomOf="@+id/februaryButton"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/septemberButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_stroke"
+        android:text="9월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/augustButton"
+        app:layout_constraintTop_toBottomOf="@+id/marchButton"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/octoberButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_stroke"
+        android:text="10월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/septemberButton"
+        app:layout_constraintTop_toBottomOf="@+id/aprilButton"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/novemberButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_stroke"
+        android:text="11월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/octoberButton"
+        app:layout_constraintTop_toBottomOf="@+id/mayButton"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/decemberButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:background="@drawable/button_stroke"
+        android:text="12월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/novemberButton"
+        app:layout_constraintTop_toBottomOf="@+id/juneButton"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/februaryButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="2월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/januaryButton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/marchButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="3월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/februaryButton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/aprilButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="4월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marchButton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mayButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="5월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/aprilButton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/juneButton"
+        android:layout_width="52dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_stroke"
+        android:text="6월"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mayButton"
+        app:layout_constraintTop_toBottomOf="@+id/calendarTextView"
+        app:layout_constraintVertical_bias="0.004" />
+
+    <FrameLayout
+        android:id="@+id/calendarContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/septemberButton">
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

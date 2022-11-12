@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="lx.com.kocoa">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+<uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Kocoa"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RouteInputActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MylocaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiniOptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MinigameCreateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FespassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SancheonuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PointShopActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BbsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BbsViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BbsWriteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RankingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MiniGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SHWMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JejuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JunraActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BusanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChungcheongActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GangwonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SeoulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.naver.maps.map.CLIENT_ID"
+            android:value="mu07smaqre" />
+    </application>
+
+</manifest>
