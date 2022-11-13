@@ -42,7 +42,10 @@ class ShwFirstFragment : Fragment() {
                     SAppData.data1,
                     SAppData.data2,
                     SAppData.data3,
-                    SAppData.data4
+                    SAppData.data4,
+                    SAppData.data5,
+                    SAppData.data6,
+                    SAppData.data7
                 ))
                 notifyDataSetChanged()
             }

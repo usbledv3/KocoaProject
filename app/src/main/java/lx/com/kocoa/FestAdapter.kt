@@ -20,7 +20,7 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
     override fun onBindViewHolder(holder: FestAdapter.ViewHolder, position:Int){
         val item = items[position]
         holder.setpassItem(item)//사전예약시스템 아이템 불러오기
-        holder.setItem(item)//
+        holder.setStatusItem(item)//
     }
 
     inner class ViewHolder(val binding: FespassItemBinding) : RecyclerView.ViewHolder(binding.root){
@@ -37,8 +37,8 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
 
 
         }
-        fun setItem(item:FestManagerData){
-            //binding.festNameOut.text = item.data4
+        fun setStatusItem(item:FestManagerData){
+            //binding.festNameOut.text = item.data1
 
 
         }
