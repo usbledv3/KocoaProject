@@ -40,6 +40,7 @@ class InfoActivity : AppCompatActivity() {
         binding.nownick.text = "현재 아이디 : ${PointAppData.data1}"
 
         binding.nbackButton.setOnClickListener {
+            showToast("취소를 누르셨습니다")
             finish()
         }
 
