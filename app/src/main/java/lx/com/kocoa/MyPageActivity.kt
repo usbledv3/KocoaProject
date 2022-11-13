@@ -1,6 +1,7 @@
 package lx.com.kocoa
 
 import android.content.Intent
+import android.graphics.Point
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -33,6 +34,12 @@ class MyPageActivity : AppCompatActivity() {
             pointLauncher.launch(infoIntent)
         }
 
+        binding.justButton.setOnClickListener {
+            PointAppData.write = PointAppData.write!! + 1
+            binding.writeText.setText("${PointAppData.write} 개")
+        }
+
+
         //* 포인트샵 이동 *//*
         binding.pointshopButton.setOnClickListener {
             val pointIntent = Intent(applicationContext, PointShopActivity::class.java)
@@ -46,6 +53,7 @@ class MyPageActivity : AppCompatActivity() {
             val pointIntent = Intent(applicationContext, MainActivity::class.java)
             pointLauncher.launch(pointIntent)
         }
+
 
         /*// 화면실행시 스탬프 몇개인지? 1.0 -> 1개
         binding.ratingBar.rating = 0F

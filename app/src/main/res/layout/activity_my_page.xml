@@ -28,6 +28,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/justButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="후기증가버튼 임시"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
@@ -250,7 +258,7 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView50"
+                    android:id="@+id/writeText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="50dp"
@@ -260,7 +268,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/textView51"
+                    android:id="@+id/minigameText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
@@ -271,7 +279,7 @@
                     android:textSize="20dp" />
 
                 <TextView
-                    android:id="@+id/textView52"
+                    android:id="@+id/rankText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="60dp"
