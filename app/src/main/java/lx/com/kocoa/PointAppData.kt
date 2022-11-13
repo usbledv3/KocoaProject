@@ -12,7 +12,7 @@ class PointAppData {
         var data:String? = "맨들맨들"
         var data1:String? = "맨들맨들"
         var write:Int? = 0
-        var minigame:String? = "0개"
-        var rank:String? = "0개"
+        var minigame:Int? = 0
+        var rank:Int? = 0
     }
 }
