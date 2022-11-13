@@ -30,10 +30,10 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
             }
         }
         fun setpassItem(item:FestManagerData){
-            binding.pasFestNameOut.text = "패스이름 : ${item.data1}"
-            binding.passPassNameOut.text = "패스종류 : ${item.data2}"
-            binding.passFestRangeOut.text = "패스적용 인원 : ${item.data3}"
-            binding.passTimeOut.text = "${item.data4}부터 적용"
+            binding.pasFestNameOut.text = " 축제명 : ${item.data5}"
+            binding.passPassNameOut.text = "개최지역 : ${item.data7}"
+            binding.passFestRangeOut.text = "패스명 : ${item.data1}"
+            binding.passTimeOut.text = "패스 적용시작 : ${item.data4}부터 적용"
 
 
         }

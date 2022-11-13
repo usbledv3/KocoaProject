@@ -44,7 +44,7 @@
             android:layout_marginStart="80dp"
             android:layout_marginTop="68dp"
             android:ems="10"
-            android:hint="주최자(단체)이름"
+            android:hint="축제명"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />

@@ -12,6 +12,7 @@ class FestInforFragment : Fragment() {
 
     var _binding : FragmentFestinforBinding? = null
     val binding get() = _binding!!
+    var festAdapter:FestAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -20,11 +21,19 @@ class FestInforFragment : Fragment() {
         _binding = FragmentFestinforBinding.inflate(inflater, container, false)
 
         binding.checkInforButton.setOnClickListener {
-            val data1 = binding.festOpenName.text.toString()
-            val data2 = binding.festOpenRange.text.toString()
-            val data3 = binding.festOpenLocation.text.toString()
+            val Shwfestname = binding.festOpenName.text.toString()
+            val Shwfestrange = binding.festOpenRange.text.toString()
+            val Shwfestlocation = binding.festOpenLocation.text.toString()
+            SAppData.data5 = Shwfestname
+            SAppData.data6 = Shwfestrange
+            SAppData.data7 = Shwfestlocation
 
-            binding.festOutput1.text = "입력한 정보 확인 : ${data1}, ${data2}, ${data3}"
+            binding.festOutput1.text = "입력한 정보 확인 : ${Shwfestname}, ${Shwfestrange}, ${Shwfestlocation}"
+
+            festAdapter?.apply {
+                items.add(FestManagerData(Shwfestname, Shwfestrange,Shwfestlocation))
+                notifyDataSetChanged()
+            }
         }
 
 
