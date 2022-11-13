@@ -61,6 +61,7 @@ class PointShopActivity : AppCompatActivity() {
             when (PointAppData.reward) {
                 in 5000..1000000 -> {
                     builder.setTitle("산천어 빵을 교환하셨습니다")
+                        .setIcon(R.drawable.san2)
                         .setMessage("\n 'bang'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
@@ -79,6 +80,7 @@ class PointShopActivity : AppCompatActivity() {
             when (PointAppData.reward) {
                 in 5000..1000000 -> {
                     builder.setTitle("산천어를 교환하셨습니다")
+                        .setIcon(R.drawable.san1)
                         .setMessage("\n 'san'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
@@ -97,6 +99,7 @@ class PointShopActivity : AppCompatActivity() {
             when (PointAppData.reward) {
                 in 5000..1000000 -> {
                     builder.setTitle("케이블카 쿠폰을 교환하셨습니다")
+                        .setIcon(R.drawable.cable)
                         .setMessage("\n 'cable'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
