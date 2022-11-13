@@ -27,13 +27,13 @@ class InfoActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.renameButton.setOnClickListener {
-            PointAppData.data1 = binding.nameInfo.text.toString()
-            val userIntent = Intent(applicationContext, MyPageActivity::class.java)
-            userLauncher.launch(userIntent)
-            if(binding.nameInfo.text == null) {
-                showToast("회원정보 수정완료")
+            if(binding.nameInfo.text.toString() == "") {
+                showToast("빈칸없이 작성하세요")
             } else {
-                showToast("다시 작성하세요")
+                PointAppData.data1 = binding.nameInfo.text.toString()
+                val userIntent = Intent(applicationContext, MyPageActivity::class.java)
+                userLauncher.launch(userIntent)
+                showToast("회원정보 수정완료")
             }
         }
 

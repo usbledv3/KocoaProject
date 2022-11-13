@@ -32,8 +32,6 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoButton.setOnClickListener {
             val infoIntent = Intent(applicationContext, InfoActivity::class.java)
             pointLauncher.launch(infoIntent)
-            PointAppData.write = PointAppData.write!! + 1
-            binding.writeText.setText("${PointAppData.write} 개")
         }
 
         binding.justButton.setOnClickListener {
