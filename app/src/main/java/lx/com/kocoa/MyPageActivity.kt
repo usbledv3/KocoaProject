@@ -32,6 +32,8 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoButton.setOnClickListener {
             val infoIntent = Intent(applicationContext, InfoActivity::class.java)
             pointLauncher.launch(infoIntent)
+            PointAppData.write = PointAppData.write!! + 1
+            binding.writeText.setText("${PointAppData.write} 개")
         }
 
         binding.justButton.setOnClickListener {
@@ -39,6 +41,8 @@ class MyPageActivity : AppCompatActivity() {
             binding.writeText.setText("${PointAppData.write} 개")
         }
 
+        binding.minigameText.setText("${PointAppData.minigame} 개")
+        binding.minigameText.setText("${PointAppData.rank} 개")
 
         //* 포인트샵 이동 *//*
         binding.pointshopButton.setOnClickListener {
