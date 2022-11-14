@@ -13,7 +13,7 @@ class FebruaryFragment : Fragment() {
     var _binding: FragmentFebruaryBinding? = null
     val binding get() = _binding!!
 
-    var februaryAdapter:FebruaryAdapter? = null
+    var februaryAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,42 @@ class FebruaryFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        februaryAdapter = FebruaryAdapter()
+        februaryAdapter = MonthAdapter()
         binding.februaryList.adapter = februaryAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         februaryAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                FebruaryData(
+                MonthData(
                     "태안 빛축제",
                     R.drawable.teaan_fes,
                     "2023.1.1-12.31"
                 )
             )
             this.items.add(
-                FebruaryData(
+                MonthData(
                     "태안 빛축제",
                     R.drawable.teaan_fes,
                     "2023.1.1-12.31"
                 )
             )
             this.items.add(
-                FebruaryData(
+                MonthData(
                     "태안 빛축제",
                     R.drawable.teaan_fes,
                     "2023.1.1-12.31"
                 )
             )
             this.items.add(
-                FebruaryData(
+                MonthData(
                     "태안 빛축제",
                     R.drawable.teaan_fes,
                     "2023.1.1-12.31"
                 )
             )
             this.items.add(
-                FebruaryData(
+                MonthData(
                     "태안 빛축제",
                     R.drawable.teaan_fes,
                     "2023.1.1-12.31"

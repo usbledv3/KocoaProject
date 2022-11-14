@@ -16,6 +16,12 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         binding = ActivitySancheonuBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        AppDataYW.doSelectedItem?.let {
+            binding.imageView9.setImageResource(it.doImage)
+            binding.import1.text=it.doDate
+            binding.import3.text=it.doPlace
+            binding.textView2.text=it.doName
+        }
         binding.passbutton.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,FespassActivity::class.java))
         }

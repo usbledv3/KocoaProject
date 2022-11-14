@@ -13,7 +13,7 @@ class JuneFragment : Fragment() {
     var _binding: FragmentJuneBinding? = null
     val binding get() = _binding!!
 
-    var juneAdapter:JuneAdapter? = null
+    var juneAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,14 @@ class JuneFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        juneAdapter = JuneAdapter()
+        juneAdapter = MonthAdapter()
         binding.juneList.adapter = juneAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         juneAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                JuneData(
-                    "고창 청농원 라벤더 축제",
-                    R.drawable.gochang_fes,
-                    "2023.05.27 ~ 2023.06.30"
-                )
-            )
-            this.items.add(
-                JuneData(
-                    "고창 청농원 라벤더 축제",
-                    R.drawable.gochang_fes,
-                    "2023.05.27 ~ 2023.06.30"
-                )
-            )
-            this.items.add(
-                JuneData(
-                    "고창 청농원 라벤더 축제",
-                    R.drawable.gochang_fes,
-                    "2023.05.27 ~ 2023.06.30"
-                )
-            )
-            this.items.add(
-                JuneData(
-                    "고창 청농원 라벤더 축제",
-                    R.drawable.gochang_fes,
-                    "2023.05.27 ~ 2023.06.30"
-                )
-            )
-            this.items.add(
-                JuneData(
+                MonthData(
                     "고창 청농원 라벤더 축제",
                     R.drawable.gochang_fes,
                     "2023.05.27 ~ 2023.06.30"

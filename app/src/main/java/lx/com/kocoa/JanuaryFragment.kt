@@ -14,7 +14,7 @@ class JanuaryFragment : Fragment() {
     var _binding: FragmentJanuaryBinding? = null
     val binding get() = _binding!!
 
-    var januaryAdapter:JanuaryAdapter? = null
+    var januaryAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -35,16 +35,15 @@ class JanuaryFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        januaryAdapter = JanuaryAdapter()
+        januaryAdapter = MonthAdapter()
         binding.januaryList.adapter = januaryAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         januaryAdapter?.apply {
-            this.items.add(JanuaryData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(JanuaryData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(JanuaryData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(JanuaryData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(JanuaryData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
+            this.items.clear()
+            this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
+            this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
+            this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
         }
 
 //        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기

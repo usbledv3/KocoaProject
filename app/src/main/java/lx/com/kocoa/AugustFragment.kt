@@ -6,14 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import lx.com.kocoa.databinding.FragmentAprilBinding
 import lx.com.kocoa.databinding.FragmentAugustBinding
 
 class AugustFragment : Fragment() {
     var _binding: FragmentAugustBinding? = null
     val binding get() = _binding!!
 
-    var augustAdapter:AugustAdapter? = null
+    var augustAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +33,42 @@ class AugustFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        augustAdapter = AugustAdapter()
+        augustAdapter = MonthAdapter()
         binding.augustList.adapter = augustAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         augustAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                AugustData(
+                MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
                     "2023.08.30 ~ 2023.09.04"
                 )
             )
             this.items.add(
-                AugustData(
+                MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
                     "2023.08.30 ~ 2023.09.04"
                 )
             )
             this.items.add(
-                AugustData(
+                MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
                     "2023.08.30 ~ 2023.09.04"
                 )
             )
             this.items.add(
-                AugustData(
+                MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
                     "2023.08.30 ~ 2023.09.04"
                 )
             )
             this.items.add(
-                AugustData(
+                MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
                     "2023.08.30 ~ 2023.09.04"

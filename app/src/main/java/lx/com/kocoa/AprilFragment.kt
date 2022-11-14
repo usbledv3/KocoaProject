@@ -12,7 +12,7 @@ class AprilFragment : Fragment() {
     var _binding: FragmentAprilBinding? = null
     val binding get() = _binding!!
 
-    var aprilAdapter:AprilAdapter? = null
+    var monthAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,41 +33,42 @@ class AprilFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        aprilAdapter = AprilAdapter()
-        binding.aprilList.adapter = aprilAdapter
+        monthAdapter = MonthAdapter()
+        binding.aprilList.adapter = monthAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
-        aprilAdapter?.apply {
+        monthAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                AprilData(
+                MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.04.07 ~ 2023.07.09"
                 )
             )
             this.items.add(
-                AprilData(
+                MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.04.07 ~ 2023.07.09"
                 )
             )
             this.items.add(
-                AprilData(
+                MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.04.07 ~ 2023.07.09"
                 )
             )
             this.items.add(
-                AprilData(
+                MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.04.07 ~ 2023.07.09"
                 )
             )
             this.items.add(
-                AprilData(
+                MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.04.07 ~ 2023.07.09"
