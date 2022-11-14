@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="#FACAAF"
+        app:cardBackgroundColor="#FBB994"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp">
 
@@ -30,7 +30,8 @@
                     android:layout_weight="1"
                     android:text="적용축제이름"
                     android:textColor="#FFFFFF"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <TextView
@@ -41,7 +42,8 @@
                 android:layout_weight="1"
                 android:text="패스 종류"
                 android:textColor="#FDFDFD"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/passFestRangeOut"
@@ -50,7 +52,8 @@
                 android:layout_weight="1"
                 android:text="패스적용인원범위"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/passTimeOut"
@@ -59,7 +62,8 @@
                 android:layout_weight="1"
                 android:text="패스기간"
                 android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
