@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#40ff9050"
     tools:context=".RankingActivity">
 
     <LinearLayout
@@ -23,8 +22,8 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:text="     1등: 호텔 숙박 예약권"
+            android:layout_marginTop="20dp"
             android:textColor="#ff9050"
             android:textSize="20sp" />
 
@@ -40,7 +39,7 @@
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="     3등: 상품 뭐 줌?"
+            android:text="     3등: 지역 특산품"
             android:textColor="#ff9050"
             android:textSize="20sp" />
 
@@ -53,18 +52,33 @@
             android:textSize="20sp" />
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="236dp"
-        android:text="내 점수"
-        android:textColor="#ff9050"
-        android:textSize="20sp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rankList"
-        app:layout_constraintVertical_bias="0.533" />
+        app:layout_constraintTop_toBottomOf="@+id/rankList">
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="내 점수"
+            android:textColor="#ff9050"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/rreewwaarrdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="0점"
+            android:textColor="#ff9050"
+            android:textSize="20sp" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView5"
@@ -92,21 +106,5 @@
         app:layout_constraintVertical_bias="0.115">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="35dp"
-        android:text="0점"
-        android:textColor="#ff9050"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.595"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/rankList"
-        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
