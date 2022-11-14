@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 R.id.tab3 -> {
-                    startActivity(Intent(this@MainActivity,PointShopActivity::class.java))
+                    startActivity(Intent(this@MainActivity,MyPageActivity::class.java))
                 }
             }
             return@setOnNavigationItemSelectedListener true
