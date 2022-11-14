@@ -34,14 +34,14 @@ class MyPageActivity : AppCompatActivity() {
             pointLauncher.launch(infoIntent)
         }
 
-        binding.justButton.setOnClickListener {
+        /*binding.justButton.setOnClickListener {
             PointAppData.write = PointAppData.write!! + 1
             PointAppData.minigame = PointAppData.minigame!! + 1
             PointAppData.rank = PointAppData.rank!! + 1
             binding.writeText.setText("${PointAppData.write} 개")
             binding.minigameText.setText("${PointAppData.minigame} 개")
             binding.rankText.setText("${PointAppData.rank} 개")
-        }
+        }*/
 
 
         //* 포인트샵 이동 *//*
@@ -53,7 +53,7 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoView.setImageResource(R.drawable.digda)
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
 
-        binding.stampImage.setImageResource(R.drawable.stamp6)
+//        binding.stampImage.setImageResource(R.drawable.stamp6)
 
         binding.starButton.setOnClickListener {
             val pointIntent = Intent(applicationContext, MainActivity::class.java)
@@ -99,12 +99,11 @@ class MyPageActivity : AppCompatActivity() {
         /*binding.qrButton.setOnClickListener {
             qrCodeScan.startQRScan()
         }*/
-
     }
 
     //*함수*//*
     fun showToast(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_LONG).show()
-
     }
+
 }
