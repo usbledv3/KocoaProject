@@ -49,10 +49,10 @@ class ReviewActivity : AppCompatActivity() {
     fun initList() {
 
         val layoutManager = LinearLayoutManager(this)
-        binding.festivalList.layoutManager = layoutManager
+        binding.ReviewList.layoutManager = layoutManager
 
         reviewAdapter = ReviewAdapter()
-        binding.festivalList.adapter = reviewAdapter
+        binding.ReviewList.adapter = reviewAdapter
 
         reviewAdapter?.apply {
 

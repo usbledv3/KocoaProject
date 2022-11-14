@@ -30,11 +30,11 @@ class FestivalActivity : AppCompatActivity() {
         // 1. 리스트의 모양을 담당하는 것
         // (아래쪽으로 아이템들이 보이는 것, GridLayoutManager : 격자 형태로 보이는 것)
         val layoutManager = LinearLayoutManager(this)
-        binding.festivalList.layoutManager = layoutManager
+        binding.ReviewList.layoutManager = layoutManager
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
         fesAdapter = FestivalAdapter()
-        binding.festivalList.adapter = fesAdapter
+        binding.ReviewList.adapter = fesAdapter
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         fesAdapter?.apply {
             this.items.add(FestivalData(R.drawable.jungsun, "정선아리랑제", "기간: 2022.09.15~09.18", "장소: 정선공설운동장 일대"))
