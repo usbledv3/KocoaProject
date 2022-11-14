@@ -19,8 +19,9 @@ class GamefirstFragment : Fragment(){
         binding.makequizbtn.setOnClickListener {
             miniAdapter = MiniAdapter()
             miniAdapter?.apply {
-                this.items.add(MiniData("1번 문제", binding.quizQuestion.text.toString(), "객관식"))
-                notifyDataSetChanged()
+                GamesData.game=MiniData("1번 문제", binding.quizQuestion.text.toString(), "객관식")
+                val curActivity = activity as SHWMainActivity
+                curActivity.replaceView(FestGameListFragment())
             }
         }
         return binding.root

@@ -1,14 +1,11 @@
 package lx.com.kocoa
 
-import android.content.Context
-import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import kotlinx.android.synthetic.main.activity_stamp.*
 import lx.com.kocoa.databinding.FragmentFestGameListBinding
 
 class FestGameListFragment : Fragment() {
@@ -41,6 +38,10 @@ class FestGameListFragment : Fragment() {
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
         miniAdapter = MiniAdapter()
         binding.miniList.adapter = miniAdapter
+
+        miniAdapter?.apply {
+            GamesData.game?.let { items.add(it) }
+        }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
         miniAdapter?.listener = object: OnMiniItemClickListener {
