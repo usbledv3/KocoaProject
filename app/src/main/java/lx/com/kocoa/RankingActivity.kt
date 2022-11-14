@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.lx.list.PointAppData
 import lx.com.kocoa.databinding.ActivityRankingBinding
 
 class RankingActivity : AppCompatActivity() {
@@ -20,6 +21,8 @@ class RankingActivity : AppCompatActivity() {
         initList()
 
         initView()
+
+        binding.rreewwaarrdd.setText("${PointAppData.reward} point")
     }
 
     fun initList() {
