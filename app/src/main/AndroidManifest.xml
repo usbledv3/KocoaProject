@@ -30,15 +30,6 @@
             android:name=".MylocaActivity"
             android:exported="false" />
         <activity
-            android:name=".MiniOptionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MinigameCreateActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MapActivity"
-            android:exported="false" />
-        <activity
             android:name=".PassBookingActivity"
             android:exported="false" />
         <activity

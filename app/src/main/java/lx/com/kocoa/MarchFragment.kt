@@ -12,7 +12,7 @@ class MarchFragment : Fragment() {
     var _binding: FragmentMarchBinding? = null
     val binding get() = _binding!!
 
-    var marchAdapter:MarchAdapter? = null
+    var marchAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,41 +33,14 @@ class MarchFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        marchAdapter = MarchAdapter()
+        marchAdapter = MonthAdapter()
         binding.marchList.adapter = marchAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         marchAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                MarchData(
-                    "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
-                    R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MarchData(
-                    "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
-                    R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MarchData(
-                    "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
-                    R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MarchData(
-                    "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
-                    R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MarchData(
+                MonthData(
                     "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
                     R.drawable.oakbelly_fes,
                     "2023.1.1-12.31"

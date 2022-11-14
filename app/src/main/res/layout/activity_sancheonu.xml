@@ -40,14 +40,6 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/import2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="홈페이지: https://www.narafestival.com/"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
                     android:id="@+id/import3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -55,13 +47,6 @@
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
-                <TextView
-                    android:id="@+id/import4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="주소: 강원도 화천군 화천읍 산천어길 137"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
             </LinearLayout>
 
             <androidx.cardview.widget.CardView
@@ -88,7 +73,7 @@
 
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="177dp"
+                android:layout_width="wrap_content"
                 android:layout_height="31dp"
                 android:layout_marginTop="16dp"
                 android:text="화천 산천어 축제"
