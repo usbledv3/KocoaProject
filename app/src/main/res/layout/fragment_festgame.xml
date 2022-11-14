@@ -24,21 +24,27 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="객관식" />
+                android:backgroundTint="#ff9050"
+                android:text="객관식"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="주관식" />
+                android:backgroundTint="#ff9050"
+                android:text="주관식"
+                android:textColor="#FFFFFF" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="O/X" />
+                android:backgroundTint="#ff9050"
+                android:text="O/X"
+                android:textColor="#FFFFFF" />
 
         </LinearLayout>
 
