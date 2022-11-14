@@ -5,8 +5,8 @@ import com.naver.maps.geometry.LatLng
 
 class RouteData{
     companion object {
-        var startpoint:Editable? = null
-        var endpoint:Editable? = null
+        var startpoint:String? = null
+        var endpoint:String? = null
         var rt:ArrayList<String>? = null
     }
 }

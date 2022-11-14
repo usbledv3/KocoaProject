@@ -49,7 +49,7 @@ class FestMapFragment : Fragment(), OnMapReadyCallback {
         //지도 이동 클릭시
         binding.button9.setOnClickListener {
             //도로명주소 검색
-            val callgetPath = api.getMap(APIKEY_ID, APIKEY, binding.editTextTextPersonName6.text)
+            val callgetPath = api.getMap(APIKEY_ID, APIKEY, binding.editTextTextPersonName6.text.toString())
             callgetPath.enqueue(object : Callback<MapResponse> {
                 override fun onResponse(
                     call: Call<MapResponse>,

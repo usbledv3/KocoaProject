@@ -51,6 +51,7 @@ class ChungcheongActivity : AppCompatActivity() {
                     val item = items.get(position)
 
                     AppDataYW.doSelectedItem = item
+                    SelectedDoData.selectedItem=item
                     startActivity(Intent(this@ChungcheongActivity,SancheonuActivity::class.java))
                 }
 
