@@ -26,7 +26,6 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EEF6E4"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -35,28 +34,24 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#EEF6E4"
                     android:orientation="horizontal">
-
 
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:background="#EDEFD6"
                         android:padding="16dp"
-                        android:text=" 제 목"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
-
+                        android:text="제목"
+                        android:textColor="@color/black" />
 
                     <EditText
                         android:id="@+id/titleInput"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-
+                        android:background="#EEF6E4"
+                        android:padding="16dp"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -67,20 +62,18 @@
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:background="#EDEFD6"
                         android:padding="16dp"
-                        android:text=" 작성일"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
+                        android:text="작성일"
+                        android:textColor="@color/black" />
 
                     <EditText
                         android:id="@+id/dateInput"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
-
+                        android:background="#EEF6E4"
+                        android:padding="16dp"
+                        android:textSize="16sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -91,19 +84,18 @@
                     <TextView
                         android:layout_width="100dp"
                         android:layout_height="wrap_content"
-                        android:background="#EDEFD6"
                         android:padding="16dp"
-                        android:text=" 이름"
-                        android:textColor="@color/black"
-                        android:textStyle="bold" />
+                        android:text="이름"
+                        android:textColor="@color/black" />
 
                     <EditText
                         android:id="@+id/nameInput"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_width="234dp"
+                        android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:background="#EEF6E4"
+                        android:padding="13dp"
+                        android:textSize="16sp" />
 
                 </LinearLayout>
 
@@ -111,23 +103,22 @@
 
             <EditText
                 android:id="@+id/textInput"
-                android:layout_width="328dp"
-                android:layout_height="83dp"
+                android:layout_width="325dp"
+                android:layout_height="86dp"
                 android:layout_marginTop="8dp"
                 android:background="#EEF6E4"
                 android:ems="10"
                 android:inputType="textPersonName"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintHorizontal_bias="0.466"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
-
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/festivalList"
-                android:layout_width="339dp"
-                android:layout_height="326dp"
-                android:layout_marginTop="40dp"
+                android:id="@+id/ReviewList"
+                android:layout_width="337dp"
+                android:layout_height="275dp"
+                android:layout_marginTop="8dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -137,24 +128,11 @@
                 android:id="@+id/addButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
                 android:text="입력하기"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textInput" />
-
-            <RelativeLayout
-                android:layout_width="323dp"
-                android:layout_height="83dp"
-                app:layout_constraintBottom_toBottomOf="@+id/textInput"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.384"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-                app:layout_constraintVertical_bias="1.0">
-
-            </RelativeLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
