@@ -34,7 +34,7 @@ class FestGameListFragment : Fragment() {
     fun initList() {
         // 리스트의 모양을 담당하는 것
         // (LinearLayoutManager : 아래쪽으로 아이템들이 보이는 것, GridLayoutManager: 격자 형태로 보이는 것)
-        val layoutManager = LinearLayoutManager(HamburgerMain())
+        val layoutManager = LinearLayoutManager(MainActivity())
         binding.miniList.layoutManager = layoutManager
 
         // 2. 어댑터를 설정하는 것
