@@ -51,6 +51,7 @@ class BusanActivity : AppCompatActivity() {
                     val item = items.get(position)
 
                     AppDataYW.doSelectedItem = item
+                    SelectedDoData.selectedItem=item
                     startActivity(Intent(this@BusanActivity,SancheonuActivity::class.java))
                 }
 

@@ -51,6 +51,7 @@ class JejuActivity : AppCompatActivity() {
                 jejuAdapter?.apply {
                     val item = items.get(position)
                     AppDataYW.doSelectedItem = item
+                    SelectedDoData.selectedItem=item
                     startActivity(Intent(this@JejuActivity,SancheonuActivity::class.java))
                 }
 
