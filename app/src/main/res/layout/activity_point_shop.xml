@@ -484,9 +484,9 @@
                     android:layout_width="101dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:text="입력가능 :"
+                    android:text="코드입력 :"
+                    android:textColor="#ff9050"
                     android:textSize="20sp"
-                    android:textColor="@color/black"
                     android:textStyle="bold" />
 
                 <TextView
