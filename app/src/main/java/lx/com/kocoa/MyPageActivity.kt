@@ -53,7 +53,7 @@ class MyPageActivity : AppCompatActivity() {
         binding.infoView.setImageResource(R.drawable.digda)
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
 
-//        binding.stampImage.setImageResource(R.drawable.stamp6)
+        //binding.stampImage.setImageResource(R.drawable.stamp6)
 
         binding.starButton.setOnClickListener {
             val pointIntent = Intent(applicationContext, MainActivity::class.java)
