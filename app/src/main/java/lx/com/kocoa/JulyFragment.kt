@@ -13,7 +13,7 @@ class JulyFragment : Fragment() {
     var _binding: FragmentJulyBinding? = null
     val binding get() = _binding!!
 
-    var julyAdapter:JulyAdapter? = null
+    var julyAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,14 @@ class JulyFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        julyAdapter = JulyAdapter()
+        julyAdapter = MonthAdapter()
         binding.julyList.adapter = julyAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         julyAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                JulyData(
-                    "렛츠런파크 서울 여름 수국축제",
-                    R.drawable.suguk_fes,
-                    "2023.07.30 ~ 2023.08.21"
-                )
-            )
-            this.items.add(
-                JulyData(
-                    "렛츠런파크 서울 여름 수국축제",
-                    R.drawable.suguk_fes,
-                    "2023.07.30 ~ 2023.08.21"
-                )
-            )
-            this.items.add(
-                JulyData(
-                    "렛츠런파크 서울 여름 수국축제",
-                    R.drawable.suguk_fes,
-                    "2023.07.30 ~ 2023.08.21"
-                )
-            )
-            this.items.add(
-                JulyData(
-                    "렛츠런파크 서울 여름 수국축제",
-                    R.drawable.suguk_fes,
-                    "2023.07.30 ~ 2023.08.21"
-                )
-            )
-            this.items.add(
-                JulyData(
+                MonthData(
                     "렛츠런파크 서울 여름 수국축제",
                     R.drawable.suguk_fes,
                     "2023.07.30 ~ 2023.08.21"

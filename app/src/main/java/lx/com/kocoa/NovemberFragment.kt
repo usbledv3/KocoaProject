@@ -13,7 +13,7 @@ class NovemberFragment : Fragment() {
     var _binding: FragmentNovemberBinding? = null
     val binding get() = _binding!!
 
-    var novemberAdapter:NovemberAdapter? = null
+    var novemberAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,14 @@ class NovemberFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        novemberAdapter = NovemberAdapter()
+        novemberAdapter = MonthAdapter()
         binding.novemberList.adapter = novemberAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         novemberAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                NovemberData(
-                    "외계인 대축제",
-                    R.drawable.alien_fes,
-                    "2022.11.12 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                NovemberData(
-                    "외계인 대축제",
-                    R.drawable.alien_fes,
-                    "2022.11.12 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                NovemberData(
-                    "외계인 대축제",
-                    R.drawable.alien_fes,
-                    "2022.11.12 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                NovemberData(
-                    "외계인 대축제",
-                    R.drawable.alien_fes,
-                    "2022.11.12 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                NovemberData(
+                MonthData(
                     "외계인 대축제",
                     R.drawable.alien_fes,
                     "2022.11.12 ~ 2022.11.13"

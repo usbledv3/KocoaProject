@@ -13,7 +13,7 @@ class OctoberFragment : Fragment() {
     var _binding: FragmentOctoberBinding? = null
     val binding get() = _binding!!
 
-    var octoberAdapter:OctoberAdapter? = null
+    var octoberAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,14 @@ class OctoberFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        octoberAdapter = OctoberAdapter()
+        octoberAdapter = MonthAdapter()
         binding.octoberList.adapter = octoberAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         octoberAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                OctoberData(
-                    "화담숲 가을 단풍 축제",
-                    R.drawable.hwadam,
-                    "2022.10.15 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                OctoberData(
-                    "화담숲 가을 단풍 축제",
-                    R.drawable.hwadam,
-                    "2022.10.15 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                OctoberData(
-                    "화담숲 가을 단풍 축제",
-                    R.drawable.hwadam,
-                    "2022.10.15 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                OctoberData(
-                    "화담숲 가을 단풍 축제",
-                    R.drawable.hwadam,
-                    "2022.10.15 ~ 2022.11.13"
-                )
-            )
-            this.items.add(
-                OctoberData(
+                MonthData(
                     "화담숲 가을 단풍 축제",
                     R.drawable.hwadam,
                     "2022.10.15 ~ 2022.11.13"

@@ -6,14 +6,13 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import lx.com.kocoa.databinding.FragmentAugustBinding
 import lx.com.kocoa.databinding.FragmentDecemberBinding
 
 class DecemberFragment : Fragment() {
     var _binding: FragmentDecemberBinding? = null
     val binding get() = _binding!!
 
-    var decemberAdapter:DecemberAdapter? = null
+    var decemberAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +33,42 @@ class DecemberFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        decemberAdapter = DecemberAdapter()
+        decemberAdapter = MonthAdapter()
         binding.decemberList.adapter = decemberAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         decemberAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                DecemberData(
+                MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
                     "2022.12.16 ~ 2022.12.31"
                 )
             )
             this.items.add(
-                DecemberData(
+                MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
                     "2022.12.16 ~ 2022.12.31"
                 )
             )
             this.items.add(
-                DecemberData(
+                MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
                     "2022.12.16 ~ 2022.12.31"
                 )
             )
             this.items.add(
-                DecemberData(
+                MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
                     "2022.12.16 ~ 2022.12.31"
                 )
             )
             this.items.add(
-                DecemberData(
+                MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
                     "2022.12.16 ~ 2022.12.31"

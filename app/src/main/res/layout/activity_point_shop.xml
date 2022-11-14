@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#40ff9050"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -64,7 +65,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10sp"
                     android:text="상품교환"
-                    android:textColor="#64B5F6"
+                    android:textColor="#ff9050"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
@@ -80,7 +81,7 @@
                     android:layout_gravity="right"
                     android:layout_marginRight="10sp"
                     android:text="rewardPoint"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -160,7 +161,7 @@
                                 android:id="@+id/pointButton"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/purple_200"
+                                android:backgroundTint="#ff9050"
                                 android:textStyle="bold"
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
@@ -236,7 +237,7 @@
                                 android:id="@+id/pointButton2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/purple_200"
+                                android:backgroundTint="#ff9050"
                                 android:textStyle="bold"
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
@@ -312,7 +313,7 @@
                                 android:id="@+id/pointButton3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/purple_200"
+                                android:backgroundTint="#ff9050"
                                 android:textColor="@color/white"
                                 android:textStyle="bold"
                                 android:text="상품구매"
@@ -389,7 +390,7 @@
                                 android:id="@+id/pointButton4"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:backgroundTint="@color/purple_200"
+                                android:backgroundTint="#ff9050"
                                 android:textStyle="bold"
                                 android:text="상품구매"
                                 android:textColor="@color/white" />
@@ -423,7 +424,7 @@
                     android:layout_marginBottom="20dp"
                     android:text="상품코드 입력"
                     android:textStyle="bold"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="24sp" />
 
                 <ImageView
@@ -448,7 +449,7 @@
                     android:layout_gravity="center"
                     android:text="확인"
                     android:layout_marginTop="10dp"
-                    android:backgroundTint="@color/purple_200"
+                    android:backgroundTint="#ff9050"
                     android:textColor="@color/white"
                     android:textStyle="bold" />
 
@@ -495,7 +496,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="0.5"
                     android:textSize="20sp"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -512,7 +513,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="112sp"
                     android:layout_weight="0.5"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -529,7 +530,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="112sp"
                     android:layout_weight="0.5"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -548,7 +549,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="112sp"
                     android:layout_weight="0.5"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -563,7 +564,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:backgroundTint="@color/purple_200"
+                    android:backgroundTint="#ff9050"
                     android:text="마이페이지 이동"
 
                     android:textColor="@color/common_google_signin_btn_text_dark" />

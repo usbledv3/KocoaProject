@@ -13,7 +13,7 @@ class SeptemberFragment : Fragment() {
     var _binding: FragmentSeptemberBinding? = null
     val binding get() = _binding!!
 
-    var septemberAdapter:SeptemberAdapter? = null
+    var septemberAdapter:MonthAdapter? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,41 +34,14 @@ class SeptemberFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        septemberAdapter = SeptemberAdapter()
+        septemberAdapter = MonthAdapter()
         binding.septemberList.adapter = septemberAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         septemberAdapter?.apply {
+            this.items.clear()
             this.items.add(
-                SeptemberData(
-                    "이월드 가을축제 <인생꽃 사진관>",
-                    R.drawable.eworld_fes,
-                    "2022.09.17 ~ 2022.11.30"
-                )
-            )
-            this.items.add(
-                SeptemberData(
-                    "이월드 가을축제 <인생꽃 사진관>",
-                    R.drawable.eworld_fes,
-                    "2022.09.17 ~ 2022.11.30"
-                )
-            )
-            this.items.add(
-                SeptemberData(
-                    "이월드 가을축제 <인생꽃 사진관>",
-                    R.drawable.eworld_fes,
-                    "2022.09.17 ~ 2022.11.30"
-                )
-            )
-            this.items.add(
-                SeptemberData(
-                    "이월드 가을축제 <인생꽃 사진관>",
-                    R.drawable.eworld_fes,
-                    "2022.09.17 ~ 2022.11.30"
-                )
-            )
-            this.items.add(
-                SeptemberData(
+                MonthData(
                     "이월드 가을축제 <인생꽃 사진관>",
                     R.drawable.eworld_fes,
                     "2022.09.17 ~ 2022.11.30"

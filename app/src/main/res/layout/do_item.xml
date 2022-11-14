@@ -16,7 +16,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/busanListName"
+                android:id="@+id/doListName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
@@ -24,20 +24,20 @@
                 android:textSize="20sp" />
 
             <ImageView
-                android:id="@+id/busanImageView"
+                android:id="@+id/doImageView"
                 android:layout_width="wrap_content"
                 android:layout_height="260dp"
                 app:srcCompat="@drawable/festival1" />
 
             <TextView
-                android:id="@+id/busanListDate"
+                android:id="@+id/doListDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="110dp"
                 android:text="기간 : 2022.12.16 - 12.31" />
 
             <TextView
-                android:id="@+id/busanListPlace"
+                android:id="@+id/doListPlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="135dp"
