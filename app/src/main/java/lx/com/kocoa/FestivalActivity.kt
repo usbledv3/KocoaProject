@@ -9,6 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.ActivityFestivalBinding
 
 class FestivalActivity : AppCompatActivity() {
+
+    //festival 커밋
     lateinit var binding: ActivityFestivalBinding
     var fesAdapter:FestivalAdapter? = null
     val fesLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {}
