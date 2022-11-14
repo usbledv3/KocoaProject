@@ -31,6 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
+                    android:textColor="#ff9050"
                     android:text="산천어 축제"
                     android:textSize="20sp" />
 
@@ -39,6 +40,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
+                    android:textColor="#ff9050"
                     android:text="2023.1." />
             </LinearLayout>
         </LinearLayout>

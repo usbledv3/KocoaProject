@@ -21,6 +21,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"
                 android:text="2022 서울 빛초롱축제"
+                android:textColor="#ff9050"
+                android:textStyle="bold"
                 android:textSize="20sp" />
 
             <ImageView
@@ -34,12 +36,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="110dp"
+                android:textColor="#ff9050"
                 android:text="기간 : 2022.12.16 - 12.31" />
 
             <TextView
                 android:id="@+id/searchListPlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#ff9050"
                 android:layout_marginLeft="135dp"
                 android:text="장소 : 서울 청계천" />
         </LinearLayout>

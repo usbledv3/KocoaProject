@@ -46,7 +46,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="30dp"
                         android:hint="nickname"
-                        android:textColor="@color/black"
+                        android:textColor="#ff9050"
                         android:textSize="20sp" />
 
                     <TextView
@@ -55,7 +55,7 @@
                         android:layout_height="40dp"
                         android:hint="score"
                         android:textAlignment="viewEnd"
-                        android:textColor="@color/black"
+                        android:textColor="#ff9050"
                         android:textSize="30sp" />
                 </LinearLayout>
             </LinearLayout>

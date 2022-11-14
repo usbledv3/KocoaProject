@@ -34,7 +34,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="제목"
-                    android:textColor="#1D1D20"
+                    android:textColor="#ff9050"
                     android:textSize="18sp" />
 
                 <TextView
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="작성일"
-                    android:textColor="#1D1D20"
+                    android:textColor="#ff9050"
                     android:textSize="16sp" />
 
                 <TextView
@@ -51,7 +51,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="이름"
-                    android:textColor="#1D1D20"
+                    android:textColor="#ff9050"
                     android:textSize="16sp" />
 
                 <TextView
@@ -59,7 +59,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="내용"
-                    android:textColor="#5A6880"
+                    android:textColor="#ff9050"
                     android:textSize="16sp" />
             </LinearLayout>
         </LinearLayout>
