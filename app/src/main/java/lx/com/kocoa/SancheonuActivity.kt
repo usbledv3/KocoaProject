@@ -41,6 +41,9 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
         binding.minigamebtn.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,MiniGameActivity::class.java))
         }
+        binding.rtbtn.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,RouteActivity::class.java))
+        }
     }
 
     private fun apiOn() {
