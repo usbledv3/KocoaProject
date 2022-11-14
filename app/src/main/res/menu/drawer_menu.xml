@@ -16,7 +16,10 @@
             android:id="@+id/item3"
             android:icon="@drawable/minigame"
             android:title="축제후기 관리" />
-
+        <item
+            android:id="@+id/item4"
+            android:icon="@drawable/chat"
+            android:title="게시판" />
     </group>
 
 </menu>
