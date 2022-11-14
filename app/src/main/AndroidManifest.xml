@@ -45,6 +45,9 @@
             android:name=".PointShopActivity"
             android:exported="false" />
         <activity
+            android:name=".FestInforStatusActivity"
+            android:exported="false" />
+        <activity
             android:name=".BbsActivity"
             android:exported="false" />
         <activity
