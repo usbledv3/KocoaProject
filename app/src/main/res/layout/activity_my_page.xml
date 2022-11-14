@@ -171,14 +171,14 @@
                 android:layout_height="match_parent"
                 android:orientation="vertical">
 
-&lt;!&ndash;                <Button&ndash;&gt;
-&lt;!&ndash;                    android:id="@+id/stampButton"&ndash;&gt;
-&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;
-&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;
-&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;
-&lt;!&ndash;                    android:layout_marginTop="20dp"&ndash;&gt;
-&lt;!&ndash;                    android:backgroundTint="@color/purple_200"&ndash;&gt;
-&lt;!&ndash;                    android:text="스탬프 새로고침" />&ndash;&gt;
+                <Button
+                   android:id="@+id/stampButton"
+                    android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center"
+                   android:layout_marginTop="20dp"
+                   android:backgroundTint="@color/purple_200"
+                   android:text="스탬프 새로고침" />
 
                 <Button
                     android:id="@+id/qrButton"
@@ -327,8 +327,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_marginVertical="10dp"
-                android:background="@android:color/darker_gray" />-->
-
+                android:background="@android:color/darker_gray" />
+-->
 
             <LinearLayout
                 android:layout_width="match_parent"
