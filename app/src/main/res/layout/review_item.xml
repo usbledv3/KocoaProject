@@ -8,7 +8,7 @@
         android:layout_width="329dp"
         android:layout_height="209dp"
         android:layout_margin="15dp"
-        app:cardBackgroundColor="#EEF6E4"
+        app:cardBackgroundColor="#FACAAF"
         app:cardCornerRadius="4dp"
         app:contentPadding="10dp">
 

@@ -10,7 +10,7 @@
         android:layout_height="290dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        app:cardBackgroundColor="#729D4D00"
+        app:cardBackgroundColor="#FACAAF"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp">
 
