@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#40ff9050"
     tools:context=".InfoActivity">
 
     <LinearLayout
@@ -23,7 +24,7 @@
             android:layout_marginTop="100dp"
             android:text="회원 정보 수정"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            android:textColor="#ff9050"
             android:textSize="30sp" />
 
         <TextView
@@ -34,7 +35,7 @@
             android:textStyle="bold"
             android:layout_marginTop="30dp"
             android:text="현재 닉네임"
-            android:textColor="@color/purple_200"
+            android:textColor="#ff9050"
             android:textSize="20sp" />
 
         <EditText
@@ -89,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="100dp"
                 android:textColor="@color/common_google_signin_btn_text_dark"
-                android:backgroundTint="@color/purple_200"
+                android:backgroundTint= "#ff9050"
                 android:textStyle="bold"
                 android:text="수정" />
 
@@ -99,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:textColor="@color/common_google_signin_btn_text_dark"
-                android:backgroundTint="@color/purple_200"
+                android:backgroundTint="#ff9050"
                 android:textStyle="bold"
                 android:text="뒤로가기" />
         </LinearLayout>
