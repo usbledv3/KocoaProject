@@ -31,25 +31,29 @@ class SHWMainActivity : AppCompatActivity() {
         festpassFragment = FestPassFragment() // 페스패스 프레그먼트로 화면연결
 
         binding.registerButton.setOnClickListener {//등록현황Fragment로 넘어가는 버튼
+
 //            val passfestname = festPassFragment.passFestNameIn.text.toString()
 //            val passname = festPassFragment.passPassNameIn.text.toString()
 //            val passrange = festPassFragment.passFestRangeIn.text.toString()
 //            val passtime = festPassFragment.passTimeIn.text.toString()
-//
+
             festAdapter?.apply {
                 items.add(
                     FestManagerData(
                         SAppData.data1,
                         SAppData.data2,
                         SAppData.data3,
-                        SAppData.data4
+                        SAppData.data4,
+                        SAppData.data5,
+                        SAppData.data6,
+                        SAppData.data7
                     )
                 )
                 notifyDataSetChanged()
-
-                //supportFragmentManager.beginTransaction().replace(R.id.toshwFirstLayout, shwFirstFragment).commit()
-                finish()
             }
+            //버튼 눌렀을때 축제등록현황화면으로 복귀
+            //startActivity(Intent(this,HamburgerMain::class.java))
+            finish()
 
         }
 
