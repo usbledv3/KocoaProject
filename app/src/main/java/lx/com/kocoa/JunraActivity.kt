@@ -50,6 +50,7 @@ class JunraActivity : AppCompatActivity() {
                 junraAdapter?.apply {
                     val item = items.get(position)
                     AppDataYW.doSelectedItem = item
+                    SelectedDoData.selectedItem=item
                     startActivity(Intent(this@JunraActivity,SancheonuActivity::class.java))
                 }
             }

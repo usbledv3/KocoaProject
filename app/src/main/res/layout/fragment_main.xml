@@ -60,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
+                android:textColor="#ff9050"
                 android:text="어디로 갈까?"
                 android:textSize="20sp" />
 
@@ -135,6 +136,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="30dp"
+                android:textColor="#ff9050"
                 android:text="이벤트"
                 android:textSize="20sp" />
 

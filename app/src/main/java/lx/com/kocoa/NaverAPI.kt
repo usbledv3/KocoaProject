@@ -21,6 +21,6 @@ interface NaverAPI {
     fun getMap(
         @Header("X-NCP-APIGW-API-KEY-ID") apiKeyID: String,
         @Header("X-NCP-APIGW-API-KEY") apiKey: String,
-        @Query("query") query: Editable
+        @Query("query") query: String
     ): Call<MapResponse>
 }

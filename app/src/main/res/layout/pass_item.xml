@@ -10,7 +10,7 @@
         android:layout_height="290dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        app:cardBackgroundColor="#729D4D00"
+        app:cardBackgroundColor="#FACAAF"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp">
 
@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:text="클래스 이름"
-                        android:textColor="#000000"
+                        android:textColor="#ff9050"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -58,7 +58,7 @@
                     android:layout_gravity="end"
                     android:layout_marginRight="10dp"
                     android:text="가격"
-                    android:textColor="@color/purple_700"
+                    android:textColor="#ff9050"
                     android:textSize="15sp" />
 
             </LinearLayout>

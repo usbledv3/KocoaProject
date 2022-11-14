@@ -13,8 +13,8 @@ class RouteInputActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.routingbtn.setOnClickListener {
-            RouteData.startpoint = binding.startInput.text
-            RouteData.endpoint = binding.endInput.text
+            RouteData.startpoint = binding.startInput.text.toString()
+            RouteData.endpoint = binding.endInput.text.toString()
             startActivity(Intent(this,MylocaActivity::class.java))
         }
     }

@@ -51,6 +51,7 @@ class GangwonActivity : AppCompatActivity() {
                     val item = items.get(position)
 
                     AppDataYW.doSelectedItem = item
+                    SelectedDoData.selectedItem=item
                     startActivity(Intent(this@GangwonActivity,SancheonuActivity::class.java))
                 }
 
