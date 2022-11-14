@@ -139,7 +139,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="4dp"
+                android:backgroundTint="#ff9050"
                 android:text="입력하기"
+                android:textColor="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textInput" />
 

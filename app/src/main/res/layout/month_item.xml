@@ -7,8 +7,8 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#FACAAF"
-        android:layout_margin="15dp">
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="#C5E1A5">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -32,8 +32,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:textColor="#ff9050"
                     android:text="산천어 축제"
+                    android:textColor="#ff9050"
                     android:textSize="20sp" />
 
                 <TextView
@@ -41,8 +41,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
-                    android:textColor="#ff9050"
-                    android:text="2023.1." />
+                    android:text="2023.1."
+                    android:textColor="#ff9050" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

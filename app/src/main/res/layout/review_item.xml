@@ -8,13 +8,14 @@
         android:layout_width="329dp"
         android:layout_height="209dp"
         android:layout_margin="15dp"
-        app:cardBackgroundColor="#FACAAF"
+        android:backgroundTint="#E8DDCD"
         app:cardCornerRadius="4dp"
         app:contentPadding="10dp">
 
         <LinearLayout
             android:layout_width="308dp"
             android:layout_height="182dp"
+            android:backgroundTint="#E8DDCD"
             android:orientation="horizontal">
 
             <ImageView

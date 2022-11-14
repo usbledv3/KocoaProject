@@ -33,7 +33,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="지도 이동" />
+                android:background="#ff9050"
+                android:text="지도 이동"
+                android:textColor="#FFFFFF" />
         </LinearLayout>
 
         <androidx.fragment.app.FragmentContainerView

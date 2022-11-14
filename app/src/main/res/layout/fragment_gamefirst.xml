@@ -13,6 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="문제"
+        android:textColor="#ff9050"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +24,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="보기"
+        android:textColor="#ff9050"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -62,6 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
+                android:textColor="#ff9050"
                 android:textSize="24sp" />
 
             <EditText
@@ -77,6 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="2번"
+                android:textColor="#ff9050"
                 android:textSize="24sp" />
 
             <EditText
@@ -100,6 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="3번"
+                android:textColor="#ff9050"
                 android:textSize="24sp" />
 
             <EditText
@@ -115,6 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="4번"
+                android:textColor="#ff9050"
                 android:textSize="24sp" />
 
             <EditText
@@ -143,25 +150,29 @@
                 android:id="@+id/radioButton5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="1번" />
+                android:text="1번"
+                android:textColor="#ff9050" />
 
             <RadioButton
                 android:id="@+id/radioButton6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2번" />
+                android:text="2번"
+                android:textColor="#ff9050" />
 
             <RadioButton
                 android:id="@+id/radioButton7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="3번" />
+                android:text="3번"
+                android:textColor="#ff9050" />
 
             <RadioButton
                 android:id="@+id/radioButton8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="4번" />
+                android:text="4번"
+                android:textColor="#ff9050" />
         </RadioGroup>
 
     </LinearLayout>
@@ -171,7 +182,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:backgroundTint="#ff9050"
         android:text="문제 생성"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
