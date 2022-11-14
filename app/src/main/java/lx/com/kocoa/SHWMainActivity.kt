@@ -47,7 +47,8 @@ class SHWMainActivity : AppCompatActivity() {
                 )
                 notifyDataSetChanged()
 
-                supportFragmentManager.beginTransaction().replace(R.id.toshwFirstLayout, shwFirstFragment).commit()
+                //supportFragmentManager.beginTransaction().replace(R.id.toshwFirstLayout, shwFirstFragment).commit()
+                finish()
             }
 
         }
