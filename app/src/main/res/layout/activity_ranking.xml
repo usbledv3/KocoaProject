@@ -39,7 +39,7 @@
             android:id="@+id/textView15"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="     3등: 상품 뭐 줌?"
+            android:text="     3등: 지역 특산품"
             android:textColor="#ff9050"
             android:textSize="20sp" />
 
