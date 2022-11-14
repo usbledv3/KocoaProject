@@ -114,7 +114,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="161dp"
                 android:background="#BD9070"
-                android:backgroundTintMode="add"
+                android:backgroundTint="#ff9050"
                 android:text="예약버튼"
                 android:textColor="@color/white"
                 tools:ignore="TextContrastCheck" />
