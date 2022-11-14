@@ -10,8 +10,8 @@ import androidx.fragment.app.Fragment
 import lx.com.kocoa.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    // 커밋이 잘 되었나요? asdfaasdf
     // 테스트를 한번 더 해 봅시다 111
+    // 커밋이 잘 되었나요?
     lateinit var binding: ActivityMainBinding
 
     //부분화면 구분자
@@ -82,7 +82,7 @@ class MainActivity : AppCompatActivity() {
 
                 }
                 R.id.tab3 -> {
-                    startActivity(Intent(this@MainActivity,MyPageActivity::class.java))
+                    startActivity(Intent(this@MainActivity,PointShopActivity::class.java))
                 }
             }
             return@setOnNavigationItemSelectedListener true

@@ -15,7 +15,7 @@ class SHWMainActivity : AppCompatActivity() {
     lateinit var festgameFragment: FestGameListFragment // 미니게임 프레그먼트
     lateinit var festpassFragment: FestPassFragment // 페스패스 프레그먼트
     lateinit var shwFirstFragment:ShwFirstFragment// 등록현황 프레그먼트
-    lateinit var festPassFragment: FestPassFragment
+    lateinit var festPassFragment: FestPassFragment // 이거도 있어야함!! 위에꺼랑 다른거임!!
     var festAdapter:FestAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,7 +48,6 @@ class SHWMainActivity : AppCompatActivity() {
                 notifyDataSetChanged()
 
                 supportFragmentManager.beginTransaction().replace(R.id.toshwFirstLayout, shwFirstFragment).commit()
-
             }
 
         }
