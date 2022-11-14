@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="152dp"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="52dp"
             android:backgroundTint="#ff9050"
             android:text="입력정보 확인"
             android:textColor="#FFFFFF"
