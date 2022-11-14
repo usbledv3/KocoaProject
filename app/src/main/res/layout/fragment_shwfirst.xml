@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="축제 등록 현황"
-            android:textColor="@color/black"
+            android:textColor="#ff9050"
             android:textSize="40sp" />
     </LinearLayout>
 
@@ -45,6 +45,8 @@
         android:layout_marginTop="4dp"
         android:text="새 로 고 침"
         android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:backgroundTint="#ff9050"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.848"
         app:layout_constraintStart_toStartOf="parent"

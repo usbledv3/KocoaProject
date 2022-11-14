@@ -101,7 +101,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="#B2DBDF"
+                app:cardBackgroundColor="#FACAAF"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="5dp"
                 app:contentPadding="4dp">
@@ -162,9 +162,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#ff9050"
-                                android:textStyle="bold"
                                 android:text="상품구매"
-                                android:textColor="@color/white" />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -177,7 +177,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="#B2DBDF"
+                app:cardBackgroundColor="#FACAAF"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="5dp"
                 app:contentPadding="4dp">
@@ -238,9 +238,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#ff9050"
-                                android:textStyle="bold"
                                 android:text="상품구매"
-                                android:textColor="@color/white" />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -253,7 +253,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="#B2DBDF"
+                app:cardBackgroundColor="#FACAAF"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="5dp"
                 app:contentPadding="4dp">
@@ -314,10 +314,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#ff9050"
-                                android:textColor="@color/white"
-                                android:textStyle="bold"
                                 android:text="상품구매"
-                                />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 
@@ -330,7 +329,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                app:cardBackgroundColor="#B2DBDF"
+                app:cardBackgroundColor="#FACAAF"
                 app:cardCornerRadius="8dp"
                 app:cardElevation="5dp"
                 app:contentPadding="4dp">
@@ -391,9 +390,9 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:backgroundTint="#ff9050"
-                                android:textStyle="bold"
                                 android:text="상품구매"
-                                android:textColor="@color/white" />
+                                android:textColor="@color/white"
+                                android:textStyle="bold" />
 
                         </LinearLayout>
 

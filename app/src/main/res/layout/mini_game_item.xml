@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:hint="name"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"

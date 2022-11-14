@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         android:clickable="true"
         android:src="@drawable/write"
-        app:backgroundTint="#8F38E7"
+        app:backgroundTint="#ff9050"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
