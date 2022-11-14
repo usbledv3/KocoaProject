@@ -40,7 +40,7 @@
                         android:layout_height="wrap_content"
                         android:padding="16dp"
                         android:text="제목"
-                        android:textColor="@color/black" />
+                        android:textColor="#ff9050" />
 
                     <EditText
                         android:id="@+id/titleInput"
@@ -63,7 +63,7 @@
                         android:layout_height="wrap_content"
                         android:padding="16dp"
                         android:text="작성일"
-                        android:textColor="@color/black" />
+                        android:textColor="#ff9050" />
 
                     <EditText
                         android:id="@+id/dateInput"
@@ -85,7 +85,7 @@
                         android:layout_height="wrap_content"
                         android:padding="16dp"
                         android:text="이름"
-                        android:textColor="@color/black" />
+                        android:textColor="#ff9050" />
 
                     <EditText
                         android:id="@+id/nameInput"

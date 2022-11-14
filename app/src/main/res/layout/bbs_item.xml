@@ -44,7 +44,7 @@
                     android:includeFontPadding="false"
                     android:text="제목"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
+                    android:textColor="#ff9050"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 
