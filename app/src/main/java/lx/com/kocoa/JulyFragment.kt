@@ -44,7 +44,21 @@ class JulyFragment : Fragment() {
                 MonthData(
                     "렛츠런파크 서울 여름 수국축제",
                     R.drawable.suguk_fes,
-                    "2023.07.30 ~ 2023.08.21"
+                    "2023.7.30-2023.8.21"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "주문진 불꽃크루즈",
+                    R.drawable.jumunjin_fes,
+                    "2022.7.1-2022.12.31"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "국제해양영화제",
+                    R.drawable.seamovie_fes,
+                    "2022.7.28-2022.7.31"
                 )
             )
         }

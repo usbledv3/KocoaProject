@@ -44,7 +44,21 @@ class OctoberFragment : Fragment() {
                 MonthData(
                     "화담숲 가을 단풍 축제",
                     R.drawable.hwadam,
-                    "2022.10.15 ~ 2022.11.13"
+                    "2022.10.15-2022.11.13"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "피나클랜드 왕새우 축제",
+                    R.drawable.shrimp_fes,
+                    "2022.10.01-2022.11.30"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "신산 빛의거리",
+                    R.drawable.sinsan_fes,
+                    "2022.10.23-2022.11.28"
                 )
             )
         }

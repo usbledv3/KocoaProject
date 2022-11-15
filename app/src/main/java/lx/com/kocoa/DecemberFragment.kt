@@ -43,35 +43,21 @@ class DecemberFragment : Fragment() {
                 MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
-                    "2022.12.16 ~ 2022.12.31"
+                    "2022.12.16-2022.12.31"
                 )
             )
             this.items.add(
                 MonthData(
-                    "2022 서울빛초롱축제",
-                    R.drawable.bitchorong_fes,
-                    "2022.12.16 ~ 2022.12.31"
+                    "서천 마량진항 해넘이·해돋이 축제",
+                    R.drawable.sunrise_fes,
+                    "2022.12.31-2023.1.1"
                 )
             )
             this.items.add(
                 MonthData(
-                    "2022 서울빛초롱축제",
-                    R.drawable.bitchorong_fes,
-                    "2022.12.16 ~ 2022.12.31"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "2022 서울빛초롱축제",
-                    R.drawable.bitchorong_fes,
-                    "2022.12.16 ~ 2022.12.31"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "2022 서울빛초롱축제",
-                    R.drawable.bitchorong_fes,
-                    "2022.12.16 ~ 2022.12.31"
+                    "펫츠런(Pets Run) 고양",
+                    R.drawable.petsrun_fes,
+                    "2022.12.2-2022.12.3"
                 )
             )
         }
