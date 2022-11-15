@@ -46,6 +46,20 @@ class MarchFragment : Fragment() {
                     "2023.1.1-12.31"
                 )
             )
+            this.items.add(
+                MonthData(
+                    "안성 남사당놀이",
+                    R.drawable.namsadang_fes,
+                    "2022.3.26-2022.11.26"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "진도토요민속여행",
+                    R.drawable.toyo_fes,
+                    "2022.03.01 ~ 2022.12.31"
+                )
+            )
         }
 
 //        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기

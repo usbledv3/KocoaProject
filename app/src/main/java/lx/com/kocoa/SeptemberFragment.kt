@@ -44,7 +44,21 @@ class SeptemberFragment : Fragment() {
                 MonthData(
                     "이월드 가을축제 <인생꽃 사진관>",
                     R.drawable.eworld_fes,
-                    "2022.09.17 ~ 2022.11.30"
+                    "2022.9.17-2022.11.30"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "휴애리 핑크뮬리 축제",
+                    R.drawable.pinkmuli_fes,
+                    "2022.9.15-2022.11.15"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "벽초지수목원 가을꽃 국화축제",
+                    R.drawable.bykcho_fes,
+                    "2022.9.23-2022.11.20"
                 )
             )
         }
