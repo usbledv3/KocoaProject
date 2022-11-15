@@ -42,8 +42,8 @@ class JanuaryFragment : Fragment() {
         januaryAdapter?.apply {
             this.items.clear()
             this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
-            this.items.add(MonthData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29"))
+            this.items.add(MonthData("포항국제사진제 PIFF", R.drawable.piff_fes,"2023.1.19-2023.1.30"))
+            this.items.add(MonthData("별빛정원우주 365일 별빛축제", R.drawable.byul_fes,"2022.1.1-2022.12.31"))
         }
 
 //        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기

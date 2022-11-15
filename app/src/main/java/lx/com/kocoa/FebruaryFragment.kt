@@ -49,30 +49,16 @@ class FebruaryFragment : Fragment() {
             )
             this.items.add(
                 MonthData(
-                    "태안 빛축제",
-                    R.drawable.teaan_fes,
-                    "2023.1.1-12.31"
+                    "K-일러스트레이션페어 서울 2023",
+                    R.drawable.illu_fes,
+                    "2023.2.16-2023.2.19"
                 )
             )
             this.items.add(
                 MonthData(
-                    "태안 빛축제",
-                    R.drawable.teaan_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "태안 빛축제",
-                    R.drawable.teaan_fes,
-                    "2023.1.1-12.31"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "태안 빛축제",
-                    R.drawable.teaan_fes,
-                    "2023.1.1-12.31"
+                    "강진청자축제",
+                    R.drawable.gangjin_fes,
+                    "2023.2.1-2.15"
                 )
             )
         }

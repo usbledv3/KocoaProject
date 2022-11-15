@@ -19,9 +19,11 @@ class FestGameFragment : Fragment() {
 
         binding.button5.setOnClickListener {
             onFragmentChanged(0)
+            SAppData.data10 = "객관식"
         }
         binding.button6.setOnClickListener {
             onFragmentChanged(1)
+            SAppData.data10 = "주관식"
         }
         return binding.root
     }

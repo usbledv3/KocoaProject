@@ -43,35 +43,21 @@ class AugustFragment : Fragment() {
                 MonthData(
                     "춘천막국수닭갈비축제",
                     R.drawable.chuncheon_fes,
-                    "2023.08.30 ~ 2023.09.04"
+                    "2023.8.30-2023.9.4"
                 )
             )
             this.items.add(
                 MonthData(
-                    "춘천막국수닭갈비축제",
-                    R.drawable.chuncheon_fes,
-                    "2023.08.30 ~ 2023.09.04"
+                    "숲 속 모두의, 포레포레",
+                    R.drawable.fore_fes,
+                    "2022.8.27-2022.11.26"
                 )
             )
             this.items.add(
                 MonthData(
-                    "춘천막국수닭갈비축제",
-                    R.drawable.chuncheon_fes,
-                    "2023.08.30 ~ 2023.09.04"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "춘천막국수닭갈비축제",
-                    R.drawable.chuncheon_fes,
-                    "2023.08.30 ~ 2023.09.04"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "춘천막국수닭갈비축제",
-                    R.drawable.chuncheon_fes,
-                    "2023.08.30 ~ 2023.09.04"
+                    "NewYork Arts Society Festival",
+                    R.drawable.newyork_fes,
+                    "2022.8.1-2022.12.31"
                 )
             )
         }

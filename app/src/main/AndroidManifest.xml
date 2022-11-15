@@ -21,13 +21,10 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".RouteActivity"
+            android:exported="false" />
+        <activity
             android:name=".StampActivity"
-            android:exported="false" />
-        <activity
-            android:name=".RouteInputActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MylocaActivity"
             android:exported="false" />
         <activity
             android:name=".PassBookingActivity"

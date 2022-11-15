@@ -30,10 +30,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/quizQuestion" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/quizQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -69,7 +69,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/case1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="1번 내용"
@@ -85,7 +85,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName3"
+                android:id="@+id/case2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
@@ -109,7 +109,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName4"
+                android:id="@+id/case3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="3번 내용"
@@ -125,7 +125,7 @@
                 android:textSize="24sp" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName5"
+                android:id="@+id/case4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="4번 내용"
@@ -147,28 +147,28 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radioButton5"
+                android:id="@+id/radiocase1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
                 android:textColor="#ff9050" />
 
             <RadioButton
-                android:id="@+id/radioButton6"
+                android:id="@+id/radiocase2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2번"
                 android:textColor="#ff9050" />
 
             <RadioButton
-                android:id="@+id/radioButton7"
+                android:id="@+id/radiocase3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3번"
                 android:textColor="#ff9050" />
 
             <RadioButton
-                android:id="@+id/radioButton8"
+                android:id="@+id/radiocase4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4번"
@@ -178,7 +178,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button8"
+        android:id="@+id/makequizbtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

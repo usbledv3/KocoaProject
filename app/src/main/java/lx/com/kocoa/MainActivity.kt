@@ -51,21 +51,17 @@ class MainActivity : AppCompatActivity() {
                     showToast("축제등록 현황")
                     onFragmentChanged(FragmentItem.ITEM1, null)
                 }
-//                R.id.item2 -> {
-//                    showToast("지도")
-//                    onFragmentChanged(FragmentItem.ITEM2, null)
-//                }
-//                R.id.item3 -> {
-//                    showToast("미니게임+")
-//                    onFragmentChanged(FragmentItem.ITEM3, null)
-//                }
                 R.id.item2 -> {
                     showToast("축제 등록하기")
-                    onActivityChanged(HamburgerMain.ActivityItem.ITEM4) // Activity로 넘어가는 부분이라서 null필요없음.
+                    onActivityChanged(ActivityItem.ITEM4) // Activity로 넘어가는 부분이라서 null필요없음.
                 }
                 R.id.item3 -> {
                     showToast("축제후기 관리")
                     onFragmentChanged(FragmentItem.ITEM5, null)
+                }
+                R.id.item4 -> {
+                    showToast("게시판")
+                    startActivity(Intent(this@MainActivity, BbsActivity::class.java))
                 }
             }
             binding.drawerLayout.closeDrawer(GravityCompat.START)
@@ -94,21 +90,18 @@ class MainActivity : AppCompatActivity() {
         var fragment : Fragment
         when(item){
             FragmentItem.ITEM1 -> {
-                binding.toolbar2.title = "축제등록 현황"
                 fragment = ShwFirstFragment()
             }
             FragmentItem.ITEM5 -> {
-                binding.toolbar2.title = "축제후기 관리"
                 fragment = ShwFifthFragment()
             }
         }
         supportFragmentManager.beginTransaction().replace(R.id.container, fragment).commit()
     }
-    fun onActivityChanged(item: HamburgerMain.ActivityItem){ //축제등록Activity로 넘어가는 코드
+    fun onActivityChanged(item: ActivityItem){ //축제등록Activity로 넘어가는 코드
         var activity : AppCompatActivity
         when(item){
-            HamburgerMain.ActivityItem.ITEM4 -> {
-                binding.toolbar2.title = "축제 등록"
+            ActivityItem.ITEM4 -> {
                 activity = SHWMainActivity()
             }
         }
