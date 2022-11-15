@@ -31,6 +31,8 @@ class FestMapFragment : Fragment(), OnMapReadyCallback {
     ): View? {
         _binding = FragmentFestmapBinding.inflate(inflater, container, false)
 
+
+
         mapx="127.703225"
         mapy="38.107433"
         initView()
@@ -48,8 +50,10 @@ class FestMapFragment : Fragment(), OnMapReadyCallback {
 
         //지도 이동 클릭시
         binding.button9.setOnClickListener {
+            val roadname = binding.roadNameInput.text.toString()
+            SAppData.data8 = roadname
             //도로명주소 검색
-            val callgetPath = api.getMap(APIKEY_ID, APIKEY, binding.editTextTextPersonName6.text.toString())
+            val callgetPath = api.getMap(APIKEY_ID, APIKEY, binding.roadNameInput.text.toString())
             callgetPath.enqueue(object : Callback<MapResponse> {
                 override fun onResponse(
                     call: Call<MapResponse>,
@@ -88,4 +92,5 @@ class FestMapFragment : Fragment(), OnMapReadyCallback {
         val uiSettings = naverMap.uiSettings
         uiSettings.isTiltGesturesEnabled = false
     }
+
 }

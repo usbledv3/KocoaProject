@@ -57,6 +57,7 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
         build()
 
         val api = retrofit.create(NaverAPI::class.java)
+        //도로명 주소를 통해 위경도 값 받아오기
         val callgetPath = api.getMap(APIKEY_ID, APIKEY, SelectedDoData.selectedItem?.doPlace.toString())
         callgetPath.enqueue(object : Callback<MapResponse> {
             override fun onResponse(
@@ -85,6 +86,7 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
 
     @UiThread
     override fun onMapReady(naverMap: NaverMap) {
+        //지정된 위치로 지도 위치 변경
         val cameraUpdate = CameraUpdate.scrollTo(LatLng(mapy!!.toDouble(), mapx!!.toDouble()))
         if (cameraUpdate != null) {
             naverMap.moveCamera(cameraUpdate)

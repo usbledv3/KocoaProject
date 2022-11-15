@@ -89,11 +89,9 @@ class MainActivity : AppCompatActivity() {
         var fragment : Fragment
         when(item){
             FragmentItem.ITEM1 -> {
-                binding.toolbar2.title = "축제등록 현황"
                 fragment = ShwFirstFragment()
             }
             FragmentItem.ITEM5 -> {
-                binding.toolbar2.title = "축제후기 관리"
                 fragment = ShwFifthFragment()
             }
         }
@@ -103,7 +101,6 @@ class MainActivity : AppCompatActivity() {
         var activity : AppCompatActivity
         when(item){
             ActivityItem.ITEM4 -> {
-                binding.toolbar2.title = "축제 등록"
                 activity = SHWMainActivity()
             }
         }
