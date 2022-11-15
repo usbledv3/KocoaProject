@@ -28,6 +28,10 @@ class BbsActivity : AppCompatActivity() {
             startActivity(Intent(this@BbsActivity, BbsWriteActivity::class.java))
         }
 
+
+
+
+
         // 리스트 초기화
         initList()
 
@@ -36,6 +40,7 @@ class BbsActivity : AppCompatActivity() {
     }
 
     fun initList() {
+
 
         // 리스트의 모양을 담당하는 것
         val layoutManager = LinearLayoutManager(this)

@@ -19,8 +19,12 @@ class BbsViewActivity : AppCompatActivity() {
         binding = ActivityBbsViewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+
+        val toolbarBody = binding.toolbar4
+        setSupportActionBar(toolbarBody)
         // 뒤로가기 버튼 생성
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+
 
         // 이전 화면에서 선택한 아이템의 데이터를 화면에 있는 텍스트뷰에 보여주기
         JhAppData.selectedBbsItem?.apply {
@@ -44,6 +48,7 @@ class BbsViewActivity : AppCompatActivity() {
 
     // 옵션메뉴 선택 기능
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+
 
         when(item.itemId) {
             R.id.edit -> {
