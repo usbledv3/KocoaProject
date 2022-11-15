@@ -47,12 +47,13 @@ class JejuActivity : AppCompatActivity() {
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
         jejuAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 jejuAdapter?.apply {
                     val item = items.get(position)
-                    AppDataYW.doSelectedItem = item
+
                     SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@JejuActivity,SancheonuActivity::class.java))
+                    val jejuInfoIntent = Intent(this@JejuActivity,FestivalInfoActivity::class.java)
+                    jejuInfoLauncher.launch(jejuInfoIntent)
                 }
 
             }

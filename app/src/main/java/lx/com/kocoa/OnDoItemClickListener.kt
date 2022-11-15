@@ -4,6 +4,6 @@ import android.view.View
 
 interface OnDoItemClickListener {
 
-    fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int)
+    fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int)
 
 }

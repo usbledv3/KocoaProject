@@ -43,21 +43,24 @@ class DecemberFragment : Fragment() {
                 MonthData(
                     "2022 서울빛초롱축제",
                     R.drawable.bitchorong_fes,
-                    "2022.12.16-2022.12.31"
+                    "2022.12.16-2022.12.31",
+                    "서울특별시 종로구 세종대로 172"
                 )
             )
             this.items.add(
                 MonthData(
                     "서천 마량진항 해넘이·해돋이 축제",
                     R.drawable.sunrise_fes,
-                    "2022.12.31-2023.1.1"
+                    "2022.12.31-2023.1.1",
+                    "충청남도 서천군 서인로 58"
                 )
             )
             this.items.add(
                 MonthData(
                     "펫츠런(Pets Run) 고양",
                     R.drawable.petsrun_fes,
-                    "2022.12.2-2022.12.3"
+                    "2022.12.2-2022.12.3",
+                    "경기도 고양시 일산동구 중앙로 1271-4"
                 )
             )
         }

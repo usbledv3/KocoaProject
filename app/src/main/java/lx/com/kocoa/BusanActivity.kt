@@ -46,15 +46,14 @@ class BusanActivity : AppCompatActivity() {
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
         doAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 doAdapter?.apply {
                     val item = items.get(position)
 
-                    AppDataYW.doSelectedItem = item
                     SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@BusanActivity,SancheonuActivity::class.java))
+                    val busanInfoIntent = Intent(this@BusanActivity,FestivalInfoActivity::class.java)
+                    busanInfoLauncher.launch(busanInfoIntent)
                 }
-
             }
 
         }

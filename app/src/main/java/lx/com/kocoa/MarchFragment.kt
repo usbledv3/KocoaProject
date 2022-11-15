@@ -43,21 +43,24 @@ class MarchFragment : Fragment() {
                 MonthData(
                     "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
                     R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
+                    "2023.1.1-12.31",
+                    "강원도 원주시 지정면 오크밸리1길 66"
                 )
             )
             this.items.add(
                 MonthData(
                     "안성 남사당놀이",
                     R.drawable.namsadang_fes,
-                    "2022.3.26-2022.11.26"
+                    "2022.3.26-2022.11.26",
+                    "경기도 안성시 보개면 남사당로 198-2"
                 )
             )
             this.items.add(
                 MonthData(
                     "진도토요민속여행",
                     R.drawable.toyo_fes,
-                    "2022.03.01 ~ 2022.12.31"
+                    "2022.03.01 ~ 2022.12.31",
+                    "전라남도 진도군 진도읍 진도대로 7197"
                 )
             )
         }

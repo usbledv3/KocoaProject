@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
-import lx.com.kocoa.databinding.ActivitySearchBinding
 import lx.com.kocoa.databinding.ActivitySeoulBinding
 
 class SeoulActivity : AppCompatActivity() {
@@ -46,14 +45,15 @@ class SeoulActivity : AppCompatActivity() {
         }
 
         seoulAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 seoulAdapter?.apply {
                     val item = items.get(position)
-                    AppDataYW.doSelectedItem = item
                     SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@SeoulActivity,SancheonuActivity::class.java))
+                    val seoulInfoIntent = Intent(applicationContext, FestivalInfoActivity::class.java)
+                    seoulInfoLauncher.launch(seoulInfoIntent)
                 }
             }
         }
+
     }
 }

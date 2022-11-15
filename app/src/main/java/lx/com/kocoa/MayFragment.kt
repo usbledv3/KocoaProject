@@ -45,21 +45,24 @@ class MayFragment : Fragment() {
                 MonthData(
                     "강원세계산림엑스포",
                     R.drawable.oakbelly_fes,
-                    "2023.5.4-2023.6.6"
+                    "2023.5.4-2023.6.6",
+                    "강원도 고성군 토성면 잼버리로 244"
                 )
             )
             this.items.add(
                 MonthData(
                     "강릉단오제",
                     R.drawable.dano_fes,
-                    "2022.5.30-2022.6.6"
+                    "2022.5.30-2022.6.6",
+                    "강원도 강릉시 단오장길 1"
                 )
             )
             this.items.add(
                 MonthData(
                     "서울거리공연 [구석구석 라이브]",
                     R.drawable.street_fes,
-                    "2022.5.1-2022.12.31"
+                    "2022.5.1-2022.12.31",
+                    "서울특별시 마포구 연남로1길 55"
                 )
             )
         }

@@ -44,21 +44,24 @@ class JuneFragment : Fragment() {
                 MonthData(
                     "고창 청농원 라벤더 축제",
                     R.drawable.gochang_fes,
-                    "2023.5.27-2023.6.30"
+                    "2023.5.27-2023.6.30",
+                    "전라북도 고창군 공음면 청천길 41-27"
                 )
             )
             this.items.add(
                 MonthData(
                     "목포해상W쇼",
                     R.drawable.mokpo_fes,
-                    "2022.06.03-2022.11.26"
+                    "2022.06.03-2022.11.26",
+                    "전라남도 목포시 평화로 82"
                 )
             )
             this.items.add(
                 MonthData(
                     "부산커피쇼",
                     R.drawable.coffee_fes,
-                    "2022.6.29-2022.7.2"
+                    "2022.6.29-2022.7.2",
+                    "부산광역시 해운대구 APEC로 55"
                 )
             )
         }

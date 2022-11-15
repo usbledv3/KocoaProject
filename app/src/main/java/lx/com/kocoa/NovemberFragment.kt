@@ -44,21 +44,24 @@ class NovemberFragment : Fragment() {
                 MonthData(
                     "외계인 대축제",
                     R.drawable.alien_fes,
-                    "2022.11.12-2022.11.13"
+                    "2022.11.12-2022.11.13",
+                    "경상남도 밀양시 밀양대공원로 86"
                 )
             )
             this.items.add(
                 MonthData(
                     "대한민국 우리술 대축제",
                     R.drawable.alcohol_fes,
-                    "2022.11.18-2022.11.20"
+                    "2022.11.18-2022.11.20",
+                    "서울특별시 서초구 강남대로 27 AT센터"
                 )
             )
             this.items.add(
                 MonthData(
                     "청도 프로방스 크리스마스 산타마을 빛축제",
                     R.drawable.santa_fes,
-                    "32022.11.12-2023.1.31"
+                    "32022.11.12-2023.1.31",
+                    "경상북도 청도군 화양읍 이슬미로 272-23"
                 )
             )
         }

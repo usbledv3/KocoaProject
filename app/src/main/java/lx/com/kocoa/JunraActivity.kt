@@ -46,12 +46,13 @@ class JunraActivity : AppCompatActivity() {
         }
 
         junraAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 junraAdapter?.apply {
                     val item = items.get(position)
-                    AppDataYW.doSelectedItem = item
+
                     SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@JunraActivity,SancheonuActivity::class.java))
+                    val junraInfoIntent = Intent(this@JunraActivity,FestivalInfoActivity::class.java)
+                    junraInfoLauncher.launch(junraInfoIntent)
                 }
             }
         }
