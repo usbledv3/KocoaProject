@@ -91,6 +91,7 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
         if (cameraUpdate != null) {
             naverMap.moveCamera(cameraUpdate)
         }
+        naverMap.setLayerGroupEnabled(NaverMap.LAYER_GROUP_TRAFFIC, true)
     }
 }
 
