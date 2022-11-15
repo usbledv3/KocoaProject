@@ -61,14 +61,13 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val api = retrofit.create(NaverAPI::class.java)
         //도로명 주소로 위도 경도 받아오는거
-        val callgetPath = api.getMap(APIKEY_ID,APIKEY,SAppData.selelctedItem?.data8.toString())
-        callgetPath.enqueue(object: Callback<MapResponse> {
+        val callgetPath = SAppData.data8?.let { api.getMap(APIKEY_ID,APIKEY, it) }
+        callgetPath?.enqueue(object: Callback<MapResponse> {
             override fun onResponse(call: Call<MapResponse>, response: Response<MapResponse>) {
                 mapx = response.body()?.addresses?.get(0)?.x
                 mapy = response.body()?.addresses?.get(0)?.y
                 initView()
             }
-
             override fun onFailure(call: Call<MapResponse>, t: Throwable) {
 
             }
@@ -83,6 +82,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
         //지도를 mapLayout에 보여줌
         mapFragment.getMapAsync(this)
     }
+
     @UiThread
     override fun onMapReady(naverMap: NaverMap){
         //위치로 지도 이동
