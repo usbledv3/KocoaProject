@@ -27,12 +27,6 @@
             android:name=".StampActivity"
             android:exported="false" />
         <activity
-            android:name=".RouteInputActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MylocaActivity"
-            android:exported="false" />
-        <activity
             android:name=".PassBookingActivity"
             android:exported="false" />
         <activity
