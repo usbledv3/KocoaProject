@@ -8,5 +8,6 @@ data class FestManagerData (
 
         val data5:String? = null, //축제이름
         val data6:String? = null, //축제규모
-        val data7:String? = null //축제개최지역
+        val data7:String? = null, //축제개최지역
+        val data8:String? = null //지도입력 도로명주소입력
 )

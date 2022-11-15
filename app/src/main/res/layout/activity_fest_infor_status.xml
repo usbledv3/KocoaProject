@@ -46,16 +46,29 @@
                 android:textColor="#000000"
                 android:textSize="20sp" />
 
+            <TextView
+                android:id="@+id/showroadName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="축제개최지 주소"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <FrameLayout
+                <androidx.fragment.app.FragmentContainerView
                     android:id="@+id/mapLayout"
+                    android:name="com.naver.maps.map.MapFragment"
                     android:layout_width="match_parent"
-                    android:layout_height="356dp">
-
-                </FrameLayout>
+                    android:layout_height="300dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:navermap_mapType="Basic"
+                    app:navermap_zoom="13" />
 
             </LinearLayout>
 
