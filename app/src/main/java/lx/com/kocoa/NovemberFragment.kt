@@ -44,7 +44,21 @@ class NovemberFragment : Fragment() {
                 MonthData(
                     "외계인 대축제",
                     R.drawable.alien_fes,
-                    "2022.11.12 ~ 2022.11.13"
+                    "2022.11.12-2022.11.13"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "대한민국 우리술 대축제",
+                    R.drawable.alcohol_fes,
+                    "2022.11.18-2022.11.20"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "청도 프로방스 크리스마스 산타마을 빛축제",
+                    R.drawable.santa_fes,
+                    "32022.11.12-2023.1.31"
                 )
             )
         }

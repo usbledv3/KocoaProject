@@ -43,35 +43,21 @@ class AprilFragment : Fragment() {
                 MonthData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
-                    "2023.04.07 ~ 2023.07.09"
+                    "2023.4.7-2023.7.9"
                 )
             )
             this.items.add(
                 MonthData(
-                    "광주비엔날레",
-                    R.drawable.gwangju_fes,
-                    "2023.04.07 ~ 2023.07.09"
+                    "근현대사 추리여행, '사라진 열쇠를 찾아라'",
+                    R.drawable.detective_fes,
+                    "2022.4.23-2022.12.31"
                 )
             )
             this.items.add(
                 MonthData(
-                    "광주비엔날레",
-                    R.drawable.gwangju_fes,
-                    "2023.04.07 ~ 2023.07.09"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "광주비엔날레",
-                    R.drawable.gwangju_fes,
-                    "2023.04.07 ~ 2023.07.09"
-                )
-            )
-            this.items.add(
-                MonthData(
-                    "광주비엔날레",
-                    R.drawable.gwangju_fes,
-                    "2023.04.07 ~ 2023.07.09"
+                    "정선아리랑극 아리아라리",
+                    R.drawable.ari_fes,
+                    "2022.4.02-2022.11.27"
                 )
             )
         }

@@ -45,7 +45,21 @@ class MayFragment : Fragment() {
                 MonthData(
                     "강원세계산림엑스포",
                     R.drawable.oakbelly_fes,
-                    "2023.05.04 ~ 2023.06.06"
+                    "2023.5.4-2023.6.6"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "강릉단오제",
+                    R.drawable.dano_fes,
+                    "2022.5.30-2022.6.6"
+                )
+            )
+            this.items.add(
+                MonthData(
+                    "서울거리공연 [구석구석 라이브]",
+                    R.drawable.street_fes,
+                    "2022.5.1-2022.12.31"
                 )
             )
         }
