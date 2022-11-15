@@ -3,7 +3,6 @@ package lx.com.kocoa
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
 import com.naver.maps.map.overlay.ArrowheadPathOverlay
 import com.naver.maps.map.util.FusedLocationSource
