@@ -38,6 +38,9 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.showfestRange.text = "축제규모 : ${SAppData.data6}"
             binding.showfestLocation.text = "개최지역 : ${SAppData.data7}"
             binding.showroadName.text = "개최지주소 : ${SAppData.data8}"
+            binding.showQuizname.text = "미니게임 이름 : ${SAppData.data9}"
+            binding.showQuizsort.text = "미니게임 종류 : ${SAppData.data10}"
+            binding.showQuizansw.text = "미니게임 정답 : ${SAppData.data11}"
 
         }
 

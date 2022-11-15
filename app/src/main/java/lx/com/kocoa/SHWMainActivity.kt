@@ -32,11 +32,6 @@ class SHWMainActivity : AppCompatActivity() {
 
         binding.registerButton.setOnClickListener {//등록현황Fragment로 넘어가는 버튼
 
-//            val passfestname = festPassFragment.passFestNameIn.text.toString()
-//            val passname = festPassFragment.passPassNameIn.text.toString()
-//            val passrange = festPassFragment.passFestRangeIn.text.toString()
-//            val passtime = festPassFragment.passTimeIn.text.toString()
-
             festAdapter?.apply {
                 items.add(
                     FestManagerData(
@@ -46,7 +41,11 @@ class SHWMainActivity : AppCompatActivity() {
                         SAppData.data4,
                         SAppData.data5,
                         SAppData.data6,
-                        SAppData.data7
+                        SAppData.data7,
+                        SAppData.data8, // 이거 추가함/ 종인이가 수정한거랑 충돌되는지 확인해야함
+                        SAppData.data9, //객관식 미니게임 이름
+                        SAppData.data10, //미니게임 종류
+                        SAppData.data11 //미니게임 정답
                     )
                 )
                 notifyDataSetChanged()
