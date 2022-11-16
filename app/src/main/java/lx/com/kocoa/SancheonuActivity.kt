@@ -44,6 +44,9 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
         binding.rtbtn.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,RouteActivity::class.java))
         }
+        binding.infobtn.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,MapActivity::class.java))
+        }
     }
 
     private fun apiOn() {
