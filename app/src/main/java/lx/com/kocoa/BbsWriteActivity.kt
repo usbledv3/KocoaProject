@@ -18,6 +18,8 @@ class BbsWriteActivity : AppCompatActivity() {
         binding = ActivityBbsWriteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val toolbarBody = binding.toolbar5
+        setSupportActionBar(toolbarBody)
         // 뒤로가기 버튼 생성
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
