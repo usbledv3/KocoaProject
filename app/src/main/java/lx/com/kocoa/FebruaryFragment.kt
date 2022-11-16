@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.FragmentFebruaryBinding
 
@@ -15,6 +16,9 @@ class FebruaryFragment : Fragment() {
     val binding get() = _binding!!
 
     var februaryAdapter:MonthAdapter? = null
+    val februaryInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -67,20 +71,22 @@ class FebruaryFragment : Fragment() {
             )
         }
 
-//// 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-//        januaryAdapter?.listener = object: OnDoItemClickListener {
-//            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
-//                januaryAdapter?.apply {
-//                    val item = items.get(position)
-//
-//
-//                    AppDataYW.monthSelectedItem=item
-//                    val januaryInfoIntent = Intent(activity as CalendarActivity,FestivalInfoActivity::class.java)
-//                    januaryInfoLauncher.launch(januaryInfoIntent)
-//                }
-//
-//            }
-//
-//        }
+        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
+        februaryAdapter?.listener = object: OnMonthItemClickListener {
+            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+                februaryAdapter?.apply {
+                    val item = items.get(position)
+
+                    AppDataYW.monthSelectedItem=item
+
+                    activity?.let{
+                        val februaryInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        februaryInfoLauncher.launch(februaryInfoIntent)
+                    }
+
+                }
+            }
+
+        }
     }
 }

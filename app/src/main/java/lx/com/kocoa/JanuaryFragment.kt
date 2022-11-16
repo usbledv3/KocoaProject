@@ -52,15 +52,18 @@ class JanuaryFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        januaryAdapter?.listener = object: OnDoItemClickListener {
-            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+        januaryAdapter?.listener = object: OnMonthItemClickListener {
+            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
                 januaryAdapter?.apply {
                     val item = items.get(position)
 
-
                     AppDataYW.monthSelectedItem=item
-                    val januaryInfoIntent = Intent(activity as CalendarActivity,FestivalInfoActivity::class.java)
-                    januaryInfoLauncher.launch(januaryInfoIntent)
+
+                    activity?.let{
+                        val januaryInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        januaryInfoLauncher.launch(januaryInfoIntent)
+                    }
+
                 }
             }
 

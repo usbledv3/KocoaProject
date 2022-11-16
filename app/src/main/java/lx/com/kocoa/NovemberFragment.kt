@@ -1,10 +1,12 @@
 package lx.com.kocoa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.FragmentMayBinding
 import lx.com.kocoa.databinding.FragmentNovemberBinding
@@ -14,6 +16,9 @@ class NovemberFragment : Fragment() {
     val binding get() = _binding!!
 
     var novemberAdapter:MonthAdapter? = null
+    val novemberInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -58,7 +63,7 @@ class NovemberFragment : Fragment() {
             )
             this.items.add(
                 MonthData(
-                    "청도 프로방스 크리스마스 산타마을 빛축제",
+                    "프로방스 크리스마스 산타마을 빛축제",
                     R.drawable.santa_fes,
                     "32022.11.12-2023.1.31",
                     "경상북도 청도군 화양읍 이슬미로 272-23"
@@ -66,18 +71,22 @@ class NovemberFragment : Fragment() {
             )
         }
 
-//        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-//        searchAdapter?.listner = object: OnSearchItemClickListner {
-//            override fun onItemClick(holder: SearchAdapter.ViewHolder?, view: View?, position: Int) {
-//                searchAdapter?.apply {
-//                    val item = items.get(position)
-//
-//                    AppData.selectedItem = item
-//
-//                }
-//
-//            }
-//
-//        }
+        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
+        novemberAdapter?.listener = object: OnMonthItemClickListener {
+            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+                novemberAdapter?.apply {
+                    val item = items.get(position)
+
+                    AppDataYW.monthSelectedItem=item
+
+                    activity?.let{
+                        val novemberInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        novemberInfoLauncher.launch(novemberInfoIntent)
+                    }
+
+                }
+            }
+
+        }
     }
 }

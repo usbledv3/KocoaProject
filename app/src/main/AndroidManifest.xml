@@ -25,6 +25,9 @@
             android:name=".FestivalInfoActivity"
             android:exported="false" />
         <activity
+            android:name=".MonthFestivalInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".RouteActivity"
             android:exported="false" />
         <activity

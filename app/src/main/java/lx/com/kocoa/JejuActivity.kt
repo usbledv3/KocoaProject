@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
-import lx.com.kocoa.databinding.ActivityGangwonBinding
 import lx.com.kocoa.databinding.ActivityJejuBinding
 
 class JejuActivity : AppCompatActivity() {
@@ -40,9 +39,9 @@ class JejuActivity : AppCompatActivity() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         jejuAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("휴애리 동백축제", R.drawable.dongbek_fes,"2022.11.14-23.01.31", "제주 서귀포시"))
-            this.items.add(DoData("마노르블랑 핑크뮬리축제 ", R.drawable.pinkmuli_fes,"2022.09.13-2022.11.30", "제주 서귀포시"))
-            this.items.add(DoData("사계로 페스티벌", R.drawable.sagyero_fes,"2022.11.19-2022.11.19", "제주 서귀포시"))
+            this.items.add(DoData("휴애리 동백축제", R.drawable.dongbek_fes,"2022.11.14-23.01.31", "제주특별자치도 서귀포시 남원읍 신례동로 256"))
+            this.items.add(DoData("마노르블랑 핑크뮬리축제", R.drawable.pinkmuli_fes,"2022.09.13-2022.11.30", "제주특별자치도 서귀포시 안덕면 일주서로2100번길 46"))
+            this.items.add(DoData("사계로 페스티벌", R.drawable.sagyero_fes,"2022.11.19-2022.11.19", "제주특별자치도 서귀포시 사계남로 202"))
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기

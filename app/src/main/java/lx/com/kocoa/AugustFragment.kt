@@ -1,10 +1,12 @@
 package lx.com.kocoa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.FragmentAugustBinding
 
@@ -13,6 +15,9 @@ class AugustFragment : Fragment() {
     val binding get() = _binding!!
 
     var augustAdapter:MonthAdapter? = null
+    val augustInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -65,18 +70,22 @@ class AugustFragment : Fragment() {
             )
         }
 
-//        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-//        searchAdapter?.listner = object: OnSearchItemClickListner {
-//            override fun onItemClick(holder: SearchAdapter.ViewHolder?, view: View?, position: Int) {
-//                searchAdapter?.apply {
-//                    val item = items.get(position)
-//
-//                    AppData.selectedItem = item
-//
-//                }
-//
-//            }
-//
-//        }
+        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
+        augustAdapter?.listener = object: OnMonthItemClickListener {
+            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+                augustAdapter?.apply {
+                    val item = items.get(position)
+
+                    AppDataYW.monthSelectedItem=item
+
+                    activity?.let{
+                        val augustInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        augustInfoLauncher.launch(augustInfoIntent)
+                    }
+
+                }
+            }
+
+        }
     }
 }
