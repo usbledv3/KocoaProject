@@ -4,6 +4,7 @@ import android.R
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
+import lx.com.kocoa.JhAppData.Companion.bbsAdapter
 import lx.com.kocoa.databinding.ActivityBbsWriteBinding
 
 
@@ -11,8 +12,6 @@ class BbsWriteActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityBbsWriteBinding
 
-    var bbsActivity:BbsActivity? = null
-    var bbsAdapter:BbsAdapter? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,20 +23,25 @@ class BbsWriteActivity : AppCompatActivity() {
         // 뒤로가기 버튼 생성
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
+        initView()
 
+
+
+    }
+    fun initView(){
         binding.bbsSaveButton.setOnClickListener {
             val bbsTitle = binding.bbsInTitle.text.toString()
             val bbsWriter = binding.bbsInWriter.text.toString()
             val bbsContent = binding.bbsInContent.text.toString()
 
-            JhAppData.data1 = bbsTitle
 
-            bbsAdapter?.apply{
+            JhAppData.bbsAdapter?.apply{
                 items.add(
-                    BbsData(bbsTitle)
+                    BbsData(bbsTitle, bbsWriter, bbsContent)
                 )
                 notifyDataSetChanged()
             }
+            finish()
         }
     }
 

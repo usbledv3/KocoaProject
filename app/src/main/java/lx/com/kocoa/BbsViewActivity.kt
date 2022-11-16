@@ -51,6 +51,11 @@ class BbsViewActivity : AppCompatActivity() {
 
 
         when(item.itemId) {
+            android.R.id.home -> {
+                //toolbar의 back키 눌렀을 때 동작
+                finish()
+                return true
+            }
             R.id.edit -> {
                 Toast.makeText(this,"수정화면",Toast.LENGTH_SHORT).show()
                 return true
@@ -61,10 +66,9 @@ class BbsViewActivity : AppCompatActivity() {
                 return true
             }
 
-            else -> return false
 
         }
-
+        return super.onOptionsItemSelected(item)
     }
 
 
