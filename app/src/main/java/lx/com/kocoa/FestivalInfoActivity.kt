@@ -38,7 +38,7 @@ class FestivalInfoActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.fesNameView.text = "${this.doName}"
         }
 
-        //apiOn()
+        apiOn()
 
         binding.passbutton.setOnClickListener {
             startActivity(Intent(this@FestivalInfoActivity,FespassActivity::class.java))

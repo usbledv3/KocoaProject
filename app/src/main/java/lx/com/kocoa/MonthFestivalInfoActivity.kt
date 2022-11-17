@@ -39,7 +39,7 @@ class MonthFestivalInfoActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.monthFesNameView.text = "${this.mName}"
         }
 
-        //apiOn()
+        apiOn()
 
         binding.passbutton.setOnClickListener {
             startActivity(Intent(this@MonthFestivalInfoActivity,FespassActivity::class.java))
