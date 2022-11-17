@@ -28,6 +28,9 @@
             android:name=".MonthFestivalInfoActivity"
             android:exported="false" />
         <activity
+            android:name=".MapActivity"
+            android:exported="false" />
+        <activity
             android:name=".RouteActivity"
             android:exported="false" />
         <activity

@@ -3,22 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:enabled="true">
         <item
             android:id="@+id/item1"
-            android:icon="@drawable/fespassicon"
+            android:icon="@drawable/fespassicon_negative"
             android:title="축제 등록 현황" />
         <item
             android:id="@+id/item2"
-            android:icon="@drawable/mapicon"
+            android:icon="@drawable/mapicon_negative"
             android:title="축제 등록하기" />
         <item
             android:id="@+id/item3"
-            android:icon="@drawable/minigame"
+            android:icon="@drawable/minigame_negative"
             android:title="축제후기 관리" />
         <item
             android:id="@+id/item4"
-            android:icon="@drawable/chat"
+            android:icon="@drawable/chat_negative"
             android:title="게시판" />
     </group>
 

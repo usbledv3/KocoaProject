@@ -2,6 +2,7 @@ package lx.com.kocoa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.fragment.app.Fragment
 import com.google.android.material.tabs.TabLayout
 import lx.com.kocoa.databinding.ActivityShwmainBinding
@@ -22,6 +23,11 @@ class SHWMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityShwmainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val toolbarBody = binding.operateToolbar //퉅바 선언
+        setSupportActionBar(toolbarBody)
+        // 툴바 내 뒤로가기 버튼 생성
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         shwFirstFragment = ShwFirstFragment()//등록현황 프레그먼트로 이동
         festPassFragment = FestPassFragment()
@@ -89,6 +95,16 @@ class SHWMainActivity : AppCompatActivity() {
         selectedFragment?.let{
             supportFragmentManager.beginTransaction().replace(R.id.frameLayout, it).commit()
         }
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean { //툴바 뒤로가기버튼 활성화
+        when (item.getItemId()) {
+            android.R.id.home -> {
+                //toolbar의 back키 눌렀을 때 동작
+                finish()
+                return true
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 
 }
