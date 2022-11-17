@@ -2,19 +2,39 @@ package lx.com.kocoa
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.text.InputFilter
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.Filter
+import android.widget.Filterable
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.gms.common.util.ArrayUtils.contains
 import lx.com.kocoa.databinding.SearchItemBinding
+import java.util.*
+import java.util.regex.Pattern
+import kotlin.collections.ArrayList
 
-class SearchAdapter : RecyclerView.Adapter<SearchAdapter.ViewHolder>(){
+
+class SearchAdapter : RecyclerView.Adapter<SearchAdapter.ViewHolder>(), Filterable{
     //각 아이템에 보여질 데이터를 담고 있는것
     var items = ArrayList<SearchData>()
+    var itemsFilter: ArrayList<SearchData>? = ArrayList<SearchData>()
+    init {
+        itemsFilter!!.addAll(items)
+    }
+
 
     var context: Context? = null
 
     var listener:OnSearchItemClickListener? = null
+
+
+    fun setData(items: ArrayList<SearchData>) {
+        this.items = items
+        this.itemsFilter = items
+        notifyDataSetChanged()
+    }
 
     //리싸이클러뷰가 아이템 개수가 몇 개인지 물어볼때
     override fun getItemCount(): Int = items.size
@@ -54,5 +74,43 @@ class SearchAdapter : RecyclerView.Adapter<SearchAdapter.ViewHolder>(){
                 listener?.onItemClick(this,binding.root,adapterPosition)
             }
         }
+    }
+
+    override fun getFilter(): Filter {
+        return object: Filter() {
+                override fun performFiltering(constraint: CharSequence): FilterResults {
+                    val charString = constraint.toString()
+
+                    if (charString.isEmpty()) {
+                        itemsFilter!!.clear()
+                        itemsFilter!!.addAll(items)
+                    } else {
+                        val filteringList: ArrayList<SearchData> = ArrayList()
+
+                        val koreanMatcher = KoreanMatcher()
+
+                        for (item in items) {
+                            if (koreanMatcher.matchKoreanAndConsonant(item.searchName, charString)) filteringList.add(item)
+                            else { // 영어인 경우
+                                if (item.searchName.lowercase(Locale.getDefault()).contains(charString.lowercase(Locale.getDefault()))) {
+                                    filteringList.add(item)
+                                }
+                            }
+                        }
+
+                        itemsFilter!!.clear()
+                        itemsFilter!!.addAll(filteringList)
+                    }
+
+                    val filterResults = FilterResults()
+                    filterResults.values = itemsFilter
+                    return filterResults
+                }
+
+                override fun publishResults(constraint: CharSequence, results: FilterResults) {
+                    itemsFilter = results.values as ArrayList<SearchData>
+                    notifyDataSetChanged()
+                }
+            }
     }
 }
