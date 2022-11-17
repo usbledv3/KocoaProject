@@ -97,7 +97,7 @@
                     android:id="@+id/infoButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="55dp"
+                    android:layout_marginLeft="30dp"
                     android:backgroundTint="#ff9050"
                     android:text="회원정보 수정"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
@@ -106,10 +106,18 @@
                     android:id="@+id/pointshopButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="70dp"
+                    android:layout_marginLeft="20dp"
                     android:backgroundTint="#ff9050"
-
                     android:text="포인트샵"
+                    android:textColor="@color/common_google_signin_btn_text_dark" />
+
+                <Button
+                    android:id="@+id/rankingButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:backgroundTint="#ff9050"
+                    android:text="내 점수 확인"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
             </LinearLayout>
 

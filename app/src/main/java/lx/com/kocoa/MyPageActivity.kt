@@ -49,6 +49,10 @@ class MyPageActivity : AppCompatActivity() {
             val pointIntent = Intent(applicationContext, PointShopActivity::class.java)
             pointLauncher.launch(pointIntent)
         }
+        binding.rankingButton.setOnClickListener {
+            val pointIntent = Intent(applicationContext, RankingActivity::class.java)
+            pointLauncher.launch(pointIntent)
+        }
 
         binding.infoView.setImageResource(R.drawable.digda)
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
