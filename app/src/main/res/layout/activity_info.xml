@@ -75,7 +75,7 @@
             android:textColor="#ff9050"
             android:layout_marginTop="30dp"
             android:layout_gravity="center"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:text="성별을 선택하세요" />
 
         <RadioGroup
@@ -103,7 +103,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:layout_gravity="center"
             android:orientation="horizontal">
 
