@@ -10,7 +10,7 @@ class DoAdapter : RecyclerView.Adapter<DoAdapter.ViewHolder>(){
     //각 아이템에 보여질 데이터를 담고 있는것
     var items = ArrayList<DoData>()
 
-    var context: Context? = null
+    //var context: Context? = null
 
     var listener:OnDoItemClickListener? = null
 
@@ -28,7 +28,13 @@ class DoAdapter : RecyclerView.Adapter<DoAdapter.ViewHolder>(){
     }
     //각 아이템의 모양을 재사용하기 위해 만들어진 것
     inner class ViewHolder(val binding: DoItemBinding):RecyclerView.ViewHolder(binding.root){
-        //데이터 설정
+
+        init {
+            binding.root.setOnClickListener{
+                listener?.onDoItemClick(this,binding.root,adapterPosition)
+            }
+        }
+
         //하나의 아이템을 위한 데이터가 전달되었을 때 화면에 어떻게 표시할 지 설정
         fun setItem(item:DoData){
 //            //이미지 표시하기
@@ -47,10 +53,6 @@ class DoAdapter : RecyclerView.Adapter<DoAdapter.ViewHolder>(){
             //축제 장소
             binding.doListPlace.text = item.doPlace
         }
-        init {
-            binding.root.setOnClickListener{
-                listener?.onItemClick(this,binding.root,adapterPosition)
-            }
-        }
+
     }
 }

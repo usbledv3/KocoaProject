@@ -39,20 +39,21 @@ class GangwonActivity : AppCompatActivity() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         doAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("화천산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29", "강원 화천군"))
-            this.items.add(DoData("제8회 고니골빛축제", R.drawable.gony_fes,"2022.11.19-2023.02.05", "강원 원주시"))
-            this.items.add(DoData("제34회 춘천인형극제", R.drawable.doll_fes,"2022.04.01-2022.12.31", "강원 춘천시"))
+            this.items.add(DoData("화천산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29", "강원도 화천군 화천읍 산천어길 137"))
+            this.items.add(DoData("제8회 고니골빛축제", R.drawable.gony_fes,"2022.11.19-2023.02.05", "강원도 원주시 호저면 호저로 1277-43"))
+            this.items.add(DoData("제34회 춘천인형극제", R.drawable.doll_fes,"2022.04.01-2022.12.31", "강원도 춘천시 영서로 3017"))
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
         doAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 doAdapter?.apply {
                     val item = items.get(position)
 
-                    AppDataYW.doSelectedItem = item
+
                     SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@GangwonActivity,SancheonuActivity::class.java))
+                    val gangwonInfoIntent = Intent(this@GangwonActivity,FestivalInfoActivity::class.java)
+                    gangwonInfoLauncher.launch(gangwonInfoIntent)
                 }
 
             }

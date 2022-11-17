@@ -12,7 +12,7 @@ class MonthAdapter : RecyclerView.Adapter<MonthAdapter.ViewHolder>(){
     var items = ArrayList<MonthData>()
     var context: Context? = null
 
-    var listener:OnSearchItemClickListener? = null
+    var listener:OnMonthItemClickListener? = null
     //리싸이클러뷰가 아이템 개수가 몇 개인지 물어볼때
     override fun getItemCount(): Int = items.size
     //각 아이템의 모양이 처음 만들어 질때
@@ -45,10 +45,10 @@ class MonthAdapter : RecyclerView.Adapter<MonthAdapter.ViewHolder>(){
             binding.mListDate.text = item.mDate
 
         }
-//        init {
-//            binding.root.setOnClickListener{
-//                listener?.onItemClick(this,binding.root,adapterPosition)
-//            }
-//        }
+        init {
+            binding.root.setOnClickListener{
+                listener?.onItemClick(this,binding.root,adapterPosition)
+            }
+        }
     }
 }

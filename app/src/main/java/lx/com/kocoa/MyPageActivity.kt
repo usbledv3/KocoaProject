@@ -56,7 +56,7 @@ class MyPageActivity : AppCompatActivity() {
         //binding.stampImage.setImageResource(R.drawable.stamp6)
 
         binding.starButton.setOnClickListener {
-            val pointIntent = Intent(applicationContext, RankingActivity::class.java)
+            val pointIntent = Intent(applicationContext, MainActivity::class.java)
             pointLauncher.launch(pointIntent)
         }
 

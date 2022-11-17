@@ -1,10 +1,12 @@
 package lx.com.kocoa
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.FragmentMarchBinding
 
@@ -13,6 +15,9 @@ class MarchFragment : Fragment() {
     val binding get() = _binding!!
 
     var marchAdapter:MonthAdapter? = null
+    val marchInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,37 +48,44 @@ class MarchFragment : Fragment() {
                 MonthData(
                     "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
                     R.drawable.oakbelly_fes,
-                    "2023.1.1-12.31"
+                    "2023.1.1-12.31",
+                    "강원도 원주시 지정면 오크밸리1길 66"
                 )
             )
             this.items.add(
                 MonthData(
                     "안성 남사당놀이",
                     R.drawable.namsadang_fes,
-                    "2022.3.26-2022.11.26"
+                    "2022.3.26-2022.11.26",
+                    "경기도 안성시 보개면 남사당로 198-2"
                 )
             )
             this.items.add(
                 MonthData(
                     "진도토요민속여행",
                     R.drawable.toyo_fes,
-                    "2022.03.01 ~ 2022.12.31"
+                    "2022.03.01 ~ 2022.12.31",
+                    "전라남도 진도군 진도읍 진도대로 7197"
                 )
             )
         }
 
-//        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-//        searchAdapter?.listner = object: OnSearchItemClickListner {
-//            override fun onItemClick(holder: SearchAdapter.ViewHolder?, view: View?, position: Int) {
-//                searchAdapter?.apply {
-//                    val item = items.get(position)
-//
-//                    AppData.selectedItem = item
-//
-//                }
-//
-//            }
-//
-//        }
+        // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
+        marchAdapter?.listener = object: OnMonthItemClickListener {
+            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+                marchAdapter?.apply {
+                    val item = items.get(position)
+
+                    AppDataYW.monthSelectedItem=item
+
+                    activity?.let{
+                        val marchInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        marchInfoLauncher.launch(marchInfoIntent)
+                    }
+
+                }
+            }
+
+        }
     }
 }
