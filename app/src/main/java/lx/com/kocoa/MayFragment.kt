@@ -16,7 +16,7 @@ class MayFragment : Fragment() {
     var _binding: FragmentMayBinding? = null
     val binding get() = _binding!!
 
-    var mayAdapter:MonthAdapter? = null
+    var mayAdapter:DoAdapter? = null
     val mayInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
@@ -40,14 +40,14 @@ class MayFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        mayAdapter = MonthAdapter()
+        mayAdapter = DoAdapter()
         binding.mayList.adapter = mayAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         mayAdapter?.apply {
             this.items.clear()
             this.items.add(
-                MonthData(
+                DoData(
                     "강원세계산림엑스포",
                     R.drawable.oakbelly_fes,
                     "2023.5.4-2023.6.6",
@@ -55,7 +55,7 @@ class MayFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "강릉단오제",
                     R.drawable.dano_fes,
                     "2022.5.30-2022.6.6",
@@ -63,7 +63,7 @@ class MayFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "서울거리공연 [구석구석 라이브]",
                     R.drawable.street_fes,
                     "2022.5.1-2022.12.31",
@@ -73,15 +73,15 @@ class MayFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        mayAdapter?.listener = object: OnMonthItemClickListener {
-            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+        mayAdapter?.listener = object: OnDoItemClickListener {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 mayAdapter?.apply {
                     val item = items.get(position)
 
-                    AppDataYW.monthSelectedItem=item
+                    AppDataYW.doSelectedItem=item
 
                     activity?.let{
-                        val mayInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        val mayInfoIntent = Intent(it,SancheonuActivity::class.java)
                         mayInfoLauncher.launch(mayInfoIntent)
                     }
 

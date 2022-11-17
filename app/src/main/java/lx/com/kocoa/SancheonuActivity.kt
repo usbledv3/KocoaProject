@@ -6,7 +6,6 @@ import android.os.Bundle
 import androidx.annotation.UiThread
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
-
 import lx.com.kocoa.databinding.ActivitySancheonuBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -27,7 +26,7 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.imageView9.setImageResource(it.doImage)
             binding.import1.text="기간 : "+it.doDate
             binding.import3.text="장소 : "+it.doPlace
-            binding.textView2.text=it.doName
+            binding.nameView.text=it.doName
         }
 
         apiOn()
@@ -61,7 +60,7 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
 
         val api = retrofit.create(NaverAPI::class.java)
         //도로명 주소를 통해 위경도 값 받아오기
-        val callgetPath = api.getMap(APIKEY_ID, APIKEY, SelectedDoData.selectedItem?.doPlace.toString())
+        val callgetPath = api.getMap(APIKEY_ID, APIKEY, AppDataYW.doSelectedItem?.doPlace.toString())
         callgetPath.enqueue(object : Callback<MapResponse> {
             override fun onResponse(
                 call: Call<MapResponse>,

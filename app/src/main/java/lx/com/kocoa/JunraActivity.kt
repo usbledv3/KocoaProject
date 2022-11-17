@@ -48,9 +48,8 @@ class JunraActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 junraAdapter?.apply {
                     val item = items.get(position)
-
-                    SelectedDoData.selectedItem=item
-                    val junraInfoIntent = Intent(this@JunraActivity,FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val junraInfoIntent = Intent(this@JunraActivity,SancheonuActivity::class.java)
                     junraInfoLauncher.launch(junraInfoIntent)
                 }
             }

@@ -49,9 +49,8 @@ class JejuActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 jejuAdapter?.apply {
                     val item = items.get(position)
-
-                    SelectedDoData.selectedItem=item
-                    val jejuInfoIntent = Intent(this@JejuActivity,FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val jejuInfoIntent = Intent(this@JejuActivity,SancheonuActivity::class.java)
                     jejuInfoLauncher.launch(jejuInfoIntent)
                 }
 

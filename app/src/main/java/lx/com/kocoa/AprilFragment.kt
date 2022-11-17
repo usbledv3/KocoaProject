@@ -14,7 +14,7 @@ class AprilFragment : Fragment() {
     var _binding: FragmentAprilBinding? = null
     val binding get() = _binding!!
 
-    var aprilAdapter:MonthAdapter? = null
+    var aprilAdapter:DoAdapter? = null
     val aprilInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
@@ -38,14 +38,14 @@ class AprilFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        aprilAdapter = MonthAdapter()
+        aprilAdapter = DoAdapter()
         binding.aprilList.adapter = aprilAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         aprilAdapter?.apply {
             this.items.clear()
             this.items.add(
-                MonthData(
+                DoData(
                     "광주비엔날레",
                     R.drawable.gwangju_fes,
                     "2023.4.7-2023.7.9",
@@ -53,7 +53,7 @@ class AprilFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "근현대사 추리여행, '사라진 열쇠를 찾아라'",
                     R.drawable.detective_fes,
                     "2022.4.23-2022.12.31",
@@ -61,7 +61,7 @@ class AprilFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "정선아리랑극 아리아라리",
                     R.drawable.ari_fes,
                     "2022.4.02-2022.11.27",
@@ -71,21 +71,17 @@ class AprilFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        aprilAdapter?.listener = object: OnMonthItemClickListener {
-            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+        aprilAdapter?.listener = object: OnDoItemClickListener {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 aprilAdapter?.apply {
                     val item = items.get(position)
-
-                    AppDataYW.monthSelectedItem=item
-
+                    AppDataYW.doSelectedItem=item
                     activity?.let{
-                        val aprilInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        val aprilInfoIntent = Intent(it,SancheonuActivity::class.java)
                         aprilInfoLauncher.launch(aprilInfoIntent)
                     }
-
                 }
             }
-
         }
     }
 }

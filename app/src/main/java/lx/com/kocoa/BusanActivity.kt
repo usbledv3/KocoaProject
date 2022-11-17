@@ -49,9 +49,8 @@ class BusanActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 doAdapter?.apply {
                     val item = items.get(position)
-
-                    SelectedDoData.selectedItem=item
-                    val busanInfoIntent = Intent(this@BusanActivity,FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val busanInfoIntent = Intent(this@BusanActivity,SancheonuActivity::class.java)
                     busanInfoLauncher.launch(busanInfoIntent)
                 }
             }

@@ -48,9 +48,8 @@ class ChungcheongActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 chungcheongAdapter?.apply {
                     val item = items.get(position)
-
-                    SelectedDoData.selectedItem=item
-                    val chungcheongInfoIntent = Intent(this@ChungcheongActivity,FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val chungcheongInfoIntent = Intent(this@ChungcheongActivity,SancheonuActivity::class.java)
                     chungcheongInfoLauncher.launch(chungcheongInfoIntent)
                 }
             }

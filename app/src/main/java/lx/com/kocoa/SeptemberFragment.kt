@@ -15,7 +15,7 @@ class SeptemberFragment : Fragment() {
     var _binding: FragmentSeptemberBinding? = null
     val binding get() = _binding!!
 
-    var septemberAdapter:MonthAdapter? = null
+    var septemberAdapter:DoAdapter? = null
     val septemberInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
@@ -39,14 +39,14 @@ class SeptemberFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        septemberAdapter = MonthAdapter()
+        septemberAdapter = DoAdapter()
         binding.septemberList.adapter = septemberAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         septemberAdapter?.apply {
             this.items.clear()
             this.items.add(
-                MonthData(
+                DoData(
                     "이월드 가을축제 <인생꽃 사진관>",
                     R.drawable.eworld_fes,
                     "2022.9.17-2022.11.30",
@@ -54,7 +54,7 @@ class SeptemberFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "휴애리 핑크뮬리 축제",
                     R.drawable.pinkmuli_fes,
                     "2022.9.15-2022.11.15",
@@ -62,7 +62,7 @@ class SeptemberFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "벽초지수목원 가을꽃 국화축제",
                     R.drawable.bykcho_fes,
                     "2022.9.23-2022.11.20",
@@ -72,15 +72,13 @@ class SeptemberFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        septemberAdapter?.listener = object: OnMonthItemClickListener {
-            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+        septemberAdapter?.listener = object: OnDoItemClickListener {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 septemberAdapter?.apply {
                     val item = items.get(position)
-
-                    AppDataYW.monthSelectedItem=item
-
+                    AppDataYW.doSelectedItem=item
                     activity?.let{
-                        val septemberInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        val septemberInfoIntent = Intent(it,SancheonuActivity::class.java)
                         septemberInfoLauncher.launch(septemberInfoIntent)
                     }
 
