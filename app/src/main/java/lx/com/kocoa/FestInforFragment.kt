@@ -35,6 +35,7 @@ class FestInforFragment : Fragment() {
             val Shwfestname = binding.festOpenName.text.toString()
             val Shwfestrange = binding.festOpenRange.text.toString()
             val Shwfestlocation = binding.festOpenLocation.text.toString()
+
             SAppData.data5 = Shwfestname
             SAppData.data6 = Shwfestrange
             SAppData.data7 = Shwfestlocation

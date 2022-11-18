@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/inputPosterpic"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:src="@android:drawable/ic_menu_gallery"
@@ -100,13 +100,13 @@
             android:id="@+id/addPosterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ff9050"
+            android:backgroundTint="#7B68EE"
             android:text="사진 첨부"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.213"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/inputPosterpic"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.404" />
 
