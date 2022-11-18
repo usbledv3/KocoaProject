@@ -36,7 +36,7 @@
             app:layout_constraintHorizontal_bias="0.423"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.435" />
+            app:layout_constraintVertical_bias="0.379" />
 
         <TextView
             android:id="@+id/textView29"
@@ -48,7 +48,7 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toEndOf="@+id/passFestRangeIn"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.439" />
+            app:layout_constraintVertical_bias="0.383" />
 
         <EditText
             android:id="@+id/passFestNameIn"
@@ -74,10 +74,9 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.532"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.786" />
+            app:layout_constraintVertical_bias="0.733" />
 
         <TextView
             android:id="@+id/passOutput"
@@ -90,35 +89,7 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/checkPassButton"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <EditText
-            android:id="@+id/passPassNameIn"
-            android:layout_width="245dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:hint="사진첨부 설명"
-            android:inputType="textPersonName"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.385"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.34" />
-
-        <Button
-            android:id="@+id/button"
-            android:layout_width="57dp"
-            android:layout_height="40dp"
-            android:backgroundTint="#ff9050"
-            android:text="첨부"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toEndOf="@+id/passPassNameIn"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.34" />
+            app:layout_constraintVertical_bias="0.033" />
 
         <Button
             android:id="@+id/time"
@@ -129,10 +100,10 @@
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.699"
+            app:layout_constraintHorizontal_bias="0.702"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.645" />
+            app:layout_constraintVertical_bias="0.607" />
 
         <Button
             android:id="@+id/date"
@@ -143,10 +114,10 @@
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.325"
+            app:layout_constraintHorizontal_bias="0.306"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.645" />
+            app:layout_constraintVertical_bias="0.607" />
 
         <TextView
             android:id="@+id/passTimeIn"
