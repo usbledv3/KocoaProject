@@ -41,6 +41,8 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         naverMap.setLayerGroupEnabled(NaverMap.LAYER_GROUP_TRAFFIC, true)
         val marker1 = Marker()
         marker1.position = LatLng(38.1061548, 127.7029062)
+        marker1.icon = MarkerIcons.BLACK
+        marker1.iconTintColor = Color.BLUE
         marker1.captionText = "실내얼음조각광장"
         marker1.map = naverMap
         val marker2 = Marker()
@@ -55,10 +57,14 @@ class MapActivity : AppCompatActivity(), OnMapReadyCallback {
         marker3.map = naverMap
         val marker4 = Marker()
         marker4.position = LatLng(38.111592, 127.708927)
+        marker4.icon = MarkerIcons.BLACK
+        marker4.iconTintColor = Color.YELLOW
         marker4.captionText = "맨손낚시"
         marker4.map = naverMap
         val marker5 = Marker()
         marker5.position = LatLng(38.103809, 127.707114)
+        marker5.icon = MarkerIcons.BLACK
+        marker5.iconTintColor = Color.YELLOW
         marker5.captionText = "선등거리"
         marker5.map = naverMap
         val marker6 = Marker()
