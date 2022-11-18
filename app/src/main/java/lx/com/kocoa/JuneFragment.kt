@@ -15,7 +15,7 @@ class JuneFragment : Fragment() {
     var _binding: FragmentJuneBinding? = null
     val binding get() = _binding!!
 
-    var juneAdapter:MonthAdapter? = null
+    var juneAdapter:DoAdapter? = null
     val juneInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
@@ -39,14 +39,14 @@ class JuneFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        juneAdapter = MonthAdapter()
+        juneAdapter = DoAdapter()
         binding.juneList.adapter = juneAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         juneAdapter?.apply {
             this.items.clear()
             this.items.add(
-                MonthData(
+                DoData(
                     "고창 청농원 라벤더 축제",
                     R.drawable.gochang_fes,
                     "2023.5.27-2023.6.30",
@@ -54,7 +54,7 @@ class JuneFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "목포해상W쇼",
                     R.drawable.mokpo_fes,
                     "2022.06.03-2022.11.26",
@@ -62,7 +62,7 @@ class JuneFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "부산커피쇼",
                     R.drawable.coffee_fes,
                     "2022.6.29-2022.7.2",
@@ -72,15 +72,15 @@ class JuneFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        juneAdapter?.listener = object: OnMonthItemClickListener {
-            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+        juneAdapter?.listener = object: OnDoItemClickListener {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 juneAdapter?.apply {
                     val item = items.get(position)
 
-                    AppDataYW.monthSelectedItem=item
+                    AppDataYW.doSelectedItem=item
 
                     activity?.let{
-                        val juneInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        val juneInfoIntent = Intent(it,SancheonuActivity::class.java)
                         juneInfoLauncher.launch(juneInfoIntent)
                     }
 

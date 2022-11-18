@@ -49,10 +49,8 @@ class GangwonActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 doAdapter?.apply {
                     val item = items.get(position)
-
-
-                    SelectedDoData.selectedItem=item
-                    val gangwonInfoIntent = Intent(this@GangwonActivity,FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val gangwonInfoIntent = Intent(this@GangwonActivity,SancheonuActivity::class.java)
                     gangwonInfoLauncher.launch(gangwonInfoIntent)
                 }
 

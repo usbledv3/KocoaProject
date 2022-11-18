@@ -48,8 +48,8 @@ class SeoulActivity : AppCompatActivity() {
             override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 seoulAdapter?.apply {
                     val item = items.get(position)
-                    SelectedDoData.selectedItem=item
-                    val seoulInfoIntent = Intent(applicationContext, FestivalInfoActivity::class.java)
+                    AppDataYW.doSelectedItem=item
+                    val seoulInfoIntent = Intent(applicationContext, SancheonuActivity::class.java)
                     seoulInfoLauncher.launch(seoulInfoIntent)
                 }
             }

@@ -14,7 +14,7 @@ class MarchFragment : Fragment() {
     var _binding: FragmentMarchBinding? = null
     val binding get() = _binding!!
 
-    var marchAdapter:MonthAdapter? = null
+    var marchAdapter:DoAdapter? = null
     val marchInfoLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
@@ -38,14 +38,14 @@ class MarchFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        marchAdapter = MonthAdapter()
+        marchAdapter = DoAdapter()
         binding.marchList.adapter = marchAdapter
 
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         marchAdapter?.apply {
             this.items.clear()
             this.items.add(
-                MonthData(
+                DoData(
                     "오크밸리 3D 라이팅쇼 '소나타오브라이트'",
                     R.drawable.oakbelly_fes,
                     "2023.1.1-12.31",
@@ -53,7 +53,7 @@ class MarchFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "안성 남사당놀이",
                     R.drawable.namsadang_fes,
                     "2022.3.26-2022.11.26",
@@ -61,7 +61,7 @@ class MarchFragment : Fragment() {
                 )
             )
             this.items.add(
-                MonthData(
+                DoData(
                     "진도토요민속여행",
                     R.drawable.toyo_fes,
                     "2022.03.01 ~ 2022.12.31",
@@ -71,15 +71,15 @@ class MarchFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        marchAdapter?.listener = object: OnMonthItemClickListener {
-            override fun onItemClick(holder: MonthAdapter.ViewHolder?, view: View?, position: Int) {
+        marchAdapter?.listener = object: OnDoItemClickListener {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 marchAdapter?.apply {
                     val item = items.get(position)
 
-                    AppDataYW.monthSelectedItem=item
+                    AppDataYW.doSelectedItem=item
 
                     activity?.let{
-                        val marchInfoIntent = Intent(it,MonthFestivalInfoActivity::class.java)
+                        val marchInfoIntent = Intent(it,SancheonuActivity::class.java)
                         marchInfoLauncher.launch(marchInfoIntent)
                     }
 
