@@ -3,6 +3,7 @@ package lx.com.kocoa
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
+import android.widget.Toast
 import lx.com.kocoa.databinding.ActivityMainBinding
 import lx.com.kocoa.databinding.ActivityPassBookingBinding
 
@@ -18,6 +19,7 @@ class PassBookingActivity : AppCompatActivity() {
             this.picture?.let { binding.bookingimageView.setImageResource(it) }
         }
         binding.bookbutton.setOnClickListener {
+            showToast("${binding.bookname.text}가(이) ${binding.sbCount.text} 예약되었습니다.")
             finish()
         }
         binding.radiogroup.setOnCheckedChangeListener { radioGroup, i ->
@@ -46,5 +48,8 @@ class PassBookingActivity : AppCompatActivity() {
             }
 
         })
+    }
+    fun showToast(message:String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 }
