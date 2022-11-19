@@ -51,7 +51,6 @@
                 android:layout_marginTop="16dp"
                 android:maxDate="01/29/2023"
                 android:minDate="01/07/2023"
-                android:selectedWeekBackgroundColor="#0618C1"
                 app:guidelineUseRtl="false" />
 
             <RadioGroup
