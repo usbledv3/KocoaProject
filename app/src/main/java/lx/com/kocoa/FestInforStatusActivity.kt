@@ -10,6 +10,7 @@ import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.MapFragment
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
+import lx.com.kocoa.SAppData.Companion.data12
 import lx.com.kocoa.databinding.ActivityFestInforStatusBinding
 import retrofit2.Call
 import retrofit2.Callback
@@ -45,6 +46,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.showQuizname.text = "미니게임 이름 : ${SAppData.data9}"
             binding.showQuizsort.text = "미니게임 종류 : ${SAppData.data10}"
             binding.showQuizansw.text = "미니게임 정답 : ${SAppData.data11}"
+            //binding.showPosterImage.drawable.alpha = "${SAppData.data12}"
 
 
 
@@ -84,7 +86,6 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
     }
     private fun initView(){
         val fm = supportFragmentManager
-        val sI = supportFragmentManager
         val mapFragment = fm.findFragmentById(R.id.mapLayout) as MapFragment?
             ?:MapFragment.newInstance().also {
                 fm.beginTransaction().add(R.id.mapLayout, it).commit()
