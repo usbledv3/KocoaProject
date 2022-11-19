@@ -153,28 +153,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
-                android:textColor="#ff9050" />
+                android:textColor="#000000" />
 
             <RadioButton
                 android:id="@+id/radiocase2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2번"
-                android:textColor="#ff9050" />
+                android:textColor="#000000" />
 
             <RadioButton
                 android:id="@+id/radiocase3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3번"
-                android:textColor="#ff9050" />
+                android:textColor="#000000" />
 
             <RadioButton
                 android:id="@+id/radiocase4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4번"
-                android:textColor="#ff9050" />
+                android:textColor="#000000" />
         </RadioGroup>
 
     </LinearLayout>

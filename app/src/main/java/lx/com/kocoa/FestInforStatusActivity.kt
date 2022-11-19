@@ -31,7 +31,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
         //선택한 아이템 현황화면에 가져오는거
         SAppData.selelctedItem.apply {
             binding.showpassName.text = "패스이름 : ${SAppData.data1}"
-            binding.showpassSort.text = "패스종류 : ${SAppData.data2}"
+            //binding.showpassSort.text = "패스종류 : ${SAppData.data2}"
             binding.showpassPerson.text = "패스인원 : ${SAppData.data3}"
             binding.showpassTime.text = "패스기간 : ${SAppData.data4}"
             binding.showfestName.text = "축제이름 : ${SAppData.data5}"

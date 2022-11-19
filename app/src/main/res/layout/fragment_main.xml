@@ -27,8 +27,9 @@
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:src="@drawable/newkocoalogo"
-                app:srcCompat="@drawable/newapplogoremovebg" />
+                android:src="@drawable/newapplogoremovebg"
+                app:srcCompat="@drawable/newapplogoremovebg"
+                tools:srcCompat="@drawable/newapplogoremovebg" />
 
             <LinearLayout
                 android:layout_width="match_parent"
