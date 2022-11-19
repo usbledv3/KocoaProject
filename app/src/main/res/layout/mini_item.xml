@@ -10,7 +10,6 @@
         android:layout_height="63dp"
         android:layout_gravity="center"
         android:layout_margin="10dp"
-        app:cardBackgroundColor="#E8DDCD"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp">
 
@@ -35,7 +34,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="10dp"
                         android:text="1번 퀴즈"
-                        android:textColor="#FF9050"
+                        android:textColor="#0618C1"
                         android:textSize="15sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +45,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="퀴즈 내용"
+                        android:textColor="#000000"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/nameOutput"
@@ -60,7 +60,7 @@
                     android:layout_gravity="end"
                     android:layout_marginRight="10dp"
                     android:text="객관식"
-                    android:textColor="#FF9050"
+                    android:textColor="#0618C1"
                     android:textSize="15sp" />
 
             </LinearLayout>
