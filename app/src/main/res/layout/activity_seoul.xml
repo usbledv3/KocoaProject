@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="서울/인천/경기"
+        android:textColor="#0618C1"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

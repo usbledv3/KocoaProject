@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#ff9050"
+            android:background="#6495ED"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -31,7 +31,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="260dp"
                 android:background="@color/white"
-                android:backgroundTint="#FACAAF"
                 app:srcCompat="@drawable/sancheonu_poster" />
 
             <TextView

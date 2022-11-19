@@ -13,7 +13,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:text="문제"
-        android:textColor="#ff9050"
+        android:textColor="#0618C1"
         android:textSize="34sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="보기"
-        android:textColor="#ff9050"
+        android:textColor="#0618C1"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -65,7 +65,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
-                android:textColor="#ff9050"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <EditText
@@ -81,7 +81,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="2번"
-                android:textColor="#ff9050"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <EditText
@@ -105,7 +105,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="3번"
-                android:textColor="#ff9050"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <EditText
@@ -121,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="4번"
-                android:textColor="#ff9050"
+                android:textColor="#000000"
                 android:textSize="24sp" />
 
             <EditText
@@ -138,6 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="정답"
+            android:textColor="#0618C1"
             android:textSize="34sp" />
 
         <RadioGroup
@@ -183,7 +184,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:backgroundTint="#ff9050"
+        android:backgroundTint="#6495ED"
         android:text="문제 생성"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
