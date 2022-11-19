@@ -28,6 +28,12 @@
                 android:textColor="#0618C1"
                 android:textSize="20sp" />
 
+            <ImageView
+                android:id="@+id/showPosterImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@android:drawable/ic_menu_crop" />
+
             <TextView
                 android:id="@+id/showfestRange"
                 android:layout_width="wrap_content"
