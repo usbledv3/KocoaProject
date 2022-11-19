@@ -87,10 +87,37 @@
         <entry key="..\:/Users/shals/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_point_shop.xml" value="0.33" />
         <entry key="..\:/Users/shals/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_ranking.xml" value="0.22056159420289856" />
         <entry key="..\:/Users/shals/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_stamp.xml" value="0.33" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable-v24/drawer_header_back.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable-v24/outline.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/border.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/button_stroke.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/gradient.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/ic_launcher_applogo_background.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/ic_launcher_background.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/rectangle.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/round.xml" value="0.231" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/search_button_stroke.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/drawable/stroke.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_bbs.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_bbs_view.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_bbs_write.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_busan.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_calendar.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_chungcheong.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_fespass.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_fest_infor_status.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_gangwon.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_hamburger_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_info.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_jeju.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_junra.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_main.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_map.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_mini_game.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_my_page.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_pass_booking.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_point_shop.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_shwmain.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/drawer_header.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/fespass_item.xml" value="0.3619791666666667" />
@@ -102,6 +129,12 @@
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/month_item.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/search_item.xml" value="0.3619791666666667" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/menu/drawer_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/menu/menu_tab.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/menu/option_menu.xml" value="0.3619791666666667" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_applogo.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_applogo_round.xml" value="0.231" />
+        <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.231" />
       </map>
     </option>
   </component>
