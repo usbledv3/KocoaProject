@@ -97,7 +97,7 @@
                     android:id="@+id/infoButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="10dp"
                     android:backgroundTint="#6495ED"
                     android:text="회원정보 수정"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
@@ -106,7 +106,7 @@
                     android:id="@+id/pointshopButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="5dp"
                     android:backgroundTint="#6495ED"
                     android:text="포인트샵"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
@@ -115,10 +115,19 @@
                     android:id="@+id/rankingButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="5dp"
                     android:backgroundTint="#6495ED"
                     android:text="내 점수 확인"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
+
+                <Button
+                    android:id="@+id/chkbookbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:backgroundTint="#6495ED"
+                    android:text="예약 확인"
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <View

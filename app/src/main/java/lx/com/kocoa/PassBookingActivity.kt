@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.SeekBar
 import android.widget.Toast
-import lx.com.kocoa.databinding.ActivityMainBinding
 import lx.com.kocoa.databinding.ActivityPassBookingBinding
 
 class PassBookingActivity : AppCompatActivity() {
@@ -12,6 +11,8 @@ class PassBookingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPassBookingBinding.inflate(layoutInflater)
+        var srd : String? = null
+        var sdate : String? = null
         setContentView(binding.root)
         SelectedPassData.selectedItem?.apply {
             binding.bookname.text = this.name
@@ -19,22 +20,30 @@ class PassBookingActivity : AppCompatActivity() {
             this.picture?.let { binding.bookingimageView.setImageResource(it) }
         }
         binding.bookbutton.setOnClickListener {
-            showToast("${binding.bookname.text}가(이) ${binding.sbCount.text} 예약되었습니다.")
+            showToast("${binding.bookname.text}가(이) ${sdate}, ${srd}에 ${binding.sbCount.text} 예약되었습니다.")
+            BookData.bname = SelectedPassData.selectedItem?.name
+            BookData.bprice = SelectedPassData.selectedItem?.price.toString()
+            BookData.bdate = sdate
+            BookData.btime = srd
+            BookData.bpeople = binding.sbCount.text.toString()
             finish()
+        }
+        binding.calendarView.setOnDateChangeListener { calendarView, i, i2, i3 ->
+            sdate = String.format("%d / %d / %d", i, i2+1, i3)
         }
         binding.radiogroup.setOnCheckedChangeListener { radioGroup, i ->
             when(i) {
-                R.id.radioButton -> {
-
+                R.id.am09 -> {
+                    srd = "오전 9시"
                 }
-                R.id.radioButton2 -> {
-
+                R.id.am11 -> {
+                    srd = "오전 11시"
                 }
-                R.id.radioButton3 -> {
-
+                R.id.pm01 -> {
+                    srd = "오후 1시"
                 }
-                R.id.radioButton4 -> {
-
+                R.id.pm03 -> {
+                    srd = "오후 3시"
                 }
             }
         }
@@ -44,7 +53,7 @@ class PassBookingActivity : AppCompatActivity() {
             override fun onStartTrackingTouch(p0: SeekBar?) {
             }
             override fun onStopTrackingTouch(p0: SeekBar?) {
-                binding.sbCount.text="예약 인원 : "+ binding.seekBar.progress+"명"
+                binding.sbCount.text="예약 인원 : ${binding.seekBar.progress}명"
             }
 
         })
