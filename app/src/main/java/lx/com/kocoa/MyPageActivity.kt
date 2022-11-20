@@ -33,6 +33,10 @@ class MyPageActivity : AppCompatActivity() {
             val infoIntent = Intent(applicationContext, InfoActivity::class.java)
             pointLauncher.launch(infoIntent)
         }
+        binding.chkbookbtn.setOnClickListener {
+            val pointIntent = Intent(applicationContext, BookcheckActivity::class.java)
+            pointLauncher.launch(pointIntent)
+        }
 
         /*binding.justButton.setOnClickListener {
             PointAppData.write = PointAppData.write!! + 1
