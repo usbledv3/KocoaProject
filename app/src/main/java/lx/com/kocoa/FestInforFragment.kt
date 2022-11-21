@@ -34,19 +34,19 @@ class FestInforFragment : Fragment() {
         _binding = FragmentFestinforBinding.inflate(inflater, container, false)
 
         binding.addPosterButton.setOnClickListener { //사진첨부 버튼 눌렀을때
-        openGallery()
-            val Showposter = binding.inputPosterpic.drawable
-            SAppData.data12 = Showposter
+        openGallery() //갤러리 여는거
         }
 
         binding.checkInforButton.setOnClickListener {
             val Shwfestname = binding.festOpenName.text.toString()
             val Shwfestrange = binding.festOpenRange.text.toString()
             val Shwfestlocation = binding.festOpenLocation.text.toString()
+            val Showposter = binding.inputPosterpic.drawable
 
             SAppData.data5 = Shwfestname
             SAppData.data6 = Shwfestrange
             SAppData.data7 = Shwfestlocation
+            SAppData.data12 = Showposter
 
             binding.festOutput1.text = "입력한 정보 확인 : ${Shwfestname}, ${Shwfestrange}, ${Shwfestlocation}"
 

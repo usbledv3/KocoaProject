@@ -25,16 +25,23 @@ class FestGameFragment : Fragment() {
             onFragmentChanged(1)
             SAppData.data10 = "주관식"
         }
+        binding.button7.setOnClickListener {
+            onFragmentChanged(2)
+            SAppData.data10 = "OX퀴즈"
+        }
         return binding.root
     }
 
     fun onFragmentChanged(index: Int) {
         when(index) {
-            0 -> {
+            0 -> {  //객관식으로 이동
                 childFragmentManager.beginTransaction().replace(R.id.container2, GamefirstFragment()).commit()
             }
-            1 -> {
+            1 -> { //주관식으로 이동
                 childFragmentManager.beginTransaction().replace(R.id.container2, GamesecondFragment()).commit()
+            }
+            2 -> { //OX로 이동
+                childFragmentManager.beginTransaction().replace(R.id.container2, GamethirdFragment()).commit()
             }
         }
     }
