@@ -1,5 +1,6 @@
 package lx.com.kocoa
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,10 +20,14 @@ class GamethirdFragment : Fragment() {
 
         binding.answOButton.setOnClickListener{
             binding.whichIsAnsw.text = "정답은 O로 선택됨"
+            binding.answOButton.setBackgroundColor(Color.GREEN)
+            binding.answXButton.setBackgroundColor(Color.TRANSPARENT)
             SAppData.data11 = "O"
         }
         binding.answXButton.setOnClickListener {
             binding.whichIsAnsw.text = "정답은 X로 선택됨"
+            binding.answOButton.setBackgroundColor(Color.TRANSPARENT)
+            binding.answXButton.setBackgroundColor(Color.GREEN)
             SAppData.data11 = "X"
         }
 
