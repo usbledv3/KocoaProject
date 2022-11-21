@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#ff9050"
+                android:background="#6495ED"
                 android:text="지도 이동"
                 android:textColor="#FFFFFF" />
         </LinearLayout>

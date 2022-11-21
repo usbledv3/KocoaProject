@@ -33,6 +33,10 @@ class MyPageActivity : AppCompatActivity() {
             val infoIntent = Intent(applicationContext, InfoActivity::class.java)
             pointLauncher.launch(infoIntent)
         }
+        binding.chkbookbtn.setOnClickListener {
+            val pointIntent = Intent(applicationContext, BookcheckActivity::class.java)
+            pointLauncher.launch(pointIntent)
+        }
 
         /*binding.justButton.setOnClickListener {
             PointAppData.write = PointAppData.write!! + 1
@@ -49,6 +53,10 @@ class MyPageActivity : AppCompatActivity() {
             val pointIntent = Intent(applicationContext, PointShopActivity::class.java)
             pointLauncher.launch(pointIntent)
         }
+        binding.rankingButton.setOnClickListener {
+            val pointIntent = Intent(applicationContext, RankingActivity::class.java)
+            pointLauncher.launch(pointIntent)
+        }
 
         binding.infoView.setImageResource(R.drawable.digda)
         binding.infoText.text = "${PointAppData.data1}님 환영합니다!"
@@ -56,7 +64,7 @@ class MyPageActivity : AppCompatActivity() {
         //binding.stampImage.setImageResource(R.drawable.stamp6)
 
         binding.starButton.setOnClickListener {
-            val pointIntent = Intent(applicationContext, RankingActivity::class.java)
+            val pointIntent = Intent(applicationContext, MainActivity::class.java)
             pointLauncher.launch(pointIntent)
         }
 

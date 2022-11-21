@@ -14,39 +14,51 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:background="#F0FFFF"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/searchListName"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="90dp"
-                android:text="2022 서울 빛초롱축제"
-                android:textColor="#ff9050"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/searchListName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2022 서울 빛초롱축제"
+                    android:textColor="#0618C1"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/searchListDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="기간 : 2022.12.16 - 12.31"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/searchListPlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="장소 : 서울 청계천"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"></LinearLayout>
+
+            </LinearLayout>
 
             <ImageView
                 android:id="@+id/searchImageView"
-                android:layout_width="wrap_content"
-                android:layout_height="260dp"
+                android:layout_width="146dp"
+                android:layout_height="130dp"
                 app:srcCompat="@drawable/festival1" />
 
-            <TextView
-                android:id="@+id/searchListDate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="110dp"
-                android:text="기간 : 2022.12.16 - 12.31"
-                android:textColor="#ff9050" />
-
-            <TextView
-                android:id="@+id/searchListPlace"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="135dp"
-                android:text="장소 : 서울 청계천"
-                android:textColor="#ff9050" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

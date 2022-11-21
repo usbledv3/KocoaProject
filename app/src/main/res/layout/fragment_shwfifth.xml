@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
         android:text="축제후기 관리"
+        android:textColor="#0618C1"
         android:textSize="50sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        android:textColor="#ff9050"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

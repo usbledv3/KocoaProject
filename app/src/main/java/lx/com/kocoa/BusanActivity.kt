@@ -39,22 +39,20 @@ class BusanActivity : AppCompatActivity() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         doAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("별바다부산 나이트페스타", R.drawable.busan_festival,"2022.10.01-2022.11.13", "부산 영도구"))
-            this.items.add(DoData("부산국제매직페스티벌", R.drawable.magic_fes,"2022.06.01-2022.11.13", "부산 남구"))
-            this.items.add(DoData("청송사과축제", R.drawable.apple_fes,"2022.11.09-2022.11.13", "경북 청송군"))
+            this.items.add(DoData("별바다부산 나이트페스타", R.drawable.busan_festival,"2022.10.01-2022.11.13", " 부산광역시 영도구 맛자랑길 63(청학동)"))
+            this.items.add(DoData("부산국제매직페스티벌", R.drawable.magic_fes,"2022.06.01-2022.11.13", "부산광역시 남구 못골번영로71번길 74 부산예술대학"))
+            this.items.add(DoData("청송사과축제", R.drawable.apple_fes,"2022.11.09-2022.11.13", "경상북도 청송군 청송읍 군청로 13-7"))
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
         doAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 doAdapter?.apply {
                     val item = items.get(position)
-
-                    AppDataYW.doSelectedItem = item
-                    SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@BusanActivity,SancheonuActivity::class.java))
+                    AppDataYW.doSelectedItem=item
+                    val busanInfoIntent = Intent(this@BusanActivity,SancheonuActivity::class.java)
+                    busanInfoLauncher.launch(busanInfoIntent)
                 }
-
             }
 
         }

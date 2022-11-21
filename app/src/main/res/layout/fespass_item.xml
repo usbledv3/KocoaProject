@@ -8,7 +8,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        app:cardBackgroundColor="#FBB994"
         app:cardCornerRadius="8dp"
         app:contentPadding="4dp">
 
@@ -29,7 +28,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="적용축제이름"
-                    android:textColor="#FFFFFF"
+                    android:textColor="#0618C1"
                     android:textSize="20sp"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -41,7 +40,7 @@
                 android:layout_marginTop="15dp"
                 android:layout_weight="1"
                 android:text="패스 종류"
-                android:textColor="#FDFDFD"
+                android:textColor="#0618C1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -51,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="패스적용인원범위"
-                android:textColor="#FFFFFF"
+                android:textColor="#0618C1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 
@@ -61,7 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="패스기간"
-                android:textColor="#FFFFFF"
+                android:textColor="#0618C1"
                 android:textSize="20sp"
                 android:textStyle="bold" />
 

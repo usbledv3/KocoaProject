@@ -33,7 +33,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:text="산천어 축제"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
                 <TextView
@@ -42,7 +42,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="20dp"
                     android:text="2023.1."
-                    android:textColor="#ff9050" />
+                    android:textColor="#000000" />
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>

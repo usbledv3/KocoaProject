@@ -9,6 +9,7 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
+import kotlinx.android.synthetic.main.activity_search.*
 import lx.com.kocoa.databinding.ActivitySearchBinding
 
 class SearchActivity : AppCompatActivity() {
@@ -20,10 +21,31 @@ class SearchActivity : AppCompatActivity() {
 
     }
 
+
+
+
+
+    var searchViewTextListener: SearchView.OnQueryTextListener =
+        object : SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(filterString: String?): Boolean {
+                searchAdapter!!.filter.filter(filterString)
+                return true
+            }
+
+            override fun onQueryTextChange(filterString: String?): Boolean {
+                searchAdapter!!.filter.filter(filterString)
+                return true
+            }
+
+        }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySearchBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        val searchView = binding.searchView
+        searchView.setOnQueryTextListener(searchViewTextListener)
 
         initList()
     }

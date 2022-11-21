@@ -7,8 +7,11 @@
     tools:context=".MainFragment" >
 
     <ScrollView
+        android:id="@+id/scrollView4"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -17,33 +20,34 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:animateLayoutChanges="true"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/newkocoalogo" />
+                android:layout_height="60dp"
+                android:src="@drawable/newapplogoremovebg"
+                app:srcCompat="@drawable/newapplogoremovebg"
+                tools:srcCompat="@drawable/newapplogoremovebg" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/searchButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_width="330dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginRight="10dp"
-                    android:layout_weight="1"
                     android:background="@drawable/search_button_stroke" />
 
                 <ImageView
                     android:id="@+id/searchIcon"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
                     android:layout_marginRight="10dp"
                     android:src="@drawable/search" />
             </LinearLayout>
@@ -51,7 +55,8 @@
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/mainCarouselViewPager"
                 android:layout_width="match_parent"
-                android:layout_height="300dp" />
+                android:layout_height="250dp"
+                android:layout_marginTop="10dp" />
 
             <TextView
                 android:id="@+id/regionTextView"
@@ -59,17 +64,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
-                android:textColor="#ff9050"
                 android:text="어디로 갈까?"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <HorizontalScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
 
@@ -79,7 +84,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/seoul_fes" />
 
                     <ImageView
@@ -88,7 +93,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/gangwon_fes" />
 
                     <ImageView
@@ -97,7 +102,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/chungcheong_fes" />
 
                     <ImageView
@@ -106,7 +111,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/busan_fes" />
 
                     <ImageView
@@ -115,7 +120,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/junra_fes" />
 
                     <ImageView
@@ -124,7 +129,7 @@
                         android:layout_height="100dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:layout_weight="1"
+
                         android:src="@drawable/jeju_fes" />
                 </LinearLayout>
             </HorizontalScrollView>
@@ -134,19 +139,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="30dp"
-                android:textColor="#ff9050"
                 android:text="이벤트"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <androidx.viewpager2.widget.ViewPager2
                 android:id="@+id/eventCarouselViewPager"
                 android:layout_width="match_parent"
-                android:layout_height="150dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="10dp">
 
             </androidx.viewpager2.widget.ViewPager2>
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

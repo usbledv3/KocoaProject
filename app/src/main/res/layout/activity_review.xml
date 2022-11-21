@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#40ff9050"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -26,7 +25,7 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#EEF6E4"
+                android:background="#FFFFFF"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +34,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#EEF6E4"
+                    android:background="#FFFFFF"
                     android:orientation="horizontal">
 
 
@@ -45,7 +44,8 @@
                         android:background="#EDEFD6"
                         android:padding="16dp"
                         android:text=" 제 목"
-                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="#0618C1"
                         android:textStyle="bold" />
 
 
@@ -70,7 +70,8 @@
                         android:background="#EDEFD6"
                         android:padding="16dp"
                         android:text=" 작성일"
-                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="#0618C1"
                         android:textStyle="bold" />
 
                     <EditText
@@ -94,7 +95,8 @@
                         android:background="#EDEFD6"
                         android:padding="16dp"
                         android:text=" 이름"
-                        android:textColor="@color/black"
+                        android:textAlignment="center"
+                        android:textColor="#0618C1"
                         android:textStyle="bold" />
 
                     <EditText
@@ -139,7 +141,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="4dp"
-                android:backgroundTint="#ff9050"
+                android:backgroundTint="#6495ED"
                 android:text="입력하기"
                 android:textColor="#ffffff"
                 app:layout_constraintEnd_toEndOf="parent"

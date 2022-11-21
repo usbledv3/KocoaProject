@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     // 테스트를 한번 더 해 봅시다 111
     // 커밋이 잘 되었나요?
     // 1042948178
+    // 1111111ㅇㅇ
     lateinit var binding: ActivityMainBinding
 
     //부분화면 구분자

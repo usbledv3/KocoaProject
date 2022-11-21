@@ -25,8 +25,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="축제이름"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/showPosterImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@android:drawable/ic_menu_crop" />
 
             <TextView
                 android:id="@+id/showfestRange"
@@ -34,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="축제규모"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <TextView
@@ -43,7 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
                 android:text="축제개최지역"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <TextView
@@ -51,7 +57,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="축제개최지 주소"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <LinearLayout
@@ -84,16 +90,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:text="패스이름 뜨는곳"
-                    android:textColor="#000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/showpassSort"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="패스종류 뜨는곳"
-                    android:textColor="#000000"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
                 <TextView
@@ -102,7 +99,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:text="패스적용인원 뜨는곳"
-                    android:textColor="#000000"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
                 <TextView
@@ -111,7 +108,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="10dp"
                     android:text="패스날짜시간"
-                    android:textColor="#000000"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
                 <LinearLayout
@@ -125,7 +122,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="미니게임 이름 뜨는곳"
-                        android:textColor="#000000"
+                        android:textColor="#0618C1"
                         android:textSize="20sp" />
 
                     <TextView
@@ -133,7 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="문제종류 뜨는곳"
-                        android:textColor="#000000"
+                        android:textColor="#0618C1"
                         android:textSize="20sp" />
 
                     <TextView
@@ -141,7 +138,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="문제 정답 뜨는곳"
-                        android:textColor="#000000"
+                        android:textColor="#0618C1"
                         android:textSize="20sp" />
                 </LinearLayout>
 
@@ -154,7 +151,7 @@
                         android:id="@+id/backButton"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:backgroundTint="#ff9050"
+                        android:backgroundTint="#6495ED"
                         android:text="뒤로가기"
                         android:textColor="#FFFFFF"
                         android:textStyle="bold" />

@@ -7,7 +7,6 @@ import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.ActivityChungcheongBinding
-import lx.com.kocoa.databinding.ActivityGangwonBinding
 
 class ChungcheongActivity : AppCompatActivity() {
     lateinit var binding: ActivityChungcheongBinding
@@ -40,21 +39,19 @@ class ChungcheongActivity : AppCompatActivity() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         chungcheongAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("제2회 피나클랜드 국화축제", R.drawable.guckhwa_fes,"2022.09.23-2022.11.27", "충남 아산시"))
-            this.items.add(DoData("피나클랜드 왕새우 축제", R.drawable.shrimp_fes,"2022.10.01-2022.11.30", "충남 아산시"))
-            this.items.add(DoData("태안 빛축제", R.drawable.teaan_fes,"2021.01.0-2023.12.31", "충남 태안군"))
+            this.items.add(DoData("피나클랜드 국화축제", R.drawable.guckhwa_fes,"2022.09.23-2022.11.27", "충청남도 아산시 월선길 20-42"))
+            this.items.add(DoData("피나클랜드 왕새우 축제", R.drawable.shrimp_fes,"2022.10.01-2022.11.30", "충청남도 아산시 월선길 20-42"))
+            this.items.add(DoData("태안 빛축제", R.drawable.teaan_fes,"2021.01.0-2023.12.31", "충청남도 태안군 남면 마검포길 200"))
         }
 
         chungcheongAdapter?.listener = object: OnDoItemClickListener {
-            override fun onItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
+            override fun onDoItemClick(holder: DoAdapter.ViewHolder?, view: View?, position: Int) {
                 chungcheongAdapter?.apply {
                     val item = items.get(position)
-
-                    AppDataYW.doSelectedItem = item
-                    SelectedDoData.selectedItem=item
-                    startActivity(Intent(this@ChungcheongActivity,SancheonuActivity::class.java))
+                    AppDataYW.doSelectedItem=item
+                    val chungcheongInfoIntent = Intent(this@ChungcheongActivity,SancheonuActivity::class.java)
+                    chungcheongInfoLauncher.launch(chungcheongInfoIntent)
                 }
-
             }
 
         }

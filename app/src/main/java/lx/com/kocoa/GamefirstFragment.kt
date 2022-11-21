@@ -26,7 +26,7 @@ class GamefirstFragment : Fragment(){
 
             miniAdapter = MiniAdapter()
             miniAdapter?.apply {
-                GamesData.game=MiniData("1번 문제", binding.quizQuestion.text.toString(), "객관식")
+                GamesData.game1=MiniData("1번 문제", binding.quizQuestion.text.toString(), "객관식")
                 val curActivity = activity as SHWMainActivity
                 curActivity.replaceView(FestGameListFragment())
             }
