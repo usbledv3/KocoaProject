@@ -47,7 +47,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.showQuizname.text = "미니게임 이름 : ${SAppData.data9}"
             binding.showQuizsort.text = "미니게임 종류 : ${SAppData.data10}"
             binding.showQuizansw.text = "미니게임 정답 : ${SAppData.data11}"
-            //binding.showPosterImage.
+            binding.showPosterImage.setImageResource(R.drawable.festivalexpic)
 
 
 
