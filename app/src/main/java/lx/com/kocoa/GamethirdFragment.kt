@@ -1,5 +1,6 @@
 package lx.com.kocoa
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -19,10 +20,14 @@ class GamethirdFragment : Fragment() {
 
         binding.answOButton.setOnClickListener{
             binding.whichIsAnsw.text = "정답은 O로 선택됨"
+            binding.answOButton.setBackgroundColor(Color.GREEN)
+            binding.answXButton.setBackgroundColor(Color.TRANSPARENT)
             SAppData.data11 = "O"
         }
         binding.answXButton.setOnClickListener {
             binding.whichIsAnsw.text = "정답은 X로 선택됨"
+            binding.answOButton.setBackgroundColor(Color.TRANSPARENT)
+            binding.answXButton.setBackgroundColor(Color.GREEN)
             SAppData.data11 = "X"
         }
 
@@ -33,7 +38,7 @@ class GamethirdFragment : Fragment() {
 
             miniAdapter = MiniAdapter()
             miniAdapter?.apply {
-                GamesData.game=MiniData("생성된 문제", binding.OXname.text.toString(), "OX퀴즈")
+                GamesData.game2=MiniData("2번 문제", binding.OXname.text.toString(), "OX퀴즈")
                 val curActivity = activity as SHWMainActivity
                 curActivity.replaceView(FestGameListFragment())
             }
