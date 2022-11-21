@@ -23,7 +23,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="마이페이지"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="30sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -82,7 +82,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="20dp"
                     android:text="님 환영합니다!"
-                    android:textColor="#ff9050"
+                    android:textColor="#000000"
                     android:textSize="18sp" />
 
             </LinearLayout>
@@ -98,7 +98,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="55dp"
-                    android:backgroundTint="#ff9050"
+                    android:backgroundTint="#6495ED"
                     android:text="회원정보 수정"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
 
@@ -107,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="70dp"
-                    android:backgroundTint="#ff9050"
+                    android:backgroundTint="#6495ED"
 
                     android:text="포인트샵"
                     android:textColor="@color/common_google_signin_btn_text_dark" />
@@ -203,7 +203,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="내 활동 현황"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="24dp" />
             </LinearLayout>
 
@@ -211,7 +211,7 @@
                 android:id="@+id/justButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#ff9050"
+                android:backgroundTint="#6495ED"
                 android:text="후기증가버튼 임시"
                 android:textColor="#FFFFFF" />
 
@@ -228,7 +228,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:text="작성한 후기"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="20dp" />
 
                 <TextView
@@ -238,7 +238,7 @@
                     android:layout_marginLeft="20dp"
                     android:layout_weight="1"
                     android:text="미니게임"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="20dp" />
 
                 <TextView
@@ -248,7 +248,7 @@
                     android:layout_marginLeft="40dp"
                     android:layout_weight="1"
                     android:text="랭킹점수"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="20dp" />
             </LinearLayout>
 
@@ -266,7 +266,7 @@
                     android:layout_marginLeft="50dp"
                     android:layout_weight="1"
                     android:text="0 개"
-                    android:textColor="#ff9050"
+                    android:textColor="#000000"
                     android:textSize="20dp" />
 
                 <TextView
@@ -277,7 +277,7 @@
                     android:layout_weight="1"
                     android:text="0 개"
 
-                    android:textColor="#ff9050"
+                    android:textColor="#000000"
                     android:textSize="20dp" />
 
                 <TextView
@@ -287,7 +287,7 @@
                     android:layout_marginLeft="60dp"
                     android:layout_weight="1"
                     android:text="0 점"
-                    android:textColor="#ff9050"
+                    android:textColor="#000000"
                     android:textSize="20dp" />
             </LinearLayout>
             <View
@@ -310,7 +310,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:text="적립한 스탬프 현황"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="24dp" />
 
             </LinearLayout>
@@ -348,7 +348,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:text="공지사항"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
             </LinearLayout>
 
@@ -363,8 +363,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp"
-                    android:text="+ 추가된축제" />
+                    android:text="+ 추가된축제"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView25"
@@ -372,8 +373,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp"
-                    android:text=" - 화천 산천어 축제" />
+                    android:text=" - 화천 산천어 축제"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/textView26"
@@ -381,8 +383,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginTop="10dp"
-                    android:textSize="18sp"
-                    android:text=" - 함평 나비 축제" />
+                    android:text=" - 함평 나비 축제"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
             </LinearLayout>
 
             <View
@@ -403,16 +406,16 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:text="앱 버전정보"
-                    android:textColor="@color/black"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="3.0.14"
                     android:layout_marginLeft="180dp"
-                    android:textColor="@color/black"
+                    android:text="3.0.14"
+                    android:textColor="#0618C1"
                     android:textSize="20sp" />
 
             </LinearLayout>

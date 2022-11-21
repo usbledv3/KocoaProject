@@ -18,7 +18,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"
             android:text="축제를 등록하세요"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="34sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="148dp"
             android:layout_marginTop="48dp"
-            android:backgroundTint="#ff9050"
+            android:backgroundTint="#6495ED"
             android:text="입력정보 확인"
             android:textColor="#FFFFFF"
             app:layout_constraintStart_toStartOf="parent"
@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/inputPosterpic"
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:src="@android:drawable/ic_menu_gallery"
@@ -100,15 +100,15 @@
             android:id="@+id/addPosterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ff9050"
+            android:backgroundTint="#6495ED"
             android:text="사진 첨부"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.213"
-            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toEndOf="@+id/inputPosterpic"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.404" />
+            app:layout_constraintVertical_bias="0.405" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

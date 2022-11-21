@@ -55,13 +55,16 @@ class RouteActivity : AppCompatActivity(), OnMapReadyCallback {
         val path = ArrowheadPathOverlay()
         if(fesplace=="화천산천어축제"){
             path.coords = fishroute.data
+            path.color = Color.GREEN
+            path.width = 30
+            path.map=naverMap
         }
         if(fesplace=="제34회 춘천인형극제") {
             path.coords = dollroute.data
+            path.color = Color.GREEN
+            path.width = 30
+            path.map=naverMap
         }
-        path.color = Color.GREEN
-        path.width = 30
-        path.map=naverMap
         val uiSettings = naverMap.uiSettings
         uiSettings.isLocationButtonEnabled = true
     }

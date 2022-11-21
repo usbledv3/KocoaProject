@@ -24,7 +24,7 @@
             android:id="@+id/minicreatebtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="#ff9050"
+            android:backgroundTint="#6495ED"
             android:text="문제 추가"
             android:textColor="#FFFFFF"
             app:layout_constraintEnd_toEndOf="parent"

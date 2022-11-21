@@ -23,14 +23,13 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="100dp"
-            android:backgroundTint="#FACAAF"
             app:cardCornerRadius="15dp"
             app:cardElevation="5dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="58dp"
-                android:background="#ff9050">
+                android:background="#6495ED">
 
                 <TextView
                     android:id="@+id/gameName"

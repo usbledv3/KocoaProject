@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#FACAAF"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="4dp"
         app:cardElevation="2dp">
@@ -17,7 +16,6 @@
         <LinearLayout
             android:layout_width="407dp"
             android:layout_height="70dp"
-            android:background="#FACAAF"
             android:orientation="horizontal">
 
             <ImageView
@@ -26,7 +24,6 @@
                 android:layout_height="25dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="13sp"
-                android:background="#FACAAF"
                 app:srcCompat="@drawable/plus" />
 
             <LinearLayout
@@ -45,7 +42,7 @@
                     android:includeFontPadding="false"
                     android:text="제목"
                     android:textAlignment="textStart"
-                    android:textColor="@color/black"
+                    android:textColor="#0618C1"
                     android:textSize="18sp"
                     android:textStyle="normal" />
 

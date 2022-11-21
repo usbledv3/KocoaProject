@@ -22,9 +22,9 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="     1등: 호텔 숙박 예약권"
             android:layout_marginTop="20dp"
-            android:textColor="#ff9050"
+            android:text="     1등: 호텔 숙박 예약권"
+            android:textColor="#0618C1"
             android:textSize="20sp" />
 
         <TextView
@@ -32,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="     2등: 티켓 할인권"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="20sp" />
 
         <TextView
@@ -40,7 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="     3등: 지역 특산품"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="20sp" />
 
         <TextView
@@ -48,7 +48,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="     4~10등: 포인트 차등 지급"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="내 점수"
-            android:textColor="#ff9050"
+            android:textColor="#0618C1"
             android:textSize="20sp" />
 
         <TextView
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:text="0점"
-            android:textColor="#ff9050"
+            android:textColor="#000000"
             android:textSize="20sp" />
     </LinearLayout>
 
@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="68dp"
         android:text="축제의 주인공은 나야 나!"
-        android:textColor="#ff9050"
+        android:textColor="#0618C1"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

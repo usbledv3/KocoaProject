@@ -26,8 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginTop="16dp"
-                android:background="#BD9070"
-                android:backgroundTint="#BD9070"
+                android:background="#039BE5"
                 app:srcCompat="@drawable/handfishing" />
 
             <TextView
@@ -62,26 +61,26 @@
                 android:orientation="horizontal">
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/am09"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="9시" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/am11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="11시" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/pm01"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
                     android:text="13시" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/pm03"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
@@ -103,7 +102,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="예약 인원 : 1명" />
+                android:text="예약 인원 : 1명"
+                android:textSize="20sp" />
 
             <Button
                 android:id="@+id/bookbutton"
@@ -113,8 +113,7 @@
                 android:layout_marginStart="161dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="161dp"
-                android:background="#BD9070"
-                android:backgroundTint="#ff9050"
+                android:background="#1E88E5"
                 android:text="예약버튼"
                 android:textColor="@color/white"
                 tools:ignore="TextContrastCheck" />

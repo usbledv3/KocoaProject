@@ -10,6 +10,7 @@
         android:id="@+id/scrollView4"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:backgroundTint="#FFFFFF"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -26,7 +27,9 @@
                 android:id="@+id/imageView4"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:src="@drawable/newkocoalogo" />
+                android:src="@drawable/newapplogoremovebg"
+                app:srcCompat="@drawable/newapplogoremovebg"
+                tools:srcCompat="@drawable/newapplogoremovebg" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -62,7 +65,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginTop="10dp"
                 android:text="어디로 갈까?"
-                android:textColor="#ff9050"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <HorizontalScrollView
@@ -137,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="이벤트"
-                android:textColor="#ff9050"
+                android:textColor="#0618C1"
                 android:textSize="20sp" />
 
             <androidx.viewpager2.widget.ViewPager2

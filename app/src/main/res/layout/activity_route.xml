@@ -20,7 +20,7 @@
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#ff9050"
+        android:background="#64B5F6"
         android:text="경로정보"
         android:textColor="@color/white"
         android:textSize="16sp"
