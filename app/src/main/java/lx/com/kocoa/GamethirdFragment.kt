@@ -33,7 +33,7 @@ class GamethirdFragment : Fragment() {
 
             miniAdapter = MiniAdapter()
             miniAdapter?.apply {
-                GamesData.game=MiniData("생성된 문제", binding.OXname.text.toString(), "OX퀴즈")
+                GamesData.game2=MiniData("2번 문제", binding.OXname.text.toString(), "OX퀴즈")
                 val curActivity = activity as SHWMainActivity
                 curActivity.replaceView(FestGameListFragment())
             }
