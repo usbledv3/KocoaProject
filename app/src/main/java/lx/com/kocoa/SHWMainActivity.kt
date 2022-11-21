@@ -52,6 +52,7 @@ class SHWMainActivity : AppCompatActivity() {
                         SAppData.data9, //객관식 미니게임 이름
                         SAppData.data10, //미니게임 종류
                         SAppData.data11 //미니게임 정답
+                        // 갤러리에서 불러온 사진
                     )
                 )
                 notifyDataSetChanged()

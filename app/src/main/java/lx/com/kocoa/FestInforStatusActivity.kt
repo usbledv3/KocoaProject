@@ -1,24 +1,20 @@
 package lx.com.kocoa
 
-import android.app.ProgressDialog.show
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
 import androidx.annotation.UiThread
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.CameraUpdate
 import com.naver.maps.map.MapFragment
 import com.naver.maps.map.NaverMap
 import com.naver.maps.map.OnMapReadyCallback
-import kotlinx.android.synthetic.main.drawer_header.view.*
-import lx.com.kocoa.SAppData.Companion.data12
 import lx.com.kocoa.databinding.ActivityFestInforStatusBinding
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import javax.xml.datatype.DatatypeFactory.newInstance
 
 class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var binding:ActivityFestInforStatusBinding
@@ -26,6 +22,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
     var mapx : String? = null
     var mapy : String? = null
 
+    @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityFestInforStatusBinding.inflate(layoutInflater)
@@ -47,9 +44,7 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
             binding.showQuizname.text = "미니게임 이름 : ${SAppData.data9}"
             binding.showQuizsort.text = "미니게임 종류 : ${SAppData.data10}"
             binding.showQuizansw.text = "미니게임 정답 : ${SAppData.data11}"
-            //binding.showPosterImage.
-
-
+            binding.showPosterImage.setImageURI(SAppData.data12)
 
         }
 
