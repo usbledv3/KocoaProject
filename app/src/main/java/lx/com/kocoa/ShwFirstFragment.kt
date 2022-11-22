@@ -21,14 +21,11 @@ class ShwFirstFragment : Fragment() {
     }
 
 
-
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentShwfirstBinding.inflate(inflater, container, false)
 
         initList()
         initView()
-
 
         return binding.root
     }
@@ -50,7 +47,6 @@ class ShwFirstFragment : Fragment() {
                 notifyDataSetChanged()
             }
         }
-
     }
 
     fun initList(){
