@@ -39,6 +39,7 @@ class MiniGameActivity : AppCompatActivity() {
         binding.miniGameList.layoutManager = layoutManager
 
         // 어댑터를 설정하는 것
+        miniGameAdapter = MiniGameAdapter()
         binding.miniGameList.adapter = miniGameAdapter
 
         // 아이템을 위한 데이터 넣기
@@ -48,10 +49,10 @@ class MiniGameActivity : AppCompatActivity() {
         }
 
         // 아이템을 클릭했을 때 동작할 코드 넣어주기
-        JhAppData.miniGameAdapter?.listener = object : OnMinigameItemClickListener {
+        miniGameAdapter?.listener = object : OnMinigameItemClickListener {
             override fun onMiniGameItemClick(
                 holder: MiniGameAdapter.ViewHolder, view: View?, position: Int) {
-                JhAppData.miniGameAdapter?.apply {
+                miniGameAdapter?.apply {
                     val item = items.get(position)
 
                     JhAppData.selectedGameItem = item
