@@ -33,6 +33,10 @@ class ReviewActivity : AppCompatActivity() {
         }
     }
 
+    val now = LocalDateTime.now()
+    val formatDate = DateTimeFormatter.ISO_DATE
+    val nowDate = now.format(formatDate)
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityReviewBinding.inflate(layoutInflater)
@@ -40,6 +44,8 @@ class ReviewActivity : AppCompatActivity() {
 
         reviewAdapter=ReviewAdapter()
         reviewAdapter!!.items=list
+
+        binding.dateToday.text=nowDate
 
 
         initList()
@@ -115,9 +121,7 @@ class ReviewActivity : AppCompatActivity() {
     }
 
     fun initView() {
-        val now = LocalDateTime.now()
-        val formatDate = DateTimeFormatter.ISO_DATE
-        val nowDate = now.format(formatDate)
+
         //추가 버튼 눌렀을때
         binding.addButton.setOnClickListener {
             //입력상자에서 글자 가져오기
