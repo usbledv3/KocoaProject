@@ -72,7 +72,7 @@ class FestPassFragment : Fragment() {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
                 timeString = "${hourOfDay}시 ${minute}분"
-                passTimeIn.text = dateString2 + dateString2 + " / " + timeString
+                passTimeIn.text = dateString1 + dateString2 + " / " + timeString
             }
             TimePickerDialog(requireContext(), timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE),true).show()
         }
