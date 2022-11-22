@@ -28,6 +28,18 @@
             android:name=".BookcheckActivity"
             android:exported="false" />
         <activity
+            android:name=".EditReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FestivalInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MonthFestivalInfoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MapActivity"
             android:exported="false" />
         <activity
