@@ -98,8 +98,12 @@
             android:backgroundTint="#6495ED"
             android:text="적용 종료 날짜"
             android:textColor="#FFFFFF"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="406dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.531"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.594" />
 
         <Button
             android:id="@+id/date"
