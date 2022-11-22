@@ -43,7 +43,7 @@ class MiniGameAdapter : RecyclerView.Adapter<MiniGameAdapter.ViewHolder>() {
         }
         init {
             binding.root.setOnClickListener {
-                listener?.ongameItemClick(this, binding.root, adapterPosition)
+                listener?.onMiniGameItemClick(this, binding.root, adapterPosition)
             }
         }
 
