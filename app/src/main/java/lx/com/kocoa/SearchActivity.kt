@@ -27,6 +27,9 @@ class SearchActivity : AppCompatActivity() {
                 if(binding.searchInput.text.toString() == "2022") {
                     supportFragmentManager.beginTransaction()
                         .replace(R.id.searchContainer, AfterSearchFragment()).commit()
+                }else if(binding.searchInput.text.toString() == "축제") {
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.searchContainer, AfterSearchFragment2()).commit()
                 }
             }
 

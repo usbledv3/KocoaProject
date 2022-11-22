@@ -40,7 +40,7 @@ class SeoulActivity : AppCompatActivity() {
         seoulAdapter?.apply {
             this.items.clear()
             this.items.add(DoData("2022 서울 빛초롱축제", R.drawable.festival1,"2022.12.16-12.31", "서울특별시 종로구 세종대로 172 "))
-            this.items.add(DoData("2022 펫츠런 고양", R.drawable.petsrun_fes,"2022.12.02-2022.12.03", "경기도 고양시 일산동구 중앙로 1271-4"))
+            this.items.add(DoData("펫츠런 고양", R.drawable.petsrun_fes,"2022.12.02-2022.12.03", "경기도 고양시 일산동구 중앙로 1271-4"))
             this.items.add(DoData("서울커피페스티벌", R.drawable.seoulcoffee_fes,"2022.11.23-2022.11.26", "서울특별시 강남구 영동대로 (513, 코엑스)"))
             if(SAppData.data5!=null) {
                 this.items.add(DoData(SAppData.data5.toString(), R.drawable.festivalexpic, SAppData.data4.toString(), SAppData.data8.toString()))

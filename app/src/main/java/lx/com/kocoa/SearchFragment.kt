@@ -60,6 +60,22 @@ class SearchFragment : Fragment() {
                     "경기도 수원시 권선구 서둔로 166"
                 )
             )
+            this.items.add(
+                SearchData(
+                    "태안 빛축제",
+                    R.drawable.teaan_fes,
+                    "2023.1.1-12.31",
+                    "충청남도 태안군 남면 마검포길 200"
+                )
+            )
+            this.items.add(
+                SearchData(
+                    "강릉단오제",
+                    R.drawable.dano_fes,
+                    "2022.5.30-2022.6.6",
+                    "강원도 강릉시 단오장길 1"
+                )
+            )
         }
 
     }
