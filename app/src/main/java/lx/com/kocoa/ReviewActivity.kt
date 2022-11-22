@@ -7,6 +7,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.ActivityReviewBinding
 import lx.com.kocoa.databinding.AlertdialogEditBinding
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class ReviewActivity : AppCompatActivity() {
     lateinit var binding: ActivityReviewBinding
@@ -113,12 +115,15 @@ class ReviewActivity : AppCompatActivity() {
     }
 
     fun initView() {
+        val now = LocalDateTime.now()
+        val formatDate = DateTimeFormatter.ISO_DATE
+        val nowDate = now.format(formatDate)
         //추가 버튼 눌렀을때
         binding.addButton.setOnClickListener {
             //입력상자에서 글자 가져오기
 
             val title = binding.titleInput.text.toString()
-            val date = binding.dateInput.text.toString()
+            val date = nowDate
             val name = binding.nameInput.text.toString()
             val text = binding.textInput.text.toString()
 

@@ -8,6 +8,9 @@ import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.review_item.view.*
 import lx.com.kocoa.databinding.ReviewItemBinding
 import java.lang.reflect.Member
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.Calendar.getInstance
 
 class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
@@ -26,6 +29,8 @@ class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
 //    var items = mutableListOf<ReviewData>()
 
     var items = ArrayList<ReviewData>()
+
+
 
     // 리싸이 클러뷰가 아이템 개수가 몇 개인지 물어 볼때
     override fun getItemCount() = items.size
