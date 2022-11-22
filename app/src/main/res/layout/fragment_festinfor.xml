@@ -90,12 +90,12 @@
             android:layout_width="125dp"
             android:layout_height="125dp"
             android:src="@android:drawable/ic_menu_gallery"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/festOpenName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.269"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.231" />
+            app:layout_constraintTop_toBottomOf="@+id/fesNameView"
+            app:layout_constraintVertical_bias="0.452" />
 
         <Button
             android:id="@+id/addPosterButton"
@@ -104,12 +104,12 @@
             android:backgroundTint="#6495ED"
             android:text="사진 첨부"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/festOpenName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.749"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.25" />
+            app:layout_constraintTop_toBottomOf="@+id/fesNameView"
+            app:layout_constraintVertical_bias="0.478" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

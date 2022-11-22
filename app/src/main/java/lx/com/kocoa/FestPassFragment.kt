@@ -62,7 +62,7 @@ class FestPassFragment : Fragment() {
             val cal = Calendar.getInstance() // 캘린더뷰 만드는거
             val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
                 dateString2 = "${year}년 ${month+1}월 ${dayOfMonth}일까지,"
-                passTimeIn.text = dateString2 + dateString2 + " / " + timeString
+                passTimeIn.text = dateString1 + dateString2 + " / " + timeString
             }
             DatePickerDialog(requireContext(), dateSetListener, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DAY_OF_MONTH)).show()
         }
