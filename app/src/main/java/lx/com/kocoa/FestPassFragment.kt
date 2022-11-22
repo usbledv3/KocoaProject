@@ -22,7 +22,8 @@ class FestPassFragment : Fragment() {
     val binding get() = _binding!!
     var festAdapter:FestAdapter? = null
 
-    var dateString = "" // 날짜입력기능
+    var dateString1 = "" // 시작날짜입력기능
+    var dateString2 = "" // 종료날짜입력기능
     var timeString = "" // 시간입력기능
 
     override fun onCreateView(
@@ -48,21 +49,30 @@ class FestPassFragment : Fragment() {
                 notifyDataSetChanged()
             }
         }
-        //아래는 날짜시간 입력하는 다이얼
+        //아래는 적용시작 ~ 종료 날짜시간 입력하는 다이얼
         binding.date.setOnClickListener {
             val cal = Calendar.getInstance() // 캘린더뷰 만드는거
             val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
-                dateString = "${year}년 ${month+1}월 ${dayOfMonth}일"
-                passTimeIn.text = dateString + " / " + timeString
+                dateString1 = "${year}년 ${month+1}월 ${dayOfMonth}일부터"
+                passTimeIn.text = dateString1 + dateString2 + " / " + timeString
             }
             DatePickerDialog(requireContext(), dateSetListener, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DAY_OF_MONTH)).show()
         }
+        binding.date2.setOnClickListener {
+            val cal = Calendar.getInstance() // 캘린더뷰 만드는거
+            val dateSetListener = DatePickerDialog.OnDateSetListener { view, year, month, dayOfMonth ->
+                dateString2 = "${year}년 ${month+1}월 ${dayOfMonth}일까지,"
+                passTimeIn.text = dateString1 + dateString2 + " / " + timeString
+            }
+            DatePickerDialog(requireContext(), dateSetListener, cal.get(Calendar.YEAR),cal.get(Calendar.MONTH),cal.get(Calendar.DAY_OF_MONTH)).show()
+        }
+
         //아래는 날짜시간 입력하는 다이얼
         binding.time.setOnClickListener {
             val cal = Calendar.getInstance()
             val timeSetListener = TimePickerDialog.OnTimeSetListener { view, hourOfDay, minute ->
                 timeString = "${hourOfDay}시 ${minute}분"
-                passTimeIn.text = dateString + " / " + timeString
+                passTimeIn.text = dateString1 + dateString2 + " / " + timeString
             }
             TimePickerDialog(requireContext(), timeSetListener, cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE),true).show()
         }

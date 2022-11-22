@@ -1,16 +1,26 @@
 package lx.com.kocoa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.widget.Button
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
+import lx.com.kocoa.JhAppData.Companion.miniGameAdapter
 import lx.com.kocoa.databinding.ActivityMiniGameBinding
 
 class MiniGameActivity : AppCompatActivity() {
 
     lateinit var binding: ActivityMiniGameBinding
 
-    var miniGameAdapter:MiniGameAdapter? = null
+
+    val miniGameLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+    }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,34 +29,56 @@ class MiniGameActivity : AppCompatActivity() {
 
         initList()
 
-        initView()
+
+
     }
 
     fun initList() {
-
+        // 리스트의 모양을 담당하는 것
         val layoutManager = LinearLayoutManager(this)
         binding.miniGameList.layoutManager = layoutManager
 
-        miniGameAdapter = MiniGameAdapter()
+        // 어댑터를 설정하는 것
         binding.miniGameList.adapter = miniGameAdapter
 
+        // 아이템을 위한 데이터 넣기
         miniGameAdapter?.apply{
             this.items.add(MiniGameData(R.drawable.quiz,"축제 정보 퀴즈"))
             this.items.add(MiniGameData(R.drawable.minigame,"미니게임"))
         }
-    }
 
-    fun initView () {
-        miniGameAdapter?.listener = object :OnMinigameItemClickListener{
-            override fun ongameItemClick(holder: MiniGameAdapter.ViewHolder, view: View?, position: Int) {
-                miniGameAdapter?.apply{
+        // 아이템을 클릭했을 때 동작할 코드 넣어주기
+        JhAppData.miniGameAdapter?.listener = object : OnMinigameItemClickListener {
+            override fun onMiniGameItemClick(
+                holder: MiniGameAdapter.ViewHolder, view: View?, position: Int) {
+                JhAppData.miniGameAdapter?.apply {
                     val item = items.get(position)
+
                     JhAppData.selectedGameItem = item
+                    startActivity(Intent(this@MiniGameActivity,QuizMainActivity::class.java))
 
                 }
             }
         }
+
     }
+
+//    fun initView () {
+//        miniGameAdapter?.listener = object :OnMinigameItemClickListener{
+//            override fun ongameItemClick(holder: MiniGameAdapter.ViewHolder, view: View?, position: Int) {
+//                miniGameAdapter?.apply{
+//                    val item = items.get(position)
+//                    JhAppData.selectedGameItem = item
+//
+//                    val miniIntent = Intent(applicationContext,QuizMainActivity::class.java)
+//                    miniLauncher.launch(miniIntent)
+//
+//                }
+//            }
+//        }
+//
+//    }
+//
 
 
 }

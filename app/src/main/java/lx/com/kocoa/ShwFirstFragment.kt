@@ -58,7 +58,7 @@ class ShwFirstFragment : Fragment() {
         val layoutManager = LinearLayoutManager(getActivity())
         binding.festPassList.layoutManager = layoutManager
 
-        //각 아이템 오먕 잡아주기
+        //각 아이템 모양 잡아주기
         festAdapter = FestAdapter()
         binding.festPassList.adapter = festAdapter
 
