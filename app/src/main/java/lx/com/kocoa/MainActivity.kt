@@ -11,6 +11,7 @@ import lx.com.kocoa.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     // 커밋에 문제가 있나요?
+    // 문제가 없네요!
 
     lateinit var binding: ActivityMainBinding
 
