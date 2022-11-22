@@ -20,6 +20,8 @@ class SAppData {
         var data10:String? = null // 미니게임종류 입력
         var data11:String? = null // 미니게임정답 입력
         var data12: Uri? = null // 축제정보 포스터사진기입
+        var dataM1:String? = null // 주최자 이름ㅇㄴㅇㅇㅇ
+        var dataM2:String? = null // 주최자 이메일
 
         var selelctedItem:FestManagerData? = null // 아이템눌렀을때 상세페이지로 넘어갈때 쓰는거
     }

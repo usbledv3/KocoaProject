@@ -16,5 +16,7 @@ data class FestManagerData (
         val data9:String? = null, //미니게임객관식 문제이름입력
         val data10:String? = null, //미니게임 종류입력
         val data11:String? = null, //미니게임 정답입력
-        val data12: ImageView? = null//갤러리사진 넣기
+        val data12: ImageView? = null,//갤러리사진 넣기
+        val dataM1: String? = null,//주최자 이름
+        val dataM2: String? = null//주최자 이메일
 )
