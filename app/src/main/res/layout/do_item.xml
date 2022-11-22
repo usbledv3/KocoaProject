@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#6495ED"
+            android:background="#E4ECFA"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -23,8 +23,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2022 서울 빛초롱축제"
-                android:textColor="#FFFFFF"
-                android:textSize="20sp" />
+                android:textColor="#0618C1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/doImageView"
@@ -37,14 +38,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="기간 : 2022.12.16 - 12.31"
-                android:textColor="#FFFFFF" />
+                android:textColor="#08126E" />
 
             <TextView
                 android:id="@+id/doListPlace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="장소 : 서울 청계천"
-                android:textColor="#FFFFFF" />
+                android:textColor="#08126E" />
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

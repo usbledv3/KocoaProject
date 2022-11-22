@@ -74,13 +74,12 @@
                         android:textColor="#0618C1"
                         android:textStyle="bold" />
 
-                    <EditText
-                        android:id="@+id/dateInput"
+                    <TextView
+                        android:id="@+id/dateToday"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:ems="10"
-                        android:inputType="textPersonName" />
+                        android:textSize="18sp" />
 
                 </LinearLayout>
 
@@ -116,9 +115,10 @@
                 android:layout_width="328dp"
                 android:layout_height="83dp"
                 android:layout_marginTop="8dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/border"
                 android:ems="10"
                 android:inputType="textPersonName"
+                android:textColor="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.533"
                 app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +150,6 @@
             <RelativeLayout
                 android:layout_width="323dp"
                 android:layout_height="83dp"
-                android:background="@drawable/border"
                 app:layout_constraintBottom_toBottomOf="@+id/textInput"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.384"

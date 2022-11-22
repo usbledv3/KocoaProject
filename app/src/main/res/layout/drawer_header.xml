@@ -49,7 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingTop="@dimen/nav_header_vertical_spacing"
-                android:text="이름"
+                android:text="주최자1"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="#0618C1" />
 
@@ -57,7 +57,7 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="이메일"
+                android:text="kocoa@kocoa.com"
                 android:textColor="#0618C1" />
 
         </LinearLayout>
