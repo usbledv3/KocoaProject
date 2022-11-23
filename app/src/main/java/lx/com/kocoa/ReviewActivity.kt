@@ -2,6 +2,7 @@ package lx.com.kocoa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -141,6 +142,7 @@ class ReviewActivity : AppCompatActivity() {
                 this.notifyItemInserted(items.size)
             }
 
+            showToast("리뷰가 등록되었습니다.")
 
         }
 
@@ -168,6 +170,10 @@ class ReviewActivity : AppCompatActivity() {
         }
 
 
+    }
+
+    fun showToast(message:String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
 
