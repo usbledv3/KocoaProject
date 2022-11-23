@@ -131,6 +131,11 @@ class ReviewActivity : AppCompatActivity() {
             val name = binding.nameInput.text.toString()
             val text = binding.textInput.text.toString()
 
+            ReviewManagerData.titleofReview = title
+            ReviewManagerData.dateofReview = date
+            ReviewManagerData.nameofReview = name
+            ReviewManagerData.textofReview = text
+
             reviewAdapter?.apply {
                 items.add(ReviewData(title, date, name, text))
                 this.notifyItemInserted(items.size)

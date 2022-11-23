@@ -71,6 +71,7 @@
                         android:backgroundTint="#6495ED"
                         android:text="삭제"
                         android:textColor="#FFFFFF" />
+
                 </LinearLayout>
 
             </LinearLayout>

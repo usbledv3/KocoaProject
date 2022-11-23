@@ -2,6 +2,7 @@ package lx.com.kocoa
 
 import android.content.Intent
 import android.view.LayoutInflater
+import android.view.View
 import android.view.ViewGroup
 import android.widget.AdapterView
 import androidx.recyclerview.widget.RecyclerView
@@ -14,6 +15,7 @@ import java.time.format.DateTimeFormatter
 import java.util.Calendar.getInstance
 
 class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
+    var listener:OnReviewItemClickListener? = null
 
 //    interface OnItemClickListener {
 //        fun onItemEditClick(data: ReviewData, pos: Int)
@@ -69,13 +71,18 @@ class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
     }
 
     inner class ViewHolder(val binding: ReviewItemBinding) : RecyclerView.ViewHolder(binding.root) {
+        init {
+            binding.root.setOnClickListener {
+                listener?.onItemClick(this,binding.root,adapterPosition)
+            }
+        }
 
         private val reviewActivity=ReviewActivity.getInstance()
         var rReview: ReviewData? = null
         var rPosition: Int? = null
 
-        init {
 
+        init {
            // binding.editButton.setOnClickListener {
            //     val reviewIntent = Intent(reviewActivity,EditReviewActivity::class.java)
           //      reviewActivity?.reviewlauncher?.launch(reviewIntent)
