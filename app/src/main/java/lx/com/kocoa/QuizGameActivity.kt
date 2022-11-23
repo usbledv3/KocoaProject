@@ -51,7 +51,6 @@ class QuizGameActivity : AppCompatActivity() {
                 qCount += 1
                 quizChanged()
                 finalQuiz()
-
             }
         }.start()
 
@@ -125,7 +124,9 @@ class QuizGameActivity : AppCompatActivity() {
                     val mainIntent = Intent(applicationContext, QuizEndActivity::class.java)
                     mainLauncher.launch(mainIntent)
                     showToast("모든 문제를 다 푸셨습니다.")
+
                 }
+
             }
 
             binding.xButton.setOnClickListener {
@@ -133,6 +134,7 @@ class QuizGameActivity : AppCompatActivity() {
                     val mainIntent = Intent(applicationContext, QuizEndActivity::class.java)
                     mainLauncher.launch(mainIntent)
                     showToast("모든 문제를 다 푸셨습니다.")
+
                 }
             }
 
