@@ -16,7 +16,7 @@
             android:id="@+id/fesNameView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
+            android:layout_marginTop="32dp"
             android:text="축제를 등록하세요"
             android:textColor="#0618C1"
             android:textSize="34sp"
@@ -30,30 +30,30 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="360dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="규모 ex)지역행사 혹은 명단위"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/festOpenName" />
 
         <TextView
             android:id="@+id/festOutput1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="116dp"
+            android:layout_marginTop="32dp"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.501"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/festOpenLocation" />
+            app:layout_constraintTop_toBottomOf="@+id/checkInforButton" />
 
         <EditText
             android:id="@+id/festOpenLocation"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="80dp"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="개최지역"
             android:inputType="textPersonName"
@@ -76,40 +76,38 @@
             android:id="@+id/festOpenName"
             android:layout_width="250dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="284dp"
+            android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="축제명"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/inputPosterpic" />
 
         <ImageView
             android:id="@+id/inputPosterpic"
             android:layout_width="125dp"
             android:layout_height="125dp"
+            android:layout_marginTop="24dp"
             android:src="@android:drawable/ic_menu_gallery"
-            app:layout_constraintBottom_toTopOf="@+id/festOpenName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.269"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fesNameView"
-            app:layout_constraintVertical_bias="0.452" />
+            app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
         <Button
             android:id="@+id/addPosterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
             android:backgroundTint="#6495ED"
             android:text="사진 첨부"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/festOpenName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.749"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fesNameView"
-            app:layout_constraintVertical_bias="0.478" />
+            app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

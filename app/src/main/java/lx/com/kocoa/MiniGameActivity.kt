@@ -42,8 +42,9 @@ class MiniGameActivity : AppCompatActivity() {
 
         // 아이템을 위한 데이터 넣기
         miniGameAdapter?.apply{
-            this.items.add(MiniGameData(R.drawable.quiz,"축제 정보 퀴즈"))
-            this.items.add(MiniGameData(R.drawable.minigame,"미니게임"))
+            this.items.add(MiniGameData(R.drawable.quiz,"OX퀴즈"))
+            this.items.add(MiniGameData(R.drawable.minigame,"객관식 퀴즈"))
+            this.items.add(MiniGameData(R.drawable.minigame,"카드 게임"))
         }
 
         // 아이템을 클릭했을 때 동작할 코드 넣어주기
