@@ -29,8 +29,6 @@ class MiniGameActivity : AppCompatActivity() {
 
         initList()
 
-
-
     }
 
     fun initList() {
