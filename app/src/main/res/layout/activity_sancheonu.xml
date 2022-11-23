@@ -90,25 +90,25 @@
                 android:id="@+id/passbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="76dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginStart="72dp"
+                android:layout_marginTop="24dp"
                 android:background="#6495ED"
                 android:text="예약"
                 android:textColor="@color/white"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/reviewbtn" />
 
             <Button
                 android:id="@+id/minigamebtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="24dp"
                 android:background="#6495ED"
                 android:text="미니게임"
                 android:textColor="@color/white"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/passbutton"
-                app:layout_constraintTop_toBottomOf="@+id/ratingBar" />
+                app:layout_constraintTop_toBottomOf="@+id/reviewbtn" />
 
             <TextView
                 android:id="@+id/textView4"
@@ -175,16 +175,6 @@
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toEndOf="@+id/textView4"
                 app:layout_constraintTop_toBottomOf="@+id/rtbtn" />
-
-            <RatingBar
-                android:id="@+id/ratingBar"
-                android:layout_width="245dp"
-                android:layout_height="41dp"
-                android:layout_marginTop="36dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.539"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
             <Button
                 android:id="@+id/rtbtn"
