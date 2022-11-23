@@ -494,7 +494,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="13dp"
                     android:layout_weight="0.5"
-                    android:layout_marginLeft="13dp"
+
                     android:textColor="#ff9050"
                     android:textSize="20sp"
                     android:textStyle="bold" />
