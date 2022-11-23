@@ -59,10 +59,10 @@ class ShwFirstFragment : Fragment() {
         binding.festPassList.adapter = festAdapter
 
         //들어가는지 확인용 -> 들어가는거 확인됨
-//        festAdapter?.apply {
-//            this.items.add(FestManagerData("축제이름1", "패스종류예시1","패스적용범위예시1","패스기간예시1"))
-//            this.items.add(FestManagerData("축제이름2", "패스종류예시2","패스적용범위예시2","패스기간예시2"))
-//        }
+        festAdapter?.apply {
+            this.items.add(FestManagerData("축제이름1", "패스종류예시1","패스적용범위예시1","패스기간예시1"))
+            this.items.add(FestManagerData("축제이름2", "패스종류예시2","패스적용범위예시2","패스기간예시2")) //들어가는 화면 보류 ( data 안맞음 )
+        }
 
         festAdapter?.listener = object:OnFestInforItemClickListener{
             override fun onItemClick(holder: FestAdapter.ViewHolder?, view: View?, position: Int) {
