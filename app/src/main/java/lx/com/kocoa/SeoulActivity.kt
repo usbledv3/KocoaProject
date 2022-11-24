@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.ActivitySeoulBinding
 
 class SeoulActivity : AppCompatActivity() {
@@ -28,7 +30,8 @@ class SeoulActivity : AppCompatActivity() {
     fun initList() {
         // 리스트의 모양을 담당하는 것
         // (LinearLayoutManager : 아래쪽으로 아이템들이 보이는 것, GridLayoutManager: 격자 형태로 보이는 것)
-        val layoutManager = LinearLayoutManager(this)
+        //val layoutManager = LinearLayoutManager(this)
+        val layoutManager = GridLayoutManager(this,2, RecyclerView.VERTICAL,false)
         binding.seoulList.layoutManager = layoutManager
 
         // 2. 어댑터를 설정하는 것
