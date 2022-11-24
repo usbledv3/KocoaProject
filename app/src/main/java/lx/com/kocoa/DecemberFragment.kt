@@ -71,6 +71,30 @@ class DecemberFragment : Fragment() {
                     "경기도 고양시 일산동구 중앙로 1271-4"
                 )
             )
+            this.items.add(
+                DoData(
+                    "유성온천 크리스마스 축제",
+                    R.drawable.daejun_fes,
+                    "2022.12.02-2022.12.04",
+                    "대전광역시 유성구 계룡로123번길 52"
+                )
+            )
+            this.items.add(
+                DoData(
+                    "부산美아트페스티벌",
+                    R.drawable.art_fes,
+                    "2022.12.06-2022.12.07",
+                    "부산광역시 해운대구 APEC로 55 벡스코"
+                )
+            )
+            this.items.add(
+                DoData(
+                    "안성두메호수빙어축제",
+                    R.drawable.ansung_fes,
+                    "2022.12.24-2023.02.05",
+                    "경기도 안성시 죽산면 두메호수로 90"
+                )
+            )
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
