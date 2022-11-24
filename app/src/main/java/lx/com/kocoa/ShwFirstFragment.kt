@@ -51,7 +51,7 @@ class ShwFirstFragment : Fragment() {
 
     fun initList(){
         //리스트 모양잡기
-        val layoutManager = LinearLayoutManager(getActivity())
+        val layoutManager = LinearLayoutManager(activity)
         binding.festPassList.layoutManager = layoutManager
 
         //각 아이템 모양 잡아주기
@@ -60,8 +60,8 @@ class ShwFirstFragment : Fragment() {
 
         //들어가는지 확인용 -> 들어가는거 확인됨
         festAdapter?.apply {
-            this.items.add(FestManagerData("축제이름1", "패스종류예시1","패스적용범위예시1","패스기간예시1"))
-            this.items.add(FestManagerData("축제이름2", "패스종류예시2","패스적용범위예시2","패스기간예시2")) //들어가는 화면 보류 ( data 안맞음 )
+            this.items.add(FestManagerData("스윗패스", "","","2022년11월25일부터 2022년11월30일까지","코코아축제","","대구광역시","팔현길 212"))
+            this.items.add(FestManagerData("익스트림패스", "","","2023년1월6일부터 2023년1월8일까지","소프트웨어개발포럼","","대전광역시","둔산로 100"))
         }
 
         festAdapter?.listener = object:OnFestInforItemClickListener{
