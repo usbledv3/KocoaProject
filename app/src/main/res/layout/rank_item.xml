@@ -49,6 +49,7 @@
                         android:layout_height="30dp"
                         android:hint="nickname"
                         android:textColor="#0618C1"
+                        android:textStyle="bold"
                         android:textSize="20sp" />
 
                     <TextView
@@ -57,7 +58,7 @@
                         android:layout_height="40dp"
                         android:hint="score"
                         android:textAlignment="viewEnd"
-                        android:textColor="#6495ED"
+                        android:textColor="#0618C1"
                         android:textSize="30sp" />
                 </LinearLayout>
             </LinearLayout>

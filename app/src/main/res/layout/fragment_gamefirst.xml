@@ -15,6 +15,7 @@
         android:text="문제"
         android:textColor="#0618C1"
         android:textSize="34sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="24sp" />
 
             <EditText
@@ -81,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="2번"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="24sp" />
 
             <EditText
@@ -105,7 +106,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="3번"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="24sp" />
 
             <EditText
@@ -121,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
                 android:text="4번"
-                android:textColor="#000000"
+                android:textColor="#0618C1"
                 android:textSize="24sp" />
 
             <EditText
@@ -139,6 +140,7 @@
             android:layout_height="wrap_content"
             android:text="정답"
             android:textColor="#0618C1"
+            android:textStyle="bold"
             android:textSize="34sp" />
 
         <RadioGroup
@@ -153,28 +155,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1번"
-                android:textColor="#000000" />
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radiocase2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="2번"
-                android:textColor="#000000" />
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radiocase3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="3번"
-                android:textColor="#000000" />
+                android:textColor="@color/black" />
 
             <RadioButton
                 android:id="@+id/radiocase4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="4번"
-                android:textColor="#000000" />
+                android:textColor="@color/black" />
         </RadioGroup>
 
     </LinearLayout>

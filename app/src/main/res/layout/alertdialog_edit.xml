@@ -29,7 +29,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="제목" />
+                    android:text="제목"
+                    android:textColor="#0618C1"/>
 
                 <EditText
                     android:id="@+id/editReviewDateOutput"
@@ -37,7 +38,8 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="작성일" />
+                    android:text="작성일"
+                    android:textColor="#0618C1"/>
 
                 <EditText
                     android:id="@+id/editReviewNameOutput"
@@ -45,14 +47,15 @@
                     android:layout_height="wrap_content"
                     android:ems="10"
                     android:inputType="textPersonName"
-                    android:text="이름" />
+                    android:text="이름"
+                    android:textColor="#0618C1"/>
 
                 <EditText
                     android:id="@+id/editReviewTextOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="내용"
-                    android:textColor="#ff9050"
+                    android:textColor="#0618C1"
                     android:textSize="16sp" />
 
             </LinearLayout>

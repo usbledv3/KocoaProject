@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:text="축제 후기 관리"
             android:textColor="#0618C1"
+            android:textStyle="bold"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

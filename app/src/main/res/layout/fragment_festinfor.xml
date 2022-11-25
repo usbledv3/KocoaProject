@@ -33,6 +33,7 @@
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="규모 ex)지역행사 혹은 명단위"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/festOpenName" />
@@ -56,6 +57,7 @@
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="개최지역"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/festOpenRange" />
@@ -79,6 +81,7 @@
             android:layout_marginTop="16dp"
             android:ems="10"
             android:hint="축제명"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
