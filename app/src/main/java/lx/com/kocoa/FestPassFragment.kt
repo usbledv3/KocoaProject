@@ -34,11 +34,9 @@ class FestPassFragment : Fragment() {
 
         binding.checkPassButton.setOnClickListener {
             val passfestname = binding.passFestNameIn.text.toString()
-            //val passname = binding.passPassNameIn.text.toString()
             val passrange = binding.passFestRangeIn.text.toString()
             val passtime = binding.passTimeIn.text.toString()
             SAppData.data1 = passfestname
-            //SAppData.data2 = passname
             SAppData.data3 = passrange
             SAppData.data4 = passtime
 
@@ -48,6 +46,8 @@ class FestPassFragment : Fragment() {
                 items.add(FestManagerData(passfestname,passrange,passtime))
                 notifyDataSetChanged()
             }
+            val curActivity = activity as SHWMainActivity
+            curActivity.replaceView(FestPassListFragment())
         }
         //아래는 적용시작 ~ 종료 날짜시간 입력하는 다이얼
         binding.date.setOnClickListener {
