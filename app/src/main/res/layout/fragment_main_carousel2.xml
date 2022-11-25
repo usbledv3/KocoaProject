@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/carouselImage2"
         android:layout_width="wrap_content"
-        android:layout_height="260dp"
+        android:layout_height="300dp"
         android:src="@drawable/busan_festival"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

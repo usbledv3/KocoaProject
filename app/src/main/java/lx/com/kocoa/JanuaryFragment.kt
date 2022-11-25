@@ -49,9 +49,12 @@ class JanuaryFragment : Fragment() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         januaryAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29","강원도 화천군 화천읍 산천어길 137"))
+            this.items.add(DoData("2023 화천 산천어축제", R.drawable.sanchun_fes,"2023.1.7-1.29","강원도 화천군 화천읍 산천어길 137"))
             this.items.add(DoData("포항국제사진제 PIFF", R.drawable.piff_fes,"2023.1.19-2023.1.30","경상북도 포항시 남구 희망대로 850(대도동)"))
             this.items.add(DoData("별빛정원우주 365일 별빛축제", R.drawable.byul_fes,"2022.1.1-2022.12.31","경기도 이천시 마장면 덕이로154번길 287-76"))
+            this.items.add(DoData("퍼스트가든 빛축제", R.drawable.firstgarden,"2022.01.01-2022.12.31","경기도 파주시 탑삭골길 260"))
+            this.items.add(DoData("부산국제광고제", R.drawable.adver_fes,"2022.1.1-2022.12.31","부산광역시 해운대구 APEC로 55(우동)"))
+            this.items.add(DoData("수원화성의 비밀", R.drawable.suwon_2,"2022.1.1-2022.12.31","경기도 수원시 팔달구 행궁로 11"))
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
