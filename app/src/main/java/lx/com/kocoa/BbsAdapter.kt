@@ -1,6 +1,7 @@
 package lx.com.kocoa
 
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.BbsItemBinding
@@ -26,6 +27,10 @@ class BbsAdapter : RecyclerView.Adapter<BbsAdapter.ViewHolder>() {
         val item = items[position]
         holder.setItem(item)
     }
+    fun BbsItemDelete(position: Int){ // 얘 활성화되는곳 없음
+        items.removeAt(position)
+        notifyItemRemoved(position)
+    }
 
     // 각 아이템의 모양을 재사용하기 위해 만들어진 것
     inner class ViewHolder(val binding: BbsItemBinding) : RecyclerView.ViewHolder(binding.root) {
@@ -40,6 +45,8 @@ class BbsAdapter : RecyclerView.Adapter<BbsAdapter.ViewHolder>() {
         init {
             binding.root.setOnClickListener {
                 listener?.onBbsItemClick(this, binding.root, adapterPosition)
+
+
             }
         }
 
