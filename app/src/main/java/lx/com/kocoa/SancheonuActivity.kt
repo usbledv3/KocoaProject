@@ -35,15 +35,24 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
 
         apiOn()
 
-        binding.passbutton.setOnClickListener {
+        binding.bookImage.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,FespassActivity::class.java))
         }
-        binding.reviewbtn.setOnClickListener {
+        binding.bookText.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,FespassActivity::class.java))
+        }
+        binding.reviewText.setOnClickListener {
 //            val sancheonuInfoIntent = Intent(this,ReviewActivity::class.java)
 //            sancheonuInforlauncher.launch(sancheonuInfoIntent)
             startActivity(Intent(this@SancheonuActivity,ReviewActivity::class.java))
         }
-        binding.minigamebtn.setOnClickListener {
+        binding.reviewImage.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,ReviewActivity::class.java))
+        }
+        binding.miniText.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,MiniGameActivity::class.java))
+        }
+        binding.miniImage.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,MiniGameActivity::class.java))
         }
         binding.rtbtn.setOnClickListener {

@@ -20,10 +20,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="50dp"
             android:text="회원 정보 수정"
-            android:textColor="#0618C1"
-            android:textSize="30sp"
+            android:textColor="#071591"
+            android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
@@ -33,36 +33,39 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:text="현재 닉네임"
-            android:textColor="#0618C1"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <EditText
             android:id="@+id/nameInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="닉네임"
             android:inputType="textPersonName" />
 
         <EditText
             android:id="@+id/passwordInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="비밀번호"
             android:inputType="textPassword" />
 
         <EditText
             android:id="@+id/ageInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="나이"
             android:inputType="textPersonName" />
@@ -71,16 +74,16 @@
             android:id="@+id/genderInfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
             android:layout_marginTop="30dp"
             android:text="성별을 선택하세요"
-            android:textColor="#0618C1"
+            android:textColor="@color/black"
             android:textSize="20sp" />
 
         <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginStart="55dp"
             android:layout_marginTop="30dp"
             android:orientation="horizontal">
 
@@ -100,7 +103,7 @@
         </RadioGroup>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
@@ -108,22 +111,21 @@
 
             <Button
                 android:id="@+id/renameButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="100dp"
-                android:backgroundTint="#6495ED"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
+                android:background="@drawable/button_full"
                 android:text="수정"
-                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/nbackButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="140dp"
+                android:layout_height="35dp"
                 android:layout_marginLeft="20dp"
-                android:backgroundTint="#6495ED"
+                android:background="@drawable/button_stroke"
                 android:text="취소"
-                android:textColor="@color/common_google_signin_btn_text_dark"
+                android:textColor="@color/black"
                 android:textStyle="bold" />
         </LinearLayout>
 
