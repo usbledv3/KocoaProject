@@ -9,13 +9,15 @@ import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.FragmentShwfifthBinding
 
 class ShwFifthFragment : Fragment() {
     var _binding: FragmentShwfifthBinding? = null
     val binding get() = _binding!!
-    var reviewAdapter:ReviewAdapter? = null
+    var manageReviewAdapter:ManageReviewAdapter? = null
     val ManagereviewLauuncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
     }
 
@@ -33,10 +35,10 @@ class ShwFifthFragment : Fragment() {
         val layoutManager = LinearLayoutManager(activity)
         binding.SHWFestreviewList.layoutManager = layoutManager
 
-        reviewAdapter = ReviewAdapter()
-        binding.SHWFestreviewList.adapter = reviewAdapter
+        manageReviewAdapter = ManageReviewAdapter()
+        binding.SHWFestreviewList.adapter = manageReviewAdapter
 
-        reviewAdapter?.apply {
+        manageReviewAdapter?.apply {
 
             this.items.add(ReviewData("산천어 축제 잘 즐기고 갑니다", "2020-02-08", "정익환",
                 "산천어 축제 즐길거리가 많아서 좋았어요. 특히 버블 슈트 체험은 아이들이 너무 좋아했어요!!"))
@@ -50,9 +52,9 @@ class ShwFifthFragment : Fragment() {
         }
 
         //늘렀을때 화면 이동
-        reviewAdapter?.listener = object:OnReviewItemClickListener{
-            override fun onItemClick(holder: ReviewAdapter.ViewHolder?, view: View?, position: Int) {
-                reviewAdapter?.apply {
+        manageReviewAdapter?.listener = object:OnManageReviewItemClickListener {
+            override fun onItemClick(holder: ManageReviewAdapter.ViewHolder?, view: View?, position: Int) {
+                manageReviewAdapter?.apply {
                     val item = items.get(position)
 
                     ReviewManagerData.selectedItem = item
@@ -68,7 +70,7 @@ class ShwFifthFragment : Fragment() {
     fun initView(){
         binding.refreshReviewButton.setOnClickListener {
 
-            reviewAdapter?.apply {
+            manageReviewAdapter?.apply {
                 items.add(ReviewData(
                     ReviewManagerData.titleofReview,
                     ReviewManagerData.dateofReview,
