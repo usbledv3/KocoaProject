@@ -157,6 +157,7 @@ class PointShopActivity : AppCompatActivity() {
                 binding.rewardWrite4.text = "'${input4}' - 사용된 코드"
             }
         }
+
         binding.nbackButton2.setOnClickListener {
             val infoIntent = Intent(applicationContext, MyPageActivity::class.java)
             pointLauncher.launch(infoIntent)
