@@ -1,12 +1,9 @@
 package lx.com.kocoa
 
-data class ReviewData(
-      val profile:Int? = null,
-      val title:String? =null,
-      val date:String? = null,
-      val name:String? = null,
-      val text:String? = null
-
-
-
+class ReviewData(
+//    var profile:Int? = null,
+    var title:String? =null,
+    var date:String? = null,
+    var name:String? = null,
+    var text:String? = null
 )

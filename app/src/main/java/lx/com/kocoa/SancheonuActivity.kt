@@ -3,6 +3,7 @@ package lx.com.kocoa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.annotation.UiThread
 import com.naver.maps.geometry.LatLng
 import com.naver.maps.map.*
@@ -17,6 +18,9 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
     lateinit var binding: ActivitySancheonuBinding
     var mapx : String? = null
     var mapy : String? = null
+//    val sancheonuInforlauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+//
+//    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,13 +35,24 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
 
         apiOn()
 
-        binding.passbutton.setOnClickListener {
+        binding.bookImage.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,FespassActivity::class.java))
         }
-        binding.reviewbtn.setOnClickListener {
+        binding.bookText.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,FespassActivity::class.java))
+        }
+        binding.reviewText.setOnClickListener {
+//            val sancheonuInfoIntent = Intent(this,ReviewActivity::class.java)
+//            sancheonuInforlauncher.launch(sancheonuInfoIntent)
             startActivity(Intent(this@SancheonuActivity,ReviewActivity::class.java))
         }
-        binding.minigamebtn.setOnClickListener {
+        binding.reviewImage.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,ReviewActivity::class.java))
+        }
+        binding.miniText.setOnClickListener {
+            startActivity(Intent(this@SancheonuActivity,MiniGameActivity::class.java))
+        }
+        binding.miniImage.setOnClickListener {
             startActivity(Intent(this@SancheonuActivity,MiniGameActivity::class.java))
         }
         binding.rtbtn.setOnClickListener {

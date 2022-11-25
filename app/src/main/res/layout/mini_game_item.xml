@@ -7,7 +7,7 @@
 
     <LinearLayout
         android:layout_width="411dp"
-        android:layout_height="wrap_content"
+        android:layout_height="340dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

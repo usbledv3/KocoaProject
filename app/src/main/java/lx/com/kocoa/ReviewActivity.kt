@@ -2,45 +2,147 @@ package lx.com.kocoa
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.ActivityReviewBinding
+import lx.com.kocoa.databinding.AlertdialogEditBinding
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class ReviewActivity : AppCompatActivity() {
     lateinit var binding: ActivityReviewBinding
 
-    var reviewAdapter: ReviewAdapter? = null
+    private var reviewAdapter: ReviewAdapter? = null
 
-    val customerInfoLauncher =
-        registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+    val reviewlauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
 
+    }
+
+//    private val list:MutableList<ReviewData> = mutableListOf()
+    private val list = ArrayList<ReviewData>()
+
+    init{
+        instance = this
+    }
+
+    companion object{
+        private var instance: ReviewActivity? = null
+        fun getInstance():ReviewActivity?{
+            return instance
         }
+    }
+
+    val now = LocalDateTime.now()
+    val formatDate = DateTimeFormatter.ISO_DATE
+    val nowDate = now.format(formatDate)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityReviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        reviewAdapter=ReviewAdapter()
+        reviewAdapter!!.items=list
+
+        binding.dateToday.text=nowDate
+
+
         initList()
 
         initView()
+
+//        reviewAdapter!!.setOnItemClickListener(object : ReviewAdapter.OnItemClickListener {
+//            override fun onItemEditClick(data: ReviewData, pos: Int) {
+//                TODO("Not yet implemented")
+//            }
+//
+//            override fun onItemDeleteClick(data: ReviewData, pos: Int) {
+//                reviewAdapter!!.reviewDataDelete(pos)
+//                reviewAdapter!!.notifyItemRemoved(pos)
+//                reviewAdapter!!.notifyItemRangeChanged(pos, list.size)
+//            }
+//        })
+
+    }
+
+    fun deleteReview(position: Int){
+        list.removeAt(position)
+        reviewAdapter?.notifyItemChanged(position)
+    }
+
+    fun editReview(position: Int, reviewData: ReviewData){
+
+        val builder = AlertDialog.Builder(this)
+        val builderItem = AlertdialogEditBinding.inflate(layoutInflater)
+        val editTitle = builderItem.editReviewTitleOutput
+//        val editProfile = builderItem.editReviewProfile
+        val editDate = builderItem.editReviewDateOutput
+        val editName = builderItem.editReviewNameOutput
+        val editText = builderItem.editReviewTextOutput
+        val dialogView = layoutInflater.inflate(R.layout.alertdialog_edit, null)
+
+        builder.setTitle("리뷰 수정")
+        builder.setView(dialogView)
+            .setPositiveButton("OK"){ dialogInterface, i ->
+                reviewData.title = editTitle.text.toString()
+                reviewData.date = editDate.text.toString()
+                reviewData.name = editName.text.toString()
+                reviewData.text = editText.text.toString()
+                list[position].title = reviewData.title
+                list[position].date = reviewData.date
+                list[position].name = reviewData.name
+                list[position].text = reviewData.text
+            /* 확인일 때 main의 View의 값에 dialog View에 있는 값을 적용 */
+            }
+            .show()
+//        with(builder){
+//            setTitle("리뷰 수정")
+////                setMessage("")
+//            setView(builderItem.root)
+//            setPositiveButton("OK") { _: DialogInterface, _: Int ->
+//
+//                if(list.size != 0) {
+//                    reviewData.title = editTitle.text.toString()
+//                    reviewData.date = editDate.text.toString()
+//                    reviewData.name = editName.text.toString()
+//                    reviewData.text = editText.text.toString()
+//                    println("수정됨")
+//                    Log.d("태그", "리뷰ㄴ")
+//                    list[position] = reviewData
+//                    reviewData!!.text?.let { Log.d("", it) }
+//                    Log.d("태그", "리뷰ㄴ")
+//                    //reviewAdapter?.notifyItemChanged(position)
+//                    reviewAdapter?.notifyItemRangeChanged(position, 1)
+//                }
+//            }
+//            show()
+//        }
     }
 
     fun initView() {
+
         //추가 버튼 눌렀을때
         binding.addButton.setOnClickListener {
             //입력상자에서 글자 가져오기
 
             val title = binding.titleInput.text.toString()
-            val date = binding.dateInput.text.toString()
+            val date = nowDate
             val name = binding.nameInput.text.toString()
             val text = binding.textInput.text.toString()
 
+            ReviewManagerData.titleofReview = title
+            ReviewManagerData.dateofReview = date
+            ReviewManagerData.nameofReview = name
+            ReviewManagerData.textofReview = text
+
             reviewAdapter?.apply {
-                items.add(ReviewData(R.drawable.dragon,title, date, name, text))
-                notifyDataSetChanged()
+                items.add(ReviewData(title, date, name, text))
+                this.notifyItemInserted(items.size)
             }
 
+            showToast("리뷰가 등록되었습니다.")
 
         }
 
@@ -56,22 +158,22 @@ class ReviewActivity : AppCompatActivity() {
 
         reviewAdapter?.apply {
 
-            this.items.add(ReviewData(R.drawable.dragon,"빛초롱 축제 잘 즐기고 갑니다", "2020-02-08", "정익환",
-                "청계천에서 열리는 빛초롱 축제입니다. 등 작품 하나하나 디테일하며, 특히 전통적인 그림과 한국의 색이 뚜렷한 작품들이 많아서 만족했습니다." +
-                        "외국인들에게 많은 홍보가 된다면 보다 더 서울 관광에 도움이 될거 같습니다. "))
+            this.items.add(ReviewData("산천어 축제 잘 즐기고 갑니다", "2020-02-08", "정익환",
+                "산천어 축제 즐길거리가 많아서 좋았어요. 특히 버블 슈트 체험은 아이들이 너무 좋아했어요!!"))
 
-            this.items.add(ReviewData(R.drawable.dragon2,"빛초롱 축제에 대한 소감이에요~", "2021-02-08", "성희우",
-                "조형물도 많고, 지루하지 않게 애니메이션 캐릭터와 동화 캐릭터도 있어서 아이들도 좋아할것 같아요. " +
-                        "남산타워 등의 랜드마크도 있고 위에 설치된 물고기와 청사초롱도 예뻤어요."))
+            this.items.add(ReviewData("산천어 축제에 대한 소감이에요~", "2021-02-08", "성희우",
+                "주말에는 지역 주민들이 행사에 몰려 들기 때문에 주말에는 더욱 혼잡 해져서 평일 방문하는 것이 가장 좋습니다."))
 
-
-            this.items.add(ReviewData(R.drawable.dragon3,"산천어", "2021-01-02", "김주희",
-                "주말에는 지역 주민들이 카니발 행사에 몰려 들기 때문에 주말에는 더욱 혼잡 해져서 평일 방문하는 것이 가장 좋습니다. " +
-                        "여유롭게 산책을하면서 길을 따라 사진을 찍을 때 약 1 시간 만에 랜턴 페스티벌 (약 2km로 추정)의 전체 거리를 커버 할 수 있습니다. "))
+            this.items.add(ReviewData("산천어", "2021-01-02", "김주희",
+                "사전 예약시스템으로 미리 예약을 하고 가니까 인기 많은 산천어 맨손잡기 체험을 바로 해볼 수 있어서 좋았습니다."))
 
         }
 
 
+    }
+
+    fun showToast(message:String) {
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show()
     }
 
 

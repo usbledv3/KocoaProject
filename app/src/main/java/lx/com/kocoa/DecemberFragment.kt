@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.FragmentDecemberBinding
 
 class DecemberFragment : Fragment() {
@@ -33,7 +35,8 @@ class DecemberFragment : Fragment() {
     fun initView() {
         // 리스트의 모양을 담당하는 것
         // (LinearLayoutManager : 아래쪽으로 아이템들이 보이는 것, GridLayoutManager: 격자 형태로 보이는 것)
-        val layoutManager = LinearLayoutManager(context)
+        //val layoutManager = LinearLayoutManager(context)
+        val layoutManager = GridLayoutManager(context,2, RecyclerView.VERTICAL,false)
         binding.decemberList.layoutManager = layoutManager
 
         // 2. 어댑터를 설정하는 것
@@ -66,6 +69,30 @@ class DecemberFragment : Fragment() {
                     R.drawable.petsrun_fes,
                     "2022.12.2-2022.12.3",
                     "경기도 고양시 일산동구 중앙로 1271-4"
+                )
+            )
+            this.items.add(
+                DoData(
+                    "유성온천 크리스마스 축제",
+                    R.drawable.daejun_fes,
+                    "2022.12.02-2022.12.04",
+                    "대전광역시 유성구 계룡로123번길 52"
+                )
+            )
+            this.items.add(
+                DoData(
+                    "부산美아트페스티벌",
+                    R.drawable.art_fes,
+                    "2022.12.06-2022.12.07",
+                    "부산광역시 해운대구 APEC로 55 벡스코"
+                )
+            )
+            this.items.add(
+                DoData(
+                    "안성두메호수빙어축제",
+                    R.drawable.ansung_fes,
+                    "2022.12.24-2023.02.05",
+                    "경기도 안성시 죽산면 두메호수로 90"
                 )
             )
         }

@@ -41,17 +41,18 @@ class BbsActivity : AppCompatActivity() {
 
         // 어댑터를 설정하는 것 --> 실제 데이터를 관리하고 각 아이템의 모양을 만들어 주는 것
 
-        binding.bbsList.adapter = JhAppData.bbsAdapter
+        bbsAdapter = BbsAdapter()
+        binding.bbsList.adapter = bbsAdapter
 
         // 아이템을 위한 데이터 넣기
-        JhAppData.bbsAdapter?.apply {
+        bbsAdapter?.apply {
             this.items.add(BbsData("[공지사항]", "운영자", "건의사항", "[건의사항]"))
         }
 
         // 아이템을 클릭했을 때 동작할 코드 넣어주기
-        JhAppData.bbsAdapter?.listener = object : OnBbsItemClickListener {
+        bbsAdapter?.listener = object : OnBbsItemClickListener {
             override fun onBbsItemClick(holder: BbsAdapter.ViewHolder, view: View?, position: Int) {
-                JhAppData.bbsAdapter?.apply{
+                bbsAdapter?.apply{
                     val item = items.get(position)
 
                     JhAppData.selectedBbsItem = item

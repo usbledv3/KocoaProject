@@ -7,7 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.FragmentAugustBinding
 
 class AugustFragment : Fragment() {
@@ -33,7 +35,8 @@ class AugustFragment : Fragment() {
     fun initView() {
         // 리스트의 모양을 담당하는 것
         // (LinearLayoutManager : 아래쪽으로 아이템들이 보이는 것, GridLayoutManager: 격자 형태로 보이는 것)
-        val layoutManager = LinearLayoutManager(context)
+        //val layoutManager = LinearLayoutManager(context)
+        val layoutManager = GridLayoutManager(context,2, RecyclerView.VERTICAL,false)
         binding.augustList.layoutManager = layoutManager
 
         // 2. 어댑터를 설정하는 것

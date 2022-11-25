@@ -40,7 +40,8 @@ class FestGameListFragment : Fragment() {
         binding.miniList.adapter = miniAdapter
 
         miniAdapter?.apply {
-            GamesData.game?.let { items.add(it) }
+            GamesData.game1?.let { items.add(it) }
+            GamesData.game2?.let { items.add(it) }
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기

@@ -21,14 +21,11 @@ class ShwFirstFragment : Fragment() {
     }
 
 
-
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentShwfirstBinding.inflate(inflater, container, false)
 
         initList()
         initView()
-
 
         return binding.root
     }
@@ -50,23 +47,22 @@ class ShwFirstFragment : Fragment() {
                 notifyDataSetChanged()
             }
         }
-
     }
 
     fun initList(){
         //리스트 모양잡기
-        val layoutManager = LinearLayoutManager(getActivity())
+        val layoutManager = LinearLayoutManager(activity)
         binding.festPassList.layoutManager = layoutManager
 
-        //각 아이템 오먕 잡아주기
+        //각 아이템 모양 잡아주기
         festAdapter = FestAdapter()
         binding.festPassList.adapter = festAdapter
 
         //들어가는지 확인용 -> 들어가는거 확인됨
-//        festAdapter?.apply {
-//            this.items.add(FestManagerData("축제이름1", "패스종류예시1","패스적용범위예시1","패스기간예시1"))
-//            this.items.add(FestManagerData("축제이름2", "패스종류예시2","패스적용범위예시2","패스기간예시2"))
-//        }
+        festAdapter?.apply {
+            this.items.add(FestManagerData("라이트닝패스", "","","2022년11월25일부터 2022년11월30일까지","빛야간축제","","대구광역시","두류공원로 200"))
+            this.items.add(FestManagerData("익스트림패스", "","","2023년1월6일부터 2023년1월8일까지","힐링아트페스티벌","","대전광역시","둔산동 1544"))
+        }
 
         festAdapter?.listener = object:OnFestInforItemClickListener{
             override fun onItemClick(holder: FestAdapter.ViewHolder?, view: View?, position: Int) {

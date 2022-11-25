@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.ActivityGangwonBinding
 
 class GangwonActivity : AppCompatActivity() {
@@ -28,7 +30,8 @@ class GangwonActivity : AppCompatActivity() {
     fun initList() {
         // 리스트의 모양을 담당하는 것
         // (LinearLayoutManager : 아래쪽으로 아이템들이 보이는 것, GridLayoutManager: 격자 형태로 보이는 것)
-        val layoutManager = LinearLayoutManager(this)
+        //val layoutManager = LinearLayoutManager(this)
+        val layoutManager = GridLayoutManager(this,2, RecyclerView.VERTICAL,false)
         binding.gangwonList.layoutManager = layoutManager
 
         // 2. 어댑터를 설정하는 것
@@ -39,7 +42,7 @@ class GangwonActivity : AppCompatActivity() {
         // 3. 테스트로 아이템을 위한 데이터 넣어보기
         doAdapter?.apply {
             this.items.clear()
-            this.items.add(DoData("화천산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29", "강원도 화천군 화천읍 산천어길 137"))
+            this.items.add(DoData("2023 화천 산천어축제", R.drawable.hwachun_festival,"2023.1.7-1.29", "강원도 화천군 화천읍 산천어길 137"))
             this.items.add(DoData("제8회 고니골빛축제", R.drawable.gony_fes,"2022.11.19-2023.02.05", "강원도 원주시 호저면 호저로 1277-43"))
             this.items.add(DoData("제34회 춘천인형극제", R.drawable.doll_fes,"2022.04.01-2022.12.31", "강원도 춘천시 영서로 3017"))
         }

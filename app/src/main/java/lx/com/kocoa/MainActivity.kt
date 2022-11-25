@@ -10,10 +10,9 @@ import androidx.fragment.app.Fragment
 import lx.com.kocoa.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    // 테스트를 한번 더 해 봅시다 111
-    // 커밋이 잘 되었나요?
-    // 1042948178
-    // 1111111ㅇㅇ
+    // 커밋에 문제가 있나요?
+    // 문제가 없네요!
+
     lateinit var binding: ActivityMainBinding
 
     //부분화면 구분자
@@ -48,13 +47,14 @@ class MainActivity : AppCompatActivity() {
         binding.navigationView.setNavigationItemSelectedListener{
             when(it.itemId){
                 R.id.item1 -> {
-                    showToast("축제등록 현황")
-                    onFragmentChanged(FragmentItem.ITEM1, null)
-                }
-                R.id.item2 -> {
                     showToast("축제 등록하기")
                     onActivityChanged(ActivityItem.ITEM4) // Activity로 넘어가는 부분이라서 null필요없음.
                 }
+                R.id.item2 -> {
+                    showToast("축제등록 현황")
+                    onFragmentChanged(FragmentItem.ITEM1, null)
+                }
+
                 R.id.item3 -> {
                     showToast("축제후기 관리")
                     onFragmentChanged(FragmentItem.ITEM5, null)

@@ -14,7 +14,7 @@ class SHWMainActivity : AppCompatActivity() {
     lateinit var festinforFragment: FestInforFragment // 축제정보 프레그먼트
     lateinit var festmapFragment: FestMapFragment // 지도 프레그먼트
     lateinit var festgameFragment: FestGameListFragment // 미니게임 프레그먼트
-    lateinit var festpassFragment: FestPassFragment // 페스패스 프레그먼트
+    lateinit var festpassFragment: FestPassListFragment // 페스패스 프레그먼트
     lateinit var shwFirstFragment:ShwFirstFragment// 등록현황 프레그먼트
     lateinit var festPassFragment: FestPassFragment // 이거도 있어야함!! 위에꺼랑 다른거임!!
     var festAdapter:FestAdapter? = null
@@ -34,7 +34,7 @@ class SHWMainActivity : AppCompatActivity() {
         festinforFragment = FestInforFragment() // 축제정보 프레그먼트로 화면연결
         festmapFragment = FestMapFragment() // 지도 프레그먼트로 화면연결
         festgameFragment = FestGameListFragment() // 미니게임 프레그먼트로 화면연결
-        festpassFragment = FestPassFragment() // 페스패스 프레그먼트로 화면연결
+        festpassFragment = FestPassListFragment() // 페스패스 프레그먼트로 화면연결
 
         binding.registerButton.setOnClickListener {//등록현황Fragment로 넘어가는 버튼
 
@@ -52,6 +52,7 @@ class SHWMainActivity : AppCompatActivity() {
                         SAppData.data9, //객관식 미니게임 이름
                         SAppData.data10, //미니게임 종류
                         SAppData.data11 //미니게임 정답
+                        // 갤러리에서 불러온 사진
                     )
                 )
                 notifyDataSetChanged()
