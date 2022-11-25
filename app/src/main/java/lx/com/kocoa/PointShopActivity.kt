@@ -62,14 +62,14 @@ class PointShopActivity : AppCompatActivity() {
                 in 5000..1000000 -> {
                     builder.setTitle("산천어 빵을 교환하셨습니다")
                         .setIcon(R.drawable.san2)
-                        .setMessage("\n 'bang'을 입력하세요")
+                        .setMessage("\n 'bread'을 입력하세요")
                         .setPositiveButton("확인",
                             DialogInterface.OnClickListener { dialog, id ->
                             })
                     builder.show()
                     PointAppData.reward = PointAppData.reward!! - 5000
                     binding.rewardPoint2.text = "보유 포인트 : ${PointAppData.reward} points"
-                    binding.rewardWrite1.text = "'bang'"
+                    binding.rewardWrite1.text = "'bread'"
                 }
             }
         }
@@ -147,7 +147,7 @@ class PointShopActivity : AppCompatActivity() {
             val input3 = binding.barcodeText.text.toString()
             val input4 = binding.barcodeText.text.toString()
 
-            if (input1 == "bang") {
+            if (input1 == "bread") {
                 binding.rewardWrite1.text = "'${input1}' - 사용된 코드"
             } else if (input2 == "san") {
                 binding.rewardWrite2.text = "'${input2}' - 사용된 코드"
