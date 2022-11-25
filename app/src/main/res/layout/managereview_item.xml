@@ -69,7 +69,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#6495ED"
-                        android:text="삭제"
+                        android:text="피드백"
                         android:textColor="#FFFFFF" />
 
                 </LinearLayout>

@@ -17,7 +17,6 @@ class ShwFifthFragment : Fragment() {
     val binding get() = _binding!!
     var reviewAdapter:ReviewAdapter? = null
     val ManagereviewLauuncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-
     }
 
 
