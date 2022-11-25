@@ -1,5 +1,6 @@
 package lx.com.kocoa
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -8,6 +9,7 @@ import android.view.MenuItem
 import android.widget.Toast
 import lx.com.kocoa.databinding.ActivityBbsViewBinding
 import java.nio.file.Files.delete
+import java.text.FieldPosition
 
 
 class BbsViewActivity : AppCompatActivity() {
@@ -36,6 +38,7 @@ class BbsViewActivity : AppCompatActivity() {
         }
 
 
+
     // 옵션 메뉴 설정
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
 
@@ -43,6 +46,11 @@ class BbsViewActivity : AppCompatActivity() {
         inflater.inflate(R.menu.option_menu,menu)
 
         return true
+
+    }
+    fun BbsItemDelete(){
+        startActivity(Intent(this@BbsViewActivity, BbsActivity::class.java))
+        //일단 화면 움직이는거로 -> 저장안되니까 일단 삭제되는거로 보이긴함. 근데 뒤로가기누르면 남아있음
 
     }
 
@@ -63,6 +71,7 @@ class BbsViewActivity : AppCompatActivity() {
 
             R.id.delete -> {
                 Toast.makeText(this,"삭제",Toast.LENGTH_SHORT).show()
+                BbsItemDelete()
                 return true
             }
 
