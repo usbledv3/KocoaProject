@@ -19,7 +19,9 @@ class MiniGameActivity : AppCompatActivity() {
     val miniGameLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
+    val nnmainLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
 
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +30,11 @@ class MiniGameActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initList()
+
+        binding.nnBackButton.setOnClickListener {
+            val nnmain = Intent(this, MainActivity::class.java)
+            nnmainLauncher.launch(nnmain)
+        }
 
     }
 
