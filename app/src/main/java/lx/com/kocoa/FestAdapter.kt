@@ -39,10 +39,10 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
 
         }
         fun setRsvnItem(item:FestManagerData){
-            binding.pasFestNameOut.text = " 축제이름 : ${item.data5}"
-            binding.passPassNameOut.text = "패스이름 : ${item.data1}"
-            binding.passFestRangeOut.text = "적용인원 : ${item.data3}"
-            binding.passTimeOut.text = "패스 적용시작 : ${item.data4}부터 적용"
+            binding.pasFestNameOut.text = " ${item.data5}"
+            binding.passPassNameOut.text = "${item.data1}"
+            binding.passFestRangeOut.text = "${item.data3}"
+            binding.passTimeOut.text = "${item.data4}부터 적용"
 
 
         }
