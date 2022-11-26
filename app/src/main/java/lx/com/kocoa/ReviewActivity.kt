@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
+import lx.com.kocoa.AppDataYW.Companion.reviewAdapter
 import lx.com.kocoa.databinding.ActivityReviewBinding
 import lx.com.kocoa.databinding.AlertdialogEditBinding
 import java.time.LocalDateTime
@@ -72,7 +73,6 @@ class ReviewActivity : AppCompatActivity() {
             AppDataYW.reviewDate = date
             AppDataYW.reviewName = name
             AppDataYW.reviewText = text
-
 
             AppDataYW.reviewAdapter?.apply {
                 items.add(ReviewData(title, date, name, text))

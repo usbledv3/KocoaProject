@@ -62,7 +62,7 @@ class MiniGameActivity : AppCompatActivity() {
                     val item = items.get(position)
 
                     JhAppData.selectedGameItem = item
-                    startActivity(Intent(this@MiniGameActivity,QuizMainActivity::class.java))
+                    startActivity(Intent(this@MiniGameActivity,MultipleGameActivity::class.java))
 
                 }
             }

@@ -28,6 +28,17 @@ class SancheonuActivity : AppCompatActivity(), OnMapReadyCallback {
     var reviewData: ReviewData? = null
     var manageReviewAdapter:ManageReviewAdapter? = null
 
+    init{
+        instance = this
+    }
+
+    companion object{
+        private var instance: SancheonuActivity? = null
+        fun getInstance():SancheonuActivity?{
+            return instance
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySancheonuBinding.inflate(layoutInflater)
