@@ -23,7 +23,7 @@ class ShwFirstFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentShwfirstBinding.inflate(inflater, container, false)
-
+        PfchkData.chk=1
         initList()
         initView()
 
