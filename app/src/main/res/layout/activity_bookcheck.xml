@@ -54,38 +54,93 @@
                     android:textColor="#0618C1"
                     android:textSize="18sp" />
 
-                <TextView
-                    android:id="@+id/bpriceOutput"
-                    android:layout_width="match_parent"
+                <LinearLayout
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:text="작성일"
-                    android:textColor="#0618C1"
-                    android:textSize="16sp" />
+                    android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/bdateOutput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="이름"
-                    android:textColor="#0618C1"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/bbView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0618C1"
+                        android:textSize="16sp"
+                        android:text="가격 : " />
 
-                <TextView
-                    android:id="@+id/btimeOutput"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="내용"
-                    android:textColor="#0618C1"
-                    android:textSize="16sp" />
+                    <TextView
+                        android:id="@+id/bpriceOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="작성일"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
 
-                <TextView
-                    android:id="@+id/bpeopleOutput"
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="내용"
-                    android:textColor="#0618C1"
-                    android:textSize="16sp" />
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <!--<TextView
+                        android:id="@+id/bbView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0618C1"
+                        android:textSize="16sp"
+                        android:text="TextView" />-->
+
+                    <TextView
+                        android:id="@+id/bdateOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이름"
+                        android:textColor="#0618C1"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bbView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0618C1"
+                        android:textSize="16sp"
+                        android:text="시간 : " />
+
+                    <TextView
+                        android:id="@+id/btimeOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bbView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#0618C1"
+                        android:textSize="16sp"
+                        android:text="예약인원 : " />
+
+                    <TextView
+                        android:id="@+id/bpeopleOutput"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="내용"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
