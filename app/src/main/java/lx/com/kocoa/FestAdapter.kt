@@ -18,9 +18,10 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
         return ViewHolder(binding)
     }
     override fun onBindViewHolder(holder: FestAdapter.ViewHolder, position:Int){
-        val item = items[position]
-        holder.setpassItem(item)//사전예약시스템 아이템 불러오기
-        holder.setStatusItem(item)//
+        val item1 = items[position]
+        val item2 = items[position]
+        holder.setpassItem(item1)//사전예약시스템 아이템 불러오기
+        holder.setRsvnItem(item2)//
     }
 
     inner class ViewHolder(val binding: FespassItemBinding) : RecyclerView.ViewHolder(binding.root){
@@ -37,8 +38,11 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
 
 
         }
-        fun setStatusItem(item:FestManagerData){
-            //binding.festNameOut.text = item.data1
+        fun setRsvnItem(item:FestManagerData){
+            binding.pasFestNameOut.text = " ${item.data5}"
+            binding.passPassNameOut.text = "${item.data1}"
+            binding.passFestRangeOut.text = "${item.data3}"
+            binding.passTimeOut.text = "${item.data4}부터 적용"
 
 
         }
