@@ -32,17 +32,17 @@ class FestInforStatusActivity : AppCompatActivity(), OnMapReadyCallback {
 
         //선택한 아이템 현황화면에 가져오는거
         SAppData.selelctedItem.apply {
-            binding.showpassName.text = "패스이름 : ${SAppData.data1}"
+            binding.showfestName.text = "축제이름 : ${SAppData.data5}" /*축제이름*/
+            binding.showfestRange.text = "${SAppData.data6}" /*축제규모*/
+            binding.showfestLocation.text = "${SAppData.data7}" /*개최 지역*/
+            binding.showroadName.text = "${SAppData.data8}" /*개최지 주소*/
             //binding.showpassSort.text = "패스종류 : ${SAppData.data2}"
-            binding.showpassPerson.text = "패스인원 : ${SAppData.data3}"
-            binding.showpassTime.text = "패스기간 : ${SAppData.data4}"
-            binding.showfestName.text = "축제이름 : ${SAppData.data5}"
-            binding.showfestRange.text = "축제규모 : ${SAppData.data6}"
-            binding.showfestLocation.text = "개최지역 : ${SAppData.data7}"
-            binding.showroadName.text = "개최지주소 : ${SAppData.data8}"
-            binding.showQuizname.text = "미니게임 이름 : ${SAppData.data9}"
-            binding.showQuizsort.text = "미니게임 종류 : ${SAppData.data10}"
-            binding.showQuizansw.text = "미니게임 정답 : ${SAppData.data11}"
+            binding.showpassName.text = "${SAppData.data1}" /*패스 이름*/
+            binding.showpassPerson.text = "${SAppData.data3}" /*패스 인원*/
+            binding.showpassTime.text = "${SAppData.data4}" /*패스 기간*/
+            binding.showQuizname.text = "${SAppData.data9}" /*미니게임 이름*/
+            binding.showQuizsort.text = "${SAppData.data10}" /*미니게임 종류*/
+            binding.showQuizansw.text = "${SAppData.data11}" /*미니게임 정답*/
             binding.showPosterImage.setImageURI(SAppData.data12)
 
         }
