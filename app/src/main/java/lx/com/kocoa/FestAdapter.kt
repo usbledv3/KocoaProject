@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import lx.com.kocoa.databinding.FespassItemBinding
-import lx.com.kocoa.databinding.FestinforItemBinding
 
 class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
     var items = ArrayList<FestManagerData>()
@@ -20,8 +19,12 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
     override fun onBindViewHolder(holder: FestAdapter.ViewHolder, position:Int){
         val item1 = items[position]
         val item2 = items[position]
-        holder.setpassItem(item1)//사전예약시스템 아이템 불러오기
-        holder.setRsvnItem(item2)//
+        if(PfchkData.chk==1) {
+            holder.setpassItem(item1)//사전예약시스템 아이템 불러오기
+        }
+        if(PfchkData.chk==2) {
+            holder.setRsvnItem(item2)//
+        }
     }
 
     inner class ViewHolder(val binding: FespassItemBinding) : RecyclerView.ViewHolder(binding.root){
@@ -35,16 +38,12 @@ class FestAdapter : RecyclerView.Adapter<FestAdapter.ViewHolder>(){
             binding.passPassNameOut.text = "${item.data7}"
             binding.passFestRangeOut.text = "${item.data1}"
             binding.passTimeOut.text = "${item.data4}"
-
-
         }
         fun setRsvnItem(item:FestManagerData){
             binding.pasFestNameOut.text = " ${item.data5}"
             binding.passPassNameOut.text = "${item.data1}"
             binding.passFestRangeOut.text = "${item.data3}"
             binding.passTimeOut.text = "${item.data4}부터 적용"
-
-
         }
 
     }

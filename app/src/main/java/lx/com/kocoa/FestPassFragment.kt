@@ -41,11 +41,6 @@ class FestPassFragment : Fragment() {
             SAppData.data4 = passtime
 
             binding.passOutput.text = "입력한 정보 확인 : ${passfestname}, ${passrange}, ${passtime}"
-
-            festAdapter?.apply {
-                items.add(FestManagerData(passfestname,passrange,passtime))
-                notifyDataSetChanged()
-            }
             val curActivity = activity as SHWMainActivity
             curActivity.replaceView(FestPassListFragment())
         }

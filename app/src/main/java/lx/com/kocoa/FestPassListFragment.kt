@@ -20,6 +20,7 @@ class FestPassListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentFestPassListBinding.inflate(inflater, container, false)
 
+        PfchkData.chk=2
         initList()
 
         binding.makepassbtn.setOnClickListener {
@@ -41,6 +42,9 @@ class FestPassListFragment : Fragment() {
 
         festAdapter?.apply {
             this.items.add(FestManagerData("패스등록예시","","적용인원예시","적용기간예시","축제이름"))
+            if(SAppData.data1!=null) {
+                this.items.add(FestManagerData(SAppData.data1, "", SAppData.data3, SAppData.data4, SAppData.data5))
+            }
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
