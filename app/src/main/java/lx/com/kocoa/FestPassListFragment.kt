@@ -35,8 +35,9 @@ class FestPassListFragment : Fragment() {
         binding.makepassList.adapter = miniAdapter
 
         miniAdapter?.apply {
-            GamesData.game1?.let { items.add(it) }
-            GamesData.game2?.let { items.add(it) }
+            if(SAppData.data1!=null){
+                this.items.add(MiniData(SAppData.data1, "최대 참여 인원:${SAppData.data3}명", SAppData.data4))
+            }
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
