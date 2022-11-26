@@ -139,7 +139,7 @@
                     app:navermap_zoom="13" />
 
             </LinearLayout>
-
+<!--12-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
