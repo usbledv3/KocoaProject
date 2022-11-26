@@ -24,7 +24,7 @@ class QuizMainActivity : AppCompatActivity() {
 
         binding.gameStartButton.setOnClickListener {
            startActivity(Intent(this@QuizMainActivity, QuizGameActivity::class.java))
-
+            // 실험
         }
 
 
