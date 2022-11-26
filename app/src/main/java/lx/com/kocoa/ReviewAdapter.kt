@@ -28,11 +28,7 @@ class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
 //    }
 
     // 각 아이템에 보여질 데이터를 담고 있는 것
-//    var items = mutableListOf<ReviewData>()
-
     var items = ArrayList<ReviewData>()
-
-
 
     // 리싸이 클러뷰가 아이템 개수가 몇 개인지 물어 볼때
     override fun getItemCount() = items.size
@@ -45,21 +41,7 @@ class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
     override fun onBindViewHolder(holder: ReviewAdapter.ViewHolder, position: Int) {
         val item = items[position]
         holder.setData(item,position)
-
-//        holder.run {
-//            itemView.tag = items[position]
-//
-//            itemView.editButton?.setOnClickListener {
-//                clickListener?.onItemEditClick(items[position], position)
-//
-//            }
-//
-//            itemView.deleteButton?.setOnClickListener {
-//                reviewActivity
-//            }
-//        }
     }
-
 
     fun reviewDataDelete(position: Int) {
         items.removeAt(position)
@@ -71,38 +53,31 @@ class ReviewAdapter : RecyclerView.Adapter <ReviewAdapter.ViewHolder>(){
     }
 
     inner class ViewHolder(val binding: ReviewItemBinding) : RecyclerView.ViewHolder(binding.root) {
-        init {
-            binding.root.setOnClickListener {
-                listener?.onItemClick(this,binding.root,adapterPosition)
-            }
-        }
 
         private val reviewActivity=ReviewActivity.getInstance()
         var rReview: ReviewData? = null
         var rPosition: Int? = null
 
-
-        init {
-           // binding.editButton.setOnClickListener {
-           //     val reviewIntent = Intent(reviewActivity,EditReviewActivity::class.java)
-          //      reviewActivity?.reviewlauncher?.launch(reviewIntent)
-//                reviewActivity?.editReview(rPosition!!,rReview!!)
-    //        }
-            binding.deleteButton.setOnClickListener {
-                reviewDataDelete(rPosition!!)
-            }
-        }
-
         fun setData(item:ReviewData, position: Int) {
 //            item.profile?.apply{
- //                   binding.profileView.setImageResource(this)
- //           }
+            //                   binding.profileView.setImageResource(this)
+            //           }
             binding.reviewTitleOutput.text = item.title
             binding.dateOutput.text = item.date
             binding.nameOutput.text = item.name
             binding.reviewTextOutput.text = item.text
             this.rReview=item
             this.rPosition=position
+        }
+
+        init {
+            binding.root.setOnClickListener {
+                listener?.onItemClick(this,binding.root,adapterPosition)
+            }
+
+            binding.deleteButton.setOnClickListener {
+                reviewDataDelete(rPosition!!)
+            }
         }
     }
 }

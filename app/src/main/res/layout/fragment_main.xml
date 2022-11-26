@@ -78,7 +78,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp">
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/seoulImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -87,7 +87,7 @@
 
                         android:src="@drawable/seoul_fes" />
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/gangwonImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -96,7 +96,7 @@
 
                         android:src="@drawable/gangwon_fes" />
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/chungcheongImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -105,7 +105,7 @@
 
                         android:src="@drawable/chungcheong_fes" />
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/busanImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -114,7 +114,7 @@
 
                         android:src="@drawable/busan_fes" />
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/junraImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
@@ -123,7 +123,7 @@
 
                         android:src="@drawable/junra_fes" />
 
-                    <ImageView
+                    <de.hdodenhof.circleimageview.CircleImageView
                         android:id="@+id/jejuImage"
                         android:layout_width="100dp"
                         android:layout_height="100dp"
