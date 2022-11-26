@@ -123,7 +123,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="1명"
-                    android:textColor="#0618C1"
+                    android:textColor="@color/black"
                     android:textSize="20sp" />
             </LinearLayout>
 
