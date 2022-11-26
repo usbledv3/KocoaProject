@@ -64,7 +64,6 @@
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/Kocoa/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1805" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_fespass.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_fest_infor_status.xml" value="0.36614583333333334" />
-        <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_matching_game.xml" value="0.1574074074074074" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_pass_booking.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_route.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/Administrator/AndroidStudioProjects/KocoaProject/app/src/main/res/layout/activity_sancheonu.xml" value="0.36614583333333334" />
@@ -106,6 +105,7 @@
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_manage_review.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_map.xml" value="0.27717391304347827" />
+        <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_matching_game.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_mini_game.xml" value="0.2391304347826087" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_my_page.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/activity_pass_booking.xml" value="0.27717391304347827" />
@@ -134,6 +134,7 @@
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_april.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_august.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_december.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_event_carousel1.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_february.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_fest_game_list.xml" value="0.27717391304347827" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_fest_pass_list.xml" value="0.27717391304347827" />
@@ -152,6 +153,7 @@
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_march.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_may.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_november.xml" value="0.2441123188405797" />
+        <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_october.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_search.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_september.xml" value="0.2441123188405797" />
         <entry key="..\:/Users/shals/FinalProject/Kocoa/app/src/main/res/layout/fragment_shwfifth.xml" value="0.25407608695652173" />
