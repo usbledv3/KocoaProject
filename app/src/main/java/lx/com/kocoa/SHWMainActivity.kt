@@ -24,6 +24,8 @@ class SHWMainActivity : AppCompatActivity() {
         binding=ActivityShwmainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        PfchkData.chk=1
+
         val toolbarBody = binding.operateToolbar //퉅바 선언
         setSupportActionBar(toolbarBody)
         // 툴바 내 뒤로가기 버튼 생성
@@ -37,7 +39,6 @@ class SHWMainActivity : AppCompatActivity() {
         festpassFragment = FestPassListFragment() // 페스패스 프레그먼트로 화면연결
 
         binding.registerButton.setOnClickListener {//등록현황Fragment로 넘어가는 버튼
-
             festAdapter?.apply {
                 items.add(
                     FestManagerData(

@@ -13,7 +13,7 @@ import lx.com.kocoa.databinding.FragmentFestPassListBinding
 class FestPassListFragment : Fragment() {
     var _binding : FragmentFestPassListBinding? = null
     val binding get() = _binding!!
-    var festAdapter:FestAdapter? = null
+    var festAdapter1:FestAdapter1? = null
     val FestPassLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
     }
 
@@ -37,10 +37,10 @@ class FestPassListFragment : Fragment() {
 
         // 2. 어댑터를 설정하는 것
         // 실제 데이터를 관리하고 각 아이템의 모양을 만들어주는 것
-        festAdapter = FestAdapter()
-        binding.makepassList.adapter = festAdapter
+        festAdapter1 = FestAdapter1()
+        binding.makepassList.adapter = festAdapter1
 
-        festAdapter?.apply {
+        festAdapter1?.apply {
             this.items.add(FestManagerData("패스등록예시","","적용인원예시","적용기간예시","축제이름"))
             if(SAppData.data1!=null) {
                 this.items.add(FestManagerData(SAppData.data1, "", SAppData.data3, SAppData.data4, SAppData.data5))
@@ -48,9 +48,9 @@ class FestPassListFragment : Fragment() {
         }
 
         // 4. 아이템을 클릭했을 때 동작할 코드 넣어주기
-        festAdapter?.listener = object:OnFestInforItemClickListener {
-            override fun onItemClick(holder: FestAdapter.ViewHolder?, view: View?, position: Int) {
-                festAdapter?.apply {
+        festAdapter1?.listener1 = object:OnFestInforItemClickListener1 {
+            override fun onItemClick1(holder: FestAdapter1.ViewHolder?, view: View?, position: Int) {
+                festAdapter1?.apply {
                     val item2 = items.get(position)
 
                     SAppData.selelctedItem = item2
