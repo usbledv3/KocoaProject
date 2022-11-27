@@ -32,6 +32,7 @@ class BbsActivity : AppCompatActivity() {
         // 리스트 초기화
         initList()
 
+
     }
 
     fun initList() {
