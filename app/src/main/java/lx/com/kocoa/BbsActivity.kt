@@ -12,6 +12,8 @@ import lx.com.kocoa.databinding.ActivityBbsBinding
 
 class BbsActivity : AppCompatActivity() {
 
+    // 실험체
+
     lateinit var binding: ActivityBbsBinding
 
 
