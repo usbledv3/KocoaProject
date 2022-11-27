@@ -259,6 +259,14 @@
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_applogo.xml" value="0.231" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_applogo_round.xml" value="0.231" />
         <entry key="..\:/Users/skanr/AndroidStudioProjects/KocoaProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.231" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/drawable/button_pattern.xml" value="0.1" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/drawable/button_round.xml" value="0.259" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/drawable/button_stroke.xml" value="0.259" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/layout/activity_all_game.xml" value="0.25364583333333335" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/layout/activity_bbs_view.xml" value="0.25364583333333335" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/layout/activity_bbs_write.xml" value="0.25364583333333335" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/layout/activity_quiz_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/lx/Android/KocoaProject/app/src/main/res/layout/activity_splash.xml" value="0.264" />
       </map>
     </option>
   </component>
