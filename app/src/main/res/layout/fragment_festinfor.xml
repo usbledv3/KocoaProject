@@ -19,7 +19,7 @@
             android:layout_marginTop="32dp"
             android:text="축제를 등록하세요"
             android:textColor="#0618C1"
-            android:textSize="34sp"
+            android:textSize="28sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,14 +27,15 @@
 
         <EditText
             android:id="@+id/festOpenRange"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="규모 ex)지역행사 혹은 명단위"
-            android:textColor="@color/black"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/festOpenName" />
 
@@ -51,38 +52,40 @@
 
         <EditText
             android:id="@+id/festOpenLocation"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="16dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="개최지역"
-            android:textColor="@color/black"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/festOpenRange" />
 
         <Button
             android:id="@+id/checkInforButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="152dp"
-            android:layout_marginTop="36dp"
-            android:backgroundTint="#6495ED"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_stroke"
             android:text="입력정보 확인"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/festOpenLocation" />
 
         <EditText
             android:id="@+id/festOpenName"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_width="300dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/border_grid"
             android:ems="10"
             android:hint="축제명"
-            android:textColor="@color/black"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="parent"
@@ -90,26 +93,23 @@
 
         <ImageView
             android:id="@+id/inputPosterpic"
-            android:layout_width="125dp"
-            android:layout_height="125dp"
+            android:layout_width="157dp"
+            android:layout_height="136dp"
             android:layout_marginTop="24dp"
-            android:src="@android:drawable/ic_menu_gallery"
+            android:src="@drawable/gallery"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.269"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
-        <Button
+        <ImageView
             android:id="@+id/addPosterButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="48dp"
-            android:backgroundTint="#6495ED"
-            android:text="사진 첨부"
-            android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.749"
-            app:layout_constraintStart_toStartOf="parent"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginTop="72dp"
+            android:src="@drawable/plus"
+            app:layout_constraintStart_toEndOf="@+id/inputPosterpic"
             app:layout_constraintTop_toBottomOf="@+id/fesNameView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
