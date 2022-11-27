@@ -8,7 +8,7 @@ import com.google.android.material.tabs.TabLayout
 import lx.com.kocoa.databinding.ActivityShwmainBinding
 
 class SHWMainActivity : AppCompatActivity() {
-
+    // 실험체
     lateinit var binding: ActivityShwmainBinding
 
     lateinit var festinforFragment: FestInforFragment // 축제정보 프레그먼트
