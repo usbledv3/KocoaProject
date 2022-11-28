@@ -97,7 +97,7 @@ class ManageReviewAdapter : RecyclerView.Adapter <ManageReviewAdapter.ViewHolder
         fun setData(item:ReviewData, position: Int) {
 //            item.profile?.apply{
  //                   binding.profileView.setImageResource(this)
- //           }
+ //           }//
             binding.MreviewTitleOutput.text = item.title
             binding.MdateOutput.text = item.date
             binding.MnameOutput.text = item.name
