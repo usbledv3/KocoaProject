@@ -4,31 +4,39 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.os.Looper
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.annotation.UiThread
-import kotlinx.android.synthetic.main.activity_splash.*
+import android.widget.ImageView
+import androidx.constraintlayout.widget.ConstraintLayout
 
 class SplashActivity : AppCompatActivity() {
 
+
+    var anim_FadeIn: Animation? = null
+    var anim_ball: Animation? = null
+    var constraintLayout: ConstraintLayout? = null
+    var kocoaMainImageView: ImageView? = null
+    var kocoaLineImageView: ImageView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
 
-        // 일정 시간 지연 이후 실행하기 위한 코드
-        Handler(Looper.getMainLooper()).postDelayed({
+        constraintLayout = findViewById(R.id.constraintLayout)
+        kocoaMainImageView = findViewById(R.id.kocoaMain)
+        kocoaLineImageView = findViewById(R.id.kocoaLine)
 
-            // 일정 시간이 지나면 MainActivity로 이동
-            var intent = Intent(this, MainActivity::class.java)
+        anim_FadeIn = AnimationUtils.loadAnimation(this,R.anim.anim_splash_fadein)
+        anim_ball = AnimationUtils.loadAnimation(this,R.anim.anim_splash_ball)
+
+        kocoaMainImageView?.startAnimation(anim_ball)
+        kocoaLineImageView?.startAnimation(anim_FadeIn)
+
+        Handler().postDelayed({
+            val intent = Intent(this,MainActivity::class.java)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
             startActivity(intent)
-
-            // 이전 키를 눌렀을 때 스플래시 스크린 화면으로 이동을 방지하기 위하여
-            // 이동한 다음 사용안함으로 finish 처리
             finish()
-        }, 1000)  // 시간 2초 이후 실행
-
+        }, 3000)
     }
-
 }

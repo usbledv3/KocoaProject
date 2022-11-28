@@ -14,6 +14,7 @@ import java.text.FieldPosition
 
 class BbsViewActivity : AppCompatActivity() {
 
+        // 실험체
     lateinit var binding: ActivityBbsViewBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
