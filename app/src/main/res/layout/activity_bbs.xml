@@ -35,9 +35,10 @@
             android:layout_width="match_parent"
             android:layout_height="35dp"
             android:background="#ACAEAB"
-            android:text="    코코아 업데이트 및 공지사항을 확인해주세요!"
+            android:text="코코아 업데이트 및 공지사항을 확인해주세요!"
+            android:layout_gravity="center"
             android:textAlignment="center"
-            android:textColor="#455A64"
+            android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold" />
 
@@ -57,6 +58,7 @@
         android:textAlignment="center"
         android:textColor="#0618C1"
         android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

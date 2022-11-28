@@ -14,7 +14,7 @@ class BookcheckActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.bnameOutput.text=BookData.bname
-        binding.bpriceOutput.text="인당 ${BookData.bprice}원"
+        binding.bpriceOutput.text="1인당 ${BookData.bprice}원"
         binding.bdateOutput.text=BookData.bdate
         binding.btimeOutput.text=BookData.btime
         binding.bpeopleOutput.text=BookData.bpeople

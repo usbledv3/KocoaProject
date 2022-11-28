@@ -8,13 +8,13 @@ import com.google.android.material.tabs.TabLayout
 import lx.com.kocoa.databinding.ActivityShwmainBinding
 
 class SHWMainActivity : AppCompatActivity() {
-
+    // 실험체
     lateinit var binding: ActivityShwmainBinding
 
     lateinit var festinforFragment: FestInforFragment // 축제정보 프레그먼트
     lateinit var festmapFragment: FestMapFragment // 지도 프레그먼트
     lateinit var festgameFragment: FestGameListFragment // 미니게임 프레그먼트
-    lateinit var festpassFragment: FestPassFragment // 페스패스 프레그먼트
+    lateinit var festpassFragment: FestPassListFragment // 페스패스 프레그먼트
     lateinit var shwFirstFragment:ShwFirstFragment// 등록현황 프레그먼트
     lateinit var festPassFragment: FestPassFragment // 이거도 있어야함!! 위에꺼랑 다른거임!!
     var festAdapter:FestAdapter? = null
@@ -23,6 +23,8 @@ class SHWMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding=ActivityShwmainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        PfchkData.chk=1
 
         val toolbarBody = binding.operateToolbar //퉅바 선언
         setSupportActionBar(toolbarBody)
@@ -34,10 +36,9 @@ class SHWMainActivity : AppCompatActivity() {
         festinforFragment = FestInforFragment() // 축제정보 프레그먼트로 화면연결
         festmapFragment = FestMapFragment() // 지도 프레그먼트로 화면연결
         festgameFragment = FestGameListFragment() // 미니게임 프레그먼트로 화면연결
-        festpassFragment = FestPassFragment() // 페스패스 프레그먼트로 화면연결
+        festpassFragment = FestPassListFragment() // 페스패스 프레그먼트로 화면연결
 
         binding.registerButton.setOnClickListener {//등록현황Fragment로 넘어가는 버튼
-
             festAdapter?.apply {
                 items.add(
                     FestManagerData(

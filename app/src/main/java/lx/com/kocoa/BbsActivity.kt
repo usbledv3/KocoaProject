@@ -12,6 +12,8 @@ import lx.com.kocoa.databinding.ActivityBbsBinding
 
 class BbsActivity : AppCompatActivity() {
 
+    // 실험체
+
     lateinit var binding: ActivityBbsBinding
 
 
@@ -31,6 +33,7 @@ class BbsActivity : AppCompatActivity() {
 
         // 리스트 초기화
         initList()
+
 
     }
 

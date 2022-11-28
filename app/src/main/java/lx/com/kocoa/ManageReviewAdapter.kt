@@ -1,22 +1,15 @@
 package lx.com.kocoa
 
-import android.content.Intent
+import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.review_item.view.*
 import lx.com.kocoa.databinding.ManagereviewItemBinding
-import lx.com.kocoa.databinding.ReviewItemBinding
-import java.lang.reflect.Member
-import java.time.LocalDate
-import java.time.LocalDateTime
-import java.time.format.DateTimeFormatter
-import java.util.Calendar.getInstance
 
 class ManageReviewAdapter : RecyclerView.Adapter <ManageReviewAdapter.ViewHolder>(){
     var listener:OnManageReviewItemClickListener? = null
+    private val context: Context? = null
 
 //    interface OnItemClickListener {
 //        fun onItemEditClick(data: ReviewData, pos: Int)
@@ -89,8 +82,9 @@ class ManageReviewAdapter : RecyclerView.Adapter <ManageReviewAdapter.ViewHolder
           //      reviewActivity?.reviewlauncher?.launch(reviewIntent)
 //                reviewActivity?.editReview(rPosition!!,rReview!!)
     //        }
-            binding.addOpinionButton.setOnClickListener {//답글다는 기능으로
+            binding.addOpinionButton.setOnClickListener {//신고하는 기능으로
                 reviewDataDelete(rPosition!!)
+                //Toast.makeText(context,"정상적으로 신고되었습니다.",Toast.LENGTH_SHORT).show() //들어가긴하는데 구동하면 팅김
             }
         }
 
@@ -105,5 +99,6 @@ class ManageReviewAdapter : RecyclerView.Adapter <ManageReviewAdapter.ViewHolder
             this.rReview=item
             this.rPosition=position
         }
+
     }
 }

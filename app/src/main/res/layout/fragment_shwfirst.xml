@@ -22,6 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
             android:text="축제 등록 현황"
+            android:textStyle="bold"
             android:textColor="#0618C1"
             android:textSize="40sp" />
     </LinearLayout>

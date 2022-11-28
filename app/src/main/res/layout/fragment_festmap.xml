@@ -26,6 +26,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="도로명 주소 입력"
+                android:textColor="@color/black"
                 android:inputType="textPersonName" />
 
             <Button

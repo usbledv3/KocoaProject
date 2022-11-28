@@ -25,6 +25,34 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".AllGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Design.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MultipleResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MultipleGameActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchingEndActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchingMainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MatchingGameActivity"
+            android:exported="false" />
+        <activity
             android:name=".ManageReview"
             android:exported="false" />
         <activity
@@ -35,12 +63,6 @@
             android:exported="false" />
         <activity
             android:name=".QuizMainActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FestivalInfoActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MonthFestivalInfoActivity"
             android:exported="false" />
         <activity
             android:name=".MapActivity"
@@ -119,13 +141,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MyPageActivity"
             android:exported="false" />

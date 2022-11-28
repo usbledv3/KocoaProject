@@ -24,7 +24,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/MreviewTitleOutput"
+                    android:id="@+id/reviewTitleOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="제목"
@@ -33,12 +33,12 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/MdateOutput"
+                    android:id="@+id/dateOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="작성일"
-                    android:textColor="@color/black"
+                    android:textColor="#0618C1"
                     android:textSize="16sp"
                     android:textStyle="italic" />
 
@@ -47,11 +47,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="이름"
-                    android:textColor="@color/black"
+                    android:textColor="#0618C1"
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/MreviewTextOutput"
+                    android:id="@+id/reviewTextOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="내용"
@@ -65,7 +65,7 @@
                     android:orientation="horizontal">
 
                     <Button
-                        android:id="@+id/addOpinionButton"
+                        android:id="@+id/deleteButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:backgroundTint="#6495ED"

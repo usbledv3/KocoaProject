@@ -35,6 +35,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="TextView"
+                android:textColor="#0618C1"
+                android:textStyle="bold"
                 android:textSize="24sp" />
 
             <TextView
@@ -42,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:textColor="#0618C1"
                 android:text="TextView" />
 
             <CalendarView
@@ -64,12 +67,14 @@
                     android:id="@+id/am09"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="9시" />
 
                 <RadioButton
                     android:id="@+id/am11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/black"
                     android:text="11시" />
 
                 <RadioButton
@@ -77,6 +82,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
+                    android:textColor="@color/black"
                     android:text="13시" />
 
                 <RadioButton
@@ -84,6 +90,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="0"
+                    android:textColor="@color/black"
                     android:text="15시" />
 
             </RadioGroup>
@@ -97,13 +104,28 @@
                 android:max="10"
                 android:min="1"/>
 
-            <TextView
-                android:id="@+id/sbCount"
-                android:layout_width="match_parent"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="예약 인원 : 1명"
-                android:textSize="20sp" />
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ppView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#0618C1"
+                    android:textSize="20sp"
+                    android:text="예약인원 : " />
+
+                <TextView
+                    android:id="@+id/sbCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="1명"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
 
             <Button
                 android:id="@+id/bookbutton"

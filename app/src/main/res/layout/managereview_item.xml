@@ -29,8 +29,8 @@
                     android:layout_height="wrap_content"
                     android:text="제목"
                     android:textColor="#0618C1"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
 
                 <TextView
                     android:id="@+id/MdateOutput"
@@ -38,17 +38,17 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:text="작성일"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
+                    android:textColor="#0618C1"
+                    android:textSize="14sp"
                     android:textStyle="italic" />
 
                 <TextView
-                    android:id="@+id/nameOutput"
+                    android:id="@+id/MnameOutput"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="이름"
-                    android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textColor="#0618C1"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:id="@+id/MreviewTextOutput"
@@ -56,7 +56,7 @@
                     android:layout_height="wrap_content"
                     android:text="내용"
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,10 +67,12 @@
                     <Button
                         android:id="@+id/addOpinionButton"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="35dp"
                         android:backgroundTint="#6495ED"
-                        android:text="피드백"
-                        android:textColor="#FFFFFF" />
+                        android:drawableStart="@drawable/alert_resize"
+                        android:text="  후기신고하기"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 

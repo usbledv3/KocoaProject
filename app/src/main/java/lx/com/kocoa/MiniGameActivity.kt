@@ -3,9 +3,7 @@ package lx.com.kocoa
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.widget.Button
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.JhAppData.Companion.miniGameAdapter
@@ -19,7 +17,9 @@ class MiniGameActivity : AppCompatActivity() {
     val miniGameLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
 
     }
+    val nnmainLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
 
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,6 +28,11 @@ class MiniGameActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         initList()
+
+        binding.nnBackButton.setOnClickListener {
+            val nnmain = Intent(this, MainActivity::class.java)
+            nnmainLauncher.launch(nnmain)
+        }
 
     }
 
@@ -43,8 +48,8 @@ class MiniGameActivity : AppCompatActivity() {
         // 아이템을 위한 데이터 넣기
         miniGameAdapter?.apply{
             this.items.add(MiniGameData(R.drawable.quiz,"OX퀴즈"))
-            this.items.add(MiniGameData(R.drawable.minigame,"객관식 퀴즈"))
-            this.items.add(MiniGameData(R.drawable.minigame,"카드 게임"))
+            this.items.add(MiniGameData(R.drawable.minigame_main,"객관식 퀴즈"))
+            this.items.add(MiniGameData(R.drawable.minigame_main,"카드 게임"))
         }
 
         // 아이템을 클릭했을 때 동작할 코드 넣어주기
@@ -55,7 +60,7 @@ class MiniGameActivity : AppCompatActivity() {
                     val item = items.get(position)
 
                     JhAppData.selectedGameItem = item
-                    startActivity(Intent(this@MiniGameActivity,QuizMainActivity::class.java))
+                    startActivity(Intent(this@MiniGameActivity,MultipleGameActivity::class.java))
 
                 }
             }

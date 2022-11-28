@@ -32,8 +32,7 @@
                     android:layout_weight="1"
                     android:text="주최이름"
                     android:textColor="#0618C1"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/festRangeOut"
@@ -42,8 +41,7 @@
                     android:layout_weight="1"
                     android:text="주최규모"
                     android:textColor="#0618C1"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp" />
             </LinearLayout>
 
             <TextView
@@ -54,8 +52,7 @@
                 android:layout_weight="1"
                 android:text="주최지역"
                 android:textColor="#0618C1"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:textSize="20sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

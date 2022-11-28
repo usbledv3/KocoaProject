@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout2"
         android:layout_width="410dp"
-        android:layout_height="130dp"
+        android:layout_height="119dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -19,9 +19,10 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="축제후기 관리"
+            android:text="축제 후기 관리"
             android:textColor="#0618C1"
-            android:textSize="50sp"
+            android:textSize="34sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.504"
@@ -31,20 +32,20 @@
 
         <Button
             android:id="@+id/refreshReviewButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_width="83dp"
+            android:layout_height="41dp"
             android:backgroundTint="#6495ED"
             android:text="새로 고침"
             android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fillViewport="true"
@@ -60,9 +61,10 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/SHWFestreviewList"
-                app:layout_constraintBottom_toTopOf="parent"
                 android:layout_width="match_parent"
-                android:layout_height="642dp" />
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toTopOf="parent" />
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 

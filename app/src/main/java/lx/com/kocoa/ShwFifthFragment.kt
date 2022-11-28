@@ -1,13 +1,11 @@
 package lx.com.kocoa
 
 import android.content.Intent
-import android.nfc.tech.MifareUltralight.PAGE_SIZE
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.activity.result.contract.ActivityResultContracts
-import androidx.core.widget.NestedScrollView
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import lx.com.kocoa.databinding.FragmentShwfifthBinding
@@ -17,8 +15,8 @@ class ShwFifthFragment : Fragment() {
     val binding get() = _binding!!
     var reviewAdapter:ReviewAdapter? = null
     val ManagereviewLauuncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
-    }
 
+    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         _binding = FragmentShwfifthBinding.inflate(inflater, container, false)
@@ -28,9 +26,8 @@ class ShwFifthFragment : Fragment() {
 
         return binding.root
     }
-
     fun initList(){
-        val layoutManager = LinearLayoutManager(activity)
+        val layoutManager = LinearLayoutManager(getActivity())
         binding.SHWFestreviewList.layoutManager = layoutManager
 
         reviewAdapter = ReviewAdapter()
@@ -64,6 +61,8 @@ class ShwFifthFragment : Fragment() {
             }
         }
 
+
+
     }
     fun initView(){
         binding.refreshReviewButton.setOnClickListener {
@@ -78,7 +77,6 @@ class ShwFifthFragment : Fragment() {
                 notifyDataSetChanged()
             }
         }
-
     }
 
 }

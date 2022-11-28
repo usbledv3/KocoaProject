@@ -53,7 +53,7 @@ class PassBookingActivity : AppCompatActivity() {
             override fun onStartTrackingTouch(p0: SeekBar?) {
             }
             override fun onStopTrackingTouch(p0: SeekBar?) {
-                binding.sbCount.text="예약 인원 : ${binding.seekBar.progress}명"
+                binding.sbCount.text="${binding.seekBar.progress}명"
             }
 
         })

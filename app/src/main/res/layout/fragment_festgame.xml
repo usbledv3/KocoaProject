@@ -22,29 +22,29 @@
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6495ED"
+                android:background="@drawable/button_full"
                 android:text="객관식"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6495ED"
+                android:background="@drawable/button_full"
                 android:text="주관식"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/button7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="35dp"
                 android:layout_weight="1"
-                android:backgroundTint="#6495ED"
+                android:background="@drawable/button_full"
                 android:text="O/X"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/white" />
 
         </LinearLayout>
 
